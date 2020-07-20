@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "solarBestGJ",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.4880443668365479, "aspect_mea": 193.80278921127319, "GHI_mean": 1840.5350277653067, "Area": 22493.04, "PV_out": 41399.23 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -89.023, 16.78735 ] ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.6781628894805909, "aspect_mea": 156.73317398071288, "GHI_mean": 1816.2187392946328, "Area": 22493.76, "PV_out": 40853.59 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -88.99596, 16.89198 ] ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.613375089168549, "aspect_mea": 148.17850479125977, "GHI_mean": 1817.9279300885642, "Area": 22494.21, "PV_out": 40892.85 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -88.97764, 16.88945 ] ] } }
+]
+}

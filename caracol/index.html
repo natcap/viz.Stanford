@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>SDP CMCC Belize</title>
+	
+	<!-- Leaflet & Mini Map Plugins -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js" type="text/javascript"></script>
+	<script src="js/lib/leaflet.draw.js"></script>
+	<link rel="stylesheet" href="src/Control.MiniMap.css" />
+	<script src="src/Control.MiniMap.js" type="text/javascript"></script> 
+	
+
+	<!--jQuery-->
+	<script src="js/lib/jquery-2.1.1.min.js"></script> 
+
+	<!--Others Libs-->
+	<script src="js/lib/includeHTML.js"></script>
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/belizeStylesheet.css"/>
+    <link rel="stylesheet" href="css/w3template.css"/> 
+
+   <!-- GeoJSON file plug-in -->
+   <script type="text/javascript" src="js/lib/leaflet.ajax.min.js"></script>
+
+
+  	<!--Leaflet Shp-->
+   	<script src="js/lib/leaflet.shpfile.js"></script>
+	<script src="js/lib/shp.js"></script> 
+
+
+	</head>
+
+
+
+	<body>
+
+<!-- Base Map and Mini Map-->
+<div id="mapid"></div>
+
+
+<!-- Selection Panel -->
+<div id="panel" class="panels"> 
+	
+	<!-- Title -->
+	<h1 id="viewerTitle">Sustainable Development </h1>
+	<h4>in <i>Caracol-Chiquibul-Mountain Pine Ridge</i>, Belize</h4>
+
+	<!-- Buttons -->
+	<div id='buttonsRow'>
+		<button type= "button" class="button closeBorder" id="LULCScenarioButton">
+			Scenarios</button>
+		<button type= "button" class="button closeBorder" style="display: inline;" id="dataDownloadButton">
+			Data Download</button>
+		<button type= "button" class="button closeBorder" style="display: inline;" id="aboutPanelButton">
+			About</button>
+	</div>
+
+
+	<br>
+	<!--Layer Checkboxes and Data Download Links-->
+	<div><a class="dataLinkClose" href="https://drive.google.com/drive/folders/1PQ_kx2aS3zHSLpcjkmxq6OLNitKgsQPN" id="allDataDownload" target="_blank"> Download all Data </a></div>
+	<div class="layerChecks" id="newRoad"><input type = "checkbox" id="newRoadCheckBox"><b> Improved Caracol Road  </b><a class="dataLinkClose" href="https://drive.google.com/file/d/1Oz184Vvsxv_2-pHPiof6dIvRW7Vn5_1s/view" target="_blank">  download</a></div> 
+	<div class="layerChecks" id="CMCCCommunities"><input type = "checkbox" id="CMCCCommunitiesCheckBox"> CMCC Communities <a class="dataLinkClose" href="https://drive.google.com/file/d/1zF_AgOAO6xVEH-0tQYDyy7sh5h5fcMrP/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="watersheds"><input type = "checkbox" id="watershedsCheckBox"> Waterways <a class="dataLinkClose" href="https://drive.google.com/file/d/1rtmFK1iMqntzRj3pXvpggB8Gpg5jIs_M/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="CMCCAreas"><input type = "checkbox" id="CMCCAreasCheckBox"> Protected Areas <a class="dataLinkClose" href="https://drive.google.com/file/d/1gVqUt-YqC8xwK4uVnaDOTh7FKT4nedod/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="Roads"><input type = "checkbox" id="roadsCheckBox"> Roads <a class="dataLinkClose" href="https://drive.google.com/file/d/1Qc4mFB_7cXng83i8Oya3-wc7fGaAJ6OD/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="tourismArchKey"><input type = "checkbox" id="tourismArchKeyCheckBox"> Natural & Cultural Sites <a class="dataLinkClose" href="https://docs.google.com/document/d/19cuUkXI-JI_9XogK8MqClx1oF2X5yANsAfa13NnzmHo/edit" target="_blank"> download</a></div>
+
+	<hr>
+	<!--Economic Activities -->
+	<div class="layerChecks layerTitle" id="allToursim"> Economic Activities </div>
+	<div class="layerChecks" id="mining"><input type = "checkbox" id="miningCheckBox"> Current Mining Areas <a class="dataLinkClose" href="https://drive.google.com/file/d/1iZz7-Q4JbuWMSZcId9FNVC39khuZWNhU/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="currentAgriculture"><input type = "checkbox" id="currentAgricultureCheckBox"> Current Agriculture Areas <a class="dataLinkClose" href="https://drive.google.com/file/d/1PcXY9XRj58dnOmB4sfcYtCPl1hBZf_9T/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="timber"><input type = "checkbox" id="timberCheckBox"> Timber Concessions <a class="dataLinkClose" href="https://drive.google.com/file/d/1SGX6uAcox2ydOjdlYxaXi6k6SJtEALjs/view?usp=sharing" target="_blank">   download</a></div>
+	<div class="layerChecks" id="hotelLodging"><input type = "checkbox" id="hotelLodgingCheckBox"> Tourism Lodging <a class="dataLinkClose" href="https://drive.google.com/file/d/1U_iePO5JiWPEaxoCWG7jla20mAYh0dRg/view?usp=sharing" target="_blank">  download</a></div>
+	<br>
+	<!-- Ecosystem Services -->
+	<div class="layerChecks layerTitle" id="allMining"> Ecosystem Services </div>
+	<div class="layerChecks" id="impactHeatmap"><input type = "checkbox" id="waterflowCheckBox"> Total Water Flow <a class="dataLinkClose" href="https://drive.google.com/file/d/19W5e26ha553kmJNur4DIz8X9k3kFPZ8T/view?usp=sharing" target="_blank">   download</a></div>
+	<div class="layerChecks" id="impactHeatmap"><input type = "checkbox" id="waterQualityCheckBox"> Water Quality Index <a class="dataLinkClose" href="https://drive.google.com/file/d/1R5mcwVg4qqGdJS6JtLzTXWIjHCHBJlz5/view?usp=sharing" target="_blank">   download</a></div>
+	<div class="layerChecks" id="impactHeatmap"><input type = "checkbox" id="carbonStorageCheckBox"> Carbon Storage <a class="dataLinkClose" href="https://drive.google.com/file/d/1Esuhr6QMac3p2cVE-7TGVRNVDuIk62s4/view?usp=sharing" target="_blank">   download</a></div>
+	<br>
+	<!-- Future Development Impact-->
+	<div class="layerChecks layerTitle" id="allMining"> Future Development </div>
+	<div class="layerChecks" id="tourismExpanded"><input type = "checkbox" id="tourismExpandedCheckBox"> Tourism Impact Scores <a class="dataLinkClose" href="https://drive.google.com/file/d/1G6t3Jt0hi-ZMwGzWAY3HliodMUMw5klO/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="impactHeatmap"><input type = "checkbox" id="heatmapCheckBox"> <b>Impact: Benefits Impaired </b><a class="dataLinkClose" href="https://drive.google.com/file/d/1BHDgK7LPF0uRbf_PultMoiwA9fuQyA-f/view?usp=sharing" target="_blank"> download</a></div>
+	<br>
+	<!-- Energy -->
+	<div class="layerChecks layerTitle" id="allEnergySites"><!--<input type = "checkbox" id="allEnergySitesCheckBox">--> Energy </div>
+	<div class="layerChecks" id="energy"><input type = "checkbox" id="energyCheckBox"> Dams <a class="dataLinkClose" href="https://drive.google.com/file/d/1fgkIUQSdc-Z2TO00OsaHkio23-I3WkJe/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="energySites"><input type = "checkbox" id="energySitesCheckBox"> Potential Sites for Renewable Energy <a class="dataLinkClose" href="https://drive.google.com/file/d/1z4F9Jac8PT7ZyJZyEv1KGN3V6ZnvWUp0/view?usp=sharing" target="_blank"> download</a></div>
+
+</div><!-- Close selection Panel  -->
+
+
+<!-- Legend -->
+<div class="InteractiveLegend panels" id="interactiveLegend">
+
+<h2 id="InteractiveLegendTitle">Legend</h2>
+
+
+<!--Base Map -->
+<div class= "layerChecks" id="baseMapSelect">
+	<input type= "radio" name="basemap" id="mapRadio"> Map 
+	<input type= "radio" name="basemap" id="satelliteRadio"> Satellite 	
+</div>
+<hr>
+	<div w3-include-html="html/legend.html"></div>
+	
+		<div class="close" id="newRoadIL">
+		<div><img src="img/newRoadLegend.png" alt="Interactive Legend for New Road" height="20" width="20"> Improved Caracol Road</div>
+		</div>
+
+		<div class="close" id="watershedsIL">
+		<div><img src="img/LegendIcons.png" alt="Interactive Legend for Water Features"height="20" width="20"> Waterways </div>
+		</div>
+
+		<div class="close" id="CMCCCommunitiesIL">
+		<div><img src="img/home-run.png" alt="Interactive Legend for CMCC Communities" height="20" width="20"> CMCC Communities</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+<!-- LULC Panel  -->
+<div class= "LULCclose panels" id= "LULCPanel3"> <button type= "button" class= "exitButton" onclick="LULCPanelClose()">X</button><h3>Scenario Comparisons</h3>
+<button type= "button" class="button" id= "downloadFigureButton" onclick="downladFigure()"> Enlarge</button>
+<br>
+	<img src="scripts/staticFigureBelize.png" id= "staticFigure" width= 100%>
+<br>
+<button type= "button" class="close" id= "expandFigureButton" onclick="expandFigureOpen()">Click to Expand Figure</button>
+	<div>
+		<h4>About this Figure</h4>
+		The first two maps represent a palette of options for future development. The "more conservative" options allow for an increase in tourism, selective site development, improved agricultural practices and continued sustainable timber, with a focus on minimal expansion into natural areas, and minimal impact on natural resources. 
+		<br>
+		"Less conservative" options allow for a greater increase in tourism, more site development, expansion of agriculture into natural areas and continued sustainable timber. These generally lead to a greater impact on natural resources.
+		<br>
+		For each set of development options, a synopsis of projected changes in ecosystem services, revenue and community impact are provided. The first graph shows a simple, relative comparison of how these are likely to change under each set of development options. The second set of graphs provide more detail, with percent change given for each environmental, revenue and community impact.
+	</div>
+</div>
+
+<div class= "LULCclose panels" id= "LULCPanel2"><!--<h3>Expansion Scenarios Draft</h3> --><button type= "button" class= "exitButton" onclick="LULCPanelClose2()">X</button>
+	<img src="scripts/staticFigureBelize.png" width= 100%>
+</div>
+<div class= "LULCclose panels" id= "LULCPanel1"><h3>Case 1</h3> <!--<button type= "button" class= "exitButton" onclick="LULCPanelClose1()">X</button>-->
+	<img src="img/placeholdersmall.png" height="100" width="100">
+	<img src="img/placeholdersmall.png" height="100" width="100">
+	<img src="img/placeholdersmall.png" height="100" width="100">
+</div>
+
+<!--About panel on top of scenarios, also easy to x out of it TO DO !!!-->
+<div class= "close panels" id=AboutPanel>
+<div w3-include-html="html/about.html"></div>
+
+</div>
+
+<!-- Intro Tutorial -->
+
+<div><img class = "tutorialArrow" id = "tutorialArrow1" src="img/next1.png" width="5%"></div>
+
+<div class="panels introPanel" id=introPanel1>
+	<h2>Welcome!</h2>
+	This viewer shows different scenarios for development in the CMCC Region in Belize. 
+	<button type= "button" class="button" style="display: inline;" id="skipTutorialButton">Skip Tutorial</button>
+	<h3>Mapping Elements</h3>
+	To visualize the information we have an interactive map where you can turn layers on and off to explore different factors. To the right of the page you have the main selection panel where you have buttons that allow for greater interaction with the map, as well as checkboxes that can be clicked to turn layers on and off. Make sure to click and hover over icons and layers for additional information!
+	<br>
+	<br>
+	An interactive legend on the bottom left corner of the map will respond to the layers you are displaying on the map. 
+	<br>
+	<button type= "button" class="button" style="display: inline;" id="prev1Button">Previous</button>
+	<button type= "button" class="button" style="display: inline;" id="next1Button">Next</button>
+</div>
+
+<div class="close" id=introPanel2>
+	<h3>The Buttons</h3>
+	<button type= "button" class="button" style="display: inline;" id="close2TutorialButton">Finish Tutorial</button>
+	<br>
+	<h4>Scenarios Button</h4>
+	This button shows a figure comparing different future scenarios for development in this region and the impact on ecosystem services.
+	<h4>Data Download Button</h4>
+	This button will display links that allow you to download the data files present in this viewer. Click the button to turn the data links on and off.
+	<h4>About Button</h4>
+	This button will take you to a panel where you can find and download additional resources about this project, including reports, method descriptions, and links to additional information.
+	<br>
+	<button type= "button" class="button" style="display: inline;" id="prev2Button">Previous</button>
+	<button type= "button" class="button" style="display: inline;" id="next2Button">Start</button>
+</div>
+
+<div class="close" id=introPanel3>
+	<h3>The Scenario Comparison Panel</h3>
+	<button type= "button" class="button" style="display: inline;" id="finishTutorialButton">Finish Tutorial</button>
+	<br>
+	 The top row in the static figure has land cover maps that show models of possible expansion of the four main development areas we observed for this study: Agriculture, Mining, Tourism, and Timber. The second and third row look at metrics to evaluate how different ecoystem services will change under these development conditions. Below the graph you will find tools to expand the graph for further inspection and for download, as well as some description of some of the services evaluated. 
+	<br>
+	<button type= "button" class="button" style="display: inline;" id="prev3Button">Previous</button>
+	<button type= "button" class="button" style="display: inline;" id="next3Button">Finish</button>
+</div>
+<!--</div>-->
+
+
+
+
+<!-- JavaScript --> 
+<script src="js/maps.js"></script>
+
+<script src="js/dataDownloadControls.js"></script> 
+
+<script src="js/layers.js"></script>
+<script src="js/LULCControls.js"></script>
+
+<script src="js/aboutControls.js"></script>
+<script src="js/introTutorial.js"></script>
+
+
+
+<script>includeHTML();</script>
+
+	
+	</body>
+
+
+
+</html>

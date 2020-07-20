@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  
+
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149667597-1"></script>
+    <script src="js/gtag.js"></script>
+
+    
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>NCP Viewer: By Countries</title>
+	<meta name="author" content="Charlotte Weil, David Malmström, Anna Häägg">
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="css/commonStyle.css" />
+  	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/left-menu.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="stylesheet" href="css/risk_style.css">
+	<link rel="stylesheet" href="css/charts.css">
+	<link rel="stylesheet" href="css/legend.css">
+	<link rel="stylesheet" href="css/left-menu.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+</head>
+
+
+<body>
+
+	<!-- Menu Navbar -->
+	<div id="main_menu"></div>
+	<!-- End Menu Navbar -->
+	<!--Loading landing page-->
+	<div id="landingpage">
+			<h3 id="landing-page-loader">loading ...</h3>
+	</div>
+	<!--End Loading landing page-->
+   
+	<div class="content-wrapper">
+		<!--left menu-->
+		<div id="left-menu">
+			<h3>Nature's Contribution to People</h3>
+
+			<input id="pollination-box" type="radio" class="no_show radio_btn" name="radio1" id="a_radio-3" value="poll" autocomplete="off" checked="checked">
+			<label for="pollination-box" class="left-menu-header" id="left-menu-header-1">Pollination <span class="glyphicon glyphicon-grain"> </span> </label>
+			<h4 class="left-menu-text" id="left-menu-text-1">
+				Up to two-thirds of all crops require some degree of animal pollination to reach their maximum yields,
+				and natural habitat around farmlands can support healthy
+				populations of wild pollinators by providing them with foraging and nesting resources. <a href="poll.html">More</a> <br>
+			</h4>
+		
+			<input id="water-quality-box" type="radio" class="no_show radio_btn" name="radio1" id="a_radio-2" value="ndr" autocomplete="off">
+			<label for="water-quality-box" class="left-menu-header" id="left-menu-header-2">Water Quality Regulation <i class="fa fa-tint" viewBox = "0 0 15 15"></i> </label>
+			<h4 class="left-menu-text" id="left-menu-text-2">
+				Fertilizers like nitrogen are a major source pollution to freshwater systems and drinking water. However,
+				some of it may be retained by healthy ecosystems,
+				regulating drinking water quality to downstream populations.<a href="wq.html">More</a> <br>
+			</h4>
+		
+			<input id="coastal-risk-box" type="radio" class="no_show radio_btn" name="radio1" id="a_radio-1" value="cv" autocomplete="off">
+			<label for="coastal-risk-box" class="left-menu-header" id="left-menu-header-3">Coastal Risk Reduction <i class="fas fa-water"></i></label>
+			<h4 class="left-menu-text" id="left-menu-text-3">
+				Coastal habitats such as coral reefs, mangroves, salt marsh, or sea grass, attenuate waves and protect
+				the shorelines from the impacts of storms, such as floods and erosion. <a href="coastal.html">More</a> <br>
+			</h4>
+
+			<div class="section_marker"> </div>
+			<h3>Scenarios</h3>
+
+			<input type="radio" class="no_show" name="radio2" id="b_radio-1" value="1" checked="checked">
+			<label for="b_radio-1" class="left-menu-header" style="color: rgb(42,129,43)" >Green Growth</label>
+
+			<input type="radio" class="no_show" name="radio2" id="b_radio-2" value="3" />
+			<label for="b_radio-2" class="left-menu-header" style="color: rgb(184,152,13)">Regional Rivalry</label>
+
+			<input type="radio" class="no_show" name="radio2" id="b_radio-3" value="5" />
+			<label for="b_radio-3" class="left-menu-header" style="color: rgb(112,12,151)">Fossil Fuels</label>
+
+			<div class="section_marker"> </div>
+			<h3>What to visualize?</h3>
+
+			<input id="deficit-box" type="radio" class="no_show" onclick="switchMode('UN')" autocomplete="off" name="mode" checked="checked">
+			<label for="deficit-box" class="left-menu-header">Benefit Gap</label>
+
+		
+			<input id="people-exposed-box" type="radio" class="no_show" onclick="switchMode('pop')" name="mode" autocomplete="off">
+			<label for="people-exposed-box" class="left-menu-header">People Exposed</label>
+			
+		
+			<input id="nat-cap-box" type="radio" class="no_show" onclick="switchMode('NC')" name="mode"autocomplete="off">
+			<label for="nat-cap-box" class="left-menu-header">Nature's Contribution</label>
+			
+			<br>
+
+			<div id="info_about_measurments">A Benefit Gap in pollination can be measured as the amount of crop losses due to insufficiently pollinated crops for pollination
+			</div>
+
+		</div>
+		<!--End of left menu-->
+
+
+	<div id="main_content_container">
+		<div id="risk_map">
+			<svg id="globe-plot" viewBox="0 0 800 800" width="100%" height="100%"></svg>
+			<div id="countryLabel" onclick="backToGlobe()"></div>
+
+			<div id="legend">
+				<p id="legendHeader"></p>
+				<svg id="legendBar"></svg>
+				<span class="legendMinMax" id="legendValue_min">  0</span>
+				<span class="legendMinMax" id="legendValue_max">Max</span>
+				
+			</div> 
+
+			<div id="distribution-chart">
+					<h2 id="distri-chart-head">How severely would <br> people be impacted?<br> (<p id ="distri-chart-choosen-scenario"></p>) </h2>
+					<svg id="distribution"></svg>
+					<h3 id="distri-x-axis">Number of people</h3>
+					<h3 id="distri-y-axis">Coastal Hazard</h3>
+			</div>
+			<!--Information containter-->
+			<i class="info-button fas fa-info-circle" onclick="showInfo('info-overlay')"></i>
+			<div id="info-overlay">
+			  <p class="info_exit" onClick="hideInfo('info-overlay')">&#x2716;</p>
+				<h2 class="info_head">How to read the map</h2>
+
+				<p class="info_text">This map highlights where people will be most at risk in the future. By using the menu at left, different services and scenarios can be explored.</p><br> 
+
+				<p class="info_text"><i>Benefit Gap</i> displays where potential benefits are not currently being provided by nature. <i>People Impacted</i> displays the populations impacted by these benefits or benefit gaps and <i>Nature’s contribution</i> shows the proportion of potential benefit that is provided by nature.</p><br> 
+
+				<p class="info_text">For more detailed data and the possibility to compare services and scenarios, select a country by clicking on it.</p><br> 
+			</div>
+
+		</div>
+
+		<div id="compare-scenarios">
+			<h1 id="compare-scenario-header">Compare Scenarios and Services</h1>
+			<div id="scenario-chart">
+				<h2 class="scenario-chart-head">How much would the total <br>Benefit Gap change by 2050?</h2>
+				<svg id="scenario-comparison-svg"></svg>
+			</div>
+			<div id="scenario-chart">
+				<h2 class="scenario-chart-head">How many people would be <br> negatively impacted? </h2>
+				<svg id="population-comparison-svg"></svg>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://d3js.org/d3-geo.v1.min.js"></script>
+	<script src="https://unpkg.com/versor"></script>
+	
+	<script>
+		if (!window.d3) document.write('<script src="js/lib/d3.min.js"><\/script>');
+	</script>
+	<script src="js/lib/topojson.min.js"></script>
+	<script src="js/charts.js"></script>
+	<script src="js/mapplot.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/navigation.js"></script>
+	
+</body>
+
+</html>

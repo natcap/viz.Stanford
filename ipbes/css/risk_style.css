@@ -1,0 +1,177 @@
+.nav-global {
+  font-size: 1.1em;
+  z-index: 100;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 18%;
+  height: 18%;
+  top: 80vh;
+  left: 8vh;
+  right: 0;
+  bottom: 0;
+  /*background-color: rgba(0,0,0,0.5);*/
+  z-index: 2;
+  cursor: pointer;
+}
+
+#risk_map{
+      /* position: absolute; */
+    /* top: 1.5vh; */
+    /* bottom: 1.5vh; */
+    /* left: 1.5vh; */
+    /* right: 1.5vh; */
+    background: rgba(61, 61, 61, 0.212);
+    /* display: flex; */
+    /* width: 125vh; */
+    flex-grow: 2;
+    margin: 1.5vh;
+   
+}
+
+#aboutDiv {
+  width: 100%;
+  z-index: 100;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+
+.selected {
+  opacity: 1;
+  stroke-width: 5;
+  fill-opacity: 0.7;
+}
+
+
+.countryTooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  /*background: #fff;*/
+  padding: 5px;
+  text-align: left;
+  /*border: solid #ccc 1px;*/
+  color: white;
+  font-size: 16px;
+}
+
+.tooltipInfo{
+  font-size: 13px;
+  margin-top: 5px;
+  text-shadow: none;
+}
+
+#country_name {
+  color: white;
+  background-color: white;
+  z-index: 100;
+}
+
+#greyOut {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  visibility: hidden;
+}
+
+#globe-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  width: 99%;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+  z-index: 2;
+}
+
+#heatmap {
+  width: 100%;
+  max-width: 150vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+#globe-plot {
+  z-index: 0;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+
+#radio_container {
+  position: absolute;
+  z-index: 3;
+}
+
+#resetButton {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 2rem;
+  z-index: 100;
+}
+
+#resetText {
+  margin: auto;
+  width: fit-content;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+  z-index: 100;
+}
+
+#resetText:hover {
+  opacity: 0.8;
+}
+
+#countryLabel {
+  margin: auto;
+  position: absolute;
+  top: 2rem;
+  padding-left: 2vh;
+  color: rgb(152, 171, 189);
+  text-align: center;
+  font-size: 30px;
+  visibility: hidden;
+  z-index: 100;
+  cursor: pointer;
+}
+.info-button{
+  top:2vh;
+  right:2vh;
+}
+
+.info-button{
+  top:2.5vh;
+  right:18rem;
+}
+
+#info-overlay {
+  position: absolute;
+  bottom: 1.5vh;
+  right: 17.5rem;
+  background-color: rgba(29, 29, 29, 0.925);
+  overflow: hidden;
+  width: 0;
+  transition: .5s ease;
+  z-index: 100;
+}

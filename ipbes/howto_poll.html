@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149667597-1"></script>
+    <script src="js/gtag.js"></script>
+
+    
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>NCP Viewer: Pollination - Sample maps</title>
+	<meta name="author" content="Charlotte Weil, Anna Häägg & team">
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="css/commonStyle.css" />
+  	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/left-menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/modelingInfo.css" />
+	<link rel="stylesheet" href="css/services.css">
+	<link rel="stylesheet" href="css/legend.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+	integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+   <script src="js/L.Map.Sync.js"></script>
+
+   <!-- w3 style thingz -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+	<link rel="stylesheet" type="text/css" href="css/commonStyle.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/about.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+
+
+
+<style>
+	.ssp1 {
+		color: rgb(42,129,43);
+	}
+	.ssp3 {
+		color: rgb(184,152,13);
+	}
+	.ssp5 {
+		color: rgb(112,12,151);
+	}
+
+</style>
+
+
+<body>
+
+	<!-- Menu Navbar -->
+	<div id="main_menu"></div>
+	<!-- End Menu Navbar -->
+	<!--Loading landing page-->
+	<div id="landingpage">
+		<h3 id="landing-page-loader">loading ...</h3>
+	</div>
+	<!--End Loading landing page-->
+   
+	<div class="content-wrapper" style="padding:2vh 10vh 10vh 10vh ;">
+
+	<div class="w3-row">	
+		<h2>Pollination high resolution maps</h2>
+		<div class="w3-half">
+			<p id="service_info_text">Up to two-thirds of all crops require some degree of animal pollination to reach their maximum yields, and natural habitat around farmlands can support healthy populations of wild pollinators by providing them with foraging and nesting resources.</p>
+		<img src="static/images/pollination.jpg" alt="Maps" style="max-height:20vh; margin: auto;">
+		</div>
+
+		<div class="w3-half">
+			<p>These maps display high resolution global datasets for 4 metrics of interest: Benefit Gap (the potential benefit not provided by nature), People Exposed (to the benefits or benefit gaps), Maximum Potential Benefit (arising from human stressors and/or physical conditions), and Nature's Contribution (to providing potential benefits). When a metric is selected, a short description will appear below. Please refer to the modeling method for further details on each metric.</p><p>The bottom map displays the baseline data (year 2015), and the top map shows the change (by 2050).</p><p>To select a scenario (SSPs, 2050), as well as which metric to visualize, click on its name in the menu on the left panel.</p>
+		</div>
+	</div>
+
+	<div class="w3-row">	
+		<h2>Sample maps</h2>
+
+		<div class="w3-half">
+			<h4> <strong>Benefit Gap</strong> - Today & <a class='ssp1'>Green Growth future</a></h4>
+			<img src="static/samplemaps/poll_benef_ssp1.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+		<div class="w3-half">
+			<h4> <strong>Benefit Gap</strong> - Today & <a class='ssp3'>Regional Rivalry future</a></h4>
+			<img src="static/samplemaps/poll_benef_ssp3.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+
+
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>Benefit Gap</strong> - Today & <a class='ssp5'>Fossil Fuels future</a> </h4>
+			<img src="static/samplemaps/poll_benef_ssp5.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>People Exposed</strong> - Today & <a class='ssp1'>Green Growth future</a> </h4>
+			<img src="static/samplemaps/poll_pop_ssp1.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>People Exposed</strong> - Today & <a class='ssp3'>Regional Rivalry</a> </h4>
+			<img src="static/samplemaps/poll_pop_ssp3.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>People Exposed</strong> - Today & <a class='ssp5'>Fossil Fuels future</a> </h4>
+			<img src="static/samplemaps/poll_pop_ssp5.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>Max. Potential Benefit</strong> - Today & <a class='ssp1'>Green Growth future</a> </h4>
+			<img src="static/samplemaps/poll_pot_ssp1.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>Max. Potential Benefit</strong> - Today & <a class='ssp3'>Regional Rivalry future</a> </h4>
+			<img src="static/samplemaps/poll_pot_ssp3.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>Max. Potential Benefit</strong> - Today & <a class='ssp5'>Fossil Fuels future</a> </h4>
+			<img src="static/samplemaps/poll_pot_ssp5.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>Nature's Contribution</strong> - Today & <a class='ssp1'>Green Growth future</a> </h4>
+			<img src="static/samplemaps/poll_nc_ssp1.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>Nature's Contribution</strong> - Today & <a class='ssp3'>Regional Rivalry future</a> </h4>
+			<img src="static/samplemaps/poll_nc_ssp3.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+		<div class="w3-half" style="padding-top: 5vh;">
+			<h4> <strong>Nature's Contribution</strong> - Today & <a class='ssp5'>Fossil Fuels future</a> </h4>
+			<img src="static/samplemaps/poll_nc_ssp5.png" alt="Maps" style="width:96%; margin: auto;">
+		</div>
+
+
+
+
+		</div><!--Close w3-row-->
+
+	<div class="w3-row" style="padding: 10vh;">
+		<h4> Visit the <a href='poll.html'>Pollination page</a> to explore interactively these high-resolution maps & for details on the Methods.</h4>
+	</div>
+		</div><!--Close contents wrapper-->
+		
+
+		<!--<div id="modeling_method2">
+			<h1>Modeling Method</h1>
+
+			<div class="modelingSection1" >
+					<div style="width:30%;">
+							<img src="static/images/methods/framework.png" alt="NCP Framework" style="width:80%; border: 8px solid #dde4f2">
+					</div>
+
+					<div style="width:50%;">
+						<h2>Nature's Contributions to People (NCP) Framework</h2>
+
+						<p>The contribution that nature makes to potential benefits is a function of the amount and configuration of biodiversity and ecosystems, as well as with other drivers and stressors placed on the natural system such as climate change or pollution from anthropogenic inputs (e.g., fertilizer run-off). However, these biophysical measures indicating potential benefits may or may not coincide with where and how much people depend on the benefits from nature. Thus, the additional consideration of which populations are most dependent on nature’s role in delivering benefits is critical to establishing where these potential benefits and nature’s contributions to providing them matter to people. </p>
+					</div>
+			</div>
+			<br>
+			<div class="modelingSection1" >
+					<div style="width:30%;">
+							<img src="static/images/methods/framework_polli.png" alt="Polli Framework" style="width:80%; border: 8px solid #dde4f2"><br> <br> <br> 
+							<img src="static/images/bumblebee.jpg" alt="Pollination bee" style="width:80%; border: 8px solid #dde4f2">
+					</div>
+					<div style="width:50%;">
+							<p>For crop pollination, the <i>maximum potential benefit</i> is manifested by the total agricultural crop output that is dependent to some degree on insect pollination. For <i>population exposed</i>, we focus on “local” beneficiaries, populations whose aggregate dietary requirements exceed pollinator-independent production within 100 km. The <i>potential benefit provided by nature</i> is the yield or production attributable to pollination where it has been sufficiently delivered by pollinators from surrounding habitat, and <i>nature’s contribution</i> is represented by the proportion of total potential pollination-dependent crop output that is pollinated.</p>
+							<p>The potential benefits provided by nature, which are often called “ecosystem services” (but should be thought of as the potential supply of a service, and only truly becomes a service when combined with human demand for the service) may be measured in terms of total production value of the crop pollinated or number of people equivalents whose dietary requirements are met by pollination. We emphasize that a proportional representation of nature’s contribution to providing potential benefits is important to track differences or changes across space and time; as realized benefits provided by nature could increase alongside (or due to) increases in maximum potential benefits or population exposed, though nature’s contributions may remain the same. That is, if more pollination-dependent crops are grown, a constant proportional contribution of nature would result in higher levels of the corresponding realized benefits, in this case pollination, even if conditions for people (in terms of food security) deteriorate. The relative proportion of nature’s contribution, along with people’s needs, especially for the most vulnerable people, are more useful metrics than realized benefits alone when considering change across several variables at once (stressors, people, and nature), as they reveal where and when nature plays a key role in delivering benefits. </p>
+							<p>We also examine the benefits not provided by nature, or benefit gaps, people depend upon for their well-being (which could be filled to some extent by other forms of capital, e.g., the labor to hand-pollinate), and the populations exposed to changes in benefit gaps for each NCP in future scenarios. We use the amount of crop losses due to insufficiently pollinated crops as the measure of benefit gap for pollination.  This benefit gap results in the outcomes people will actually face and perceive – potentially leading to food shortages in this case— and is what will determine people’s well-being, the visible component of NCP. It does not by itself, however, reveal the role nature plays in contributing to that well-being.
+</p>
+					</div>
+			</div>
+
+			<br>
+			<div class="modelingSection1" >
+					<div class="modeling_left" >
+						<h2 >Modeling Crop Pollination and Micronutrient Production</h2>
+						<p>This section provides an overview of the method to estimate Nature’s Contribution to People in terms of pollination supporting crop micronutrient production, specifically pollinator-dependent Vitamin A, Folate and Energy (KJ). We first calculate wild
+							pollination sufficiency provided by habitat around farmland, and the pollination dependence of crop-based production of different micronutrients. We then use these outputs along with data on local dietary requirements to determine humanity’s needs
+							and nature’s contributions, as the dual components of NCP. </p>
+						<h3 id="wildpollinationsufficiencypollinatorhabitat">Wild Pollination Sufficiency (Pollinator Habitat)</h3>
+						<p>Pollination sufficiency is based on the area of pollinator habitat around farmland. Agricultural pixels with >30% natural habitat in the 2 km area surrounding the farm are designated as receiving sufficient pollination for pollinator-dependent yields.
+							</p>
+					
+						<h3 id="pollinationdependentnutrientproduction">Pollination-Dependent Nutrient Production</h3>
+						<p>Pollination-dependence of 115 crops (Klein, 2007), crop yields (Monfreda, 2008), and crop micronutrient content (USDA, 2011) were combined in an analysis to calculate pollination-dependent nutrient production (following Chaplin-Kramer, 2012) .</p>
+					</div>
+					<div class="modeling_right" >
+						<h2>Data</h2>
+						<p>All data displayed is publicly available <a href="http://ipbes-natcap-ecoshard-data-for-publication.ecoshard.org/">here</a></p>
+						<p>Full methods will be available upon publication, in the Supplementary information of <a href='https://science.sciencemag.org/lookup/doi/10.1126/science.aaw3372'>Chaplin-Kramer et al (2019)</a></p>
+					
+					
+						<h2>References</h2>
+						<ul>
+							<li>S. Diaz et al., Science. 359, 270–272 (2018).</li>
+							<li>S. Diaz et al., Curr. Opin. Environ. Sustain. 14, 1–16 (2015).</li>
+							<li>U. Pascual et al., Curr. Opin. Environ. Sustain. 26, 7–16 (2017).</li>
+							<li>I. M. D. Rosa et al., Multiscale scenarios for nature futures. Nat. Ecol. Evol. 1, 1416–1419 (2017).</li>
+							<li>See <a href="http://data.naturalcapitalproject.org/nightly-build/invest-users-guide/html/croppollination.html">InVEST Pollination User's Guide</a> for detailed explanation on the model.</li>
+						</ul>
+					</div>
+			</div>
+			
+
+				
+	</div>-->
+	
+
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://d3js.org/d3-geo.v1.min.js"></script>
+	<script src="https://unpkg.com/versor"></script>
+	<script>
+		if (!window.d3) document.write('<script src="js/lib/d3.min.js"><\/script>');
+	</script>
+	<script src="js/lib/topojson.min.js"></script>
+    <script src="js/navigation.js"></script>
+	<script src="js/main_poll.js"></script>
+	<script src="js/highRezMaps.js"></script>
+	
+</body>
+
+</html>

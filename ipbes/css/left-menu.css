@@ -1,0 +1,88 @@
+#left-menu {
+  position: absolute;
+  width: 19%;
+  background-color:rgb(5, 13, 24);
+  top: 0;
+  left: 0;
+  bottom: 0.6rem;
+  color: white;
+}
+
+.section_marker {
+  border-bottom: 0.2vh solid rgba(255, 255, 255, 0.25);
+  margin-top: 0.8vh;
+  margin-bottom: 0vh;
+}
+
+
+.left-menu-header {
+  display: block;
+  position: relative;
+  font-size: 2vh;
+  font-weight: 300;
+  padding: 1.5vh 2vh;
+  color:rgb(165, 165, 165);
+  cursor: pointer;
+  transition: .3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.left-menu-header:hover{
+  color: var(--light_blue);
+  padding-left: 4vh;
+}
+
+input:checked  + .left-menu-header  {
+  font-size: 2.5vh;
+  color:var(--light_blue);
+  display: block;
+}
+
+.left-menu-text {
+  font-size: 1.7vh;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+  padding: 0 2vh;
+  color:var(--inprinted_c);
+  max-height: 0;
+  overflow: hidden;
+  transition:0.5s ease-out;
+  transition-delay: 0.7s;
+}
+
+/*hovering effects*/
+.left-menu-header:hover + .left-menu-text {
+  transition-delay: 0.7s;
+  height: fit-content;
+  max-height: 10rem;
+}
+.left-menu-text:hover{
+  height: fit-content;
+  max-height: 10rem;
+}
+
+
+/* Hide the browser's default radio button */
+.no_show {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#info_about_measurments {
+  font-size: 1.9vh;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+  padding: 0 2vh;
+  color:var(--inprinted_c);
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149667597-1"></script>
+    <script src="js/gtag.js"></script>
+
+    
+  <title>NCP Viewer: Today</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/commonStyle.css" />
+  <link rel="stylesheet" type="text/css" href="css/menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/left-menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/index-map.css" />
+  <link rel="stylesheet" type="text/css" href="css/tour.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="css/bootstrap-tour-standalone.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/d3.js"></script>
+  <script src="js/lib/papaparse.js"></script>
+  <script src="js/lib/topojson.min.js"></script>
+  <script src="js/lib/d3-tip.js"></script>
+  <script src="js/lib/d3-geo-projection.v2.min.js"></script>
+  <script src="js/bootstrap-tour-standalone.min.js"></script>
+  <script src="js/guideTour.js"></script>
+
+
+  <!-- Menu Navbar -->
+ <div id="main_menu"></div>
+  <!-- End Menu Navbar -->
+  <div id="landingpage">
+    <h3 id="landing-page-loader">loading ...</h3>
+  </div>
+
+  <div class="content-wrapper">
+     <!--left menu-->
+     <div id="left-menu">
+        <h3 id ="ecosystemServices">Nature's Contribution to People</h3>
+
+        <input id="pollination-box" type="radio" name="button-global" onclick="load_pollination_data()" value="pollination" autocomplete="off" checked  class="no_show">
+        <label for="pollination-box" class="left-menu-header" id="left-menu-header-1">Pollination <span class="glyphicon glyphicon-grain"> </span> </label>
+
+        <h4 class="left-menu-text" id="left-menu-text-1">
+            Up to two-thirds of all crops require some degree of animal pollination to reach their maximum yields,
+            and natural habitat around farmlands can support healthy
+            populations of wild pollinators by providing them with foraging and nesting resources. <a href="poll.html">More</a> <br>
+        </h4>
+  
+        <input id="water-quality-box" name="button-global" type="radio" onclick="load_waterquality_data()" value="waterquality" autocomplete="off" class="no_show">
+        <label for="water-quality-box" class="left-menu-header" id="left-menu-header-2">Water Quality Regulation <i class="fa fa-tint" viewBox = "0 0 15 15"></i> </label>
+        
+        <h4 class="left-menu-text" id="left-menu-text-2">
+            Fertilizers like nitrogen are a major source pollution to freshwater systems and drinking water. However,
+            some of it may be retained by healthy ecosystems,
+            regulating drinking water quality to downstream populations. <a href="wq.html">More</a> <br>
+        </h4>
+  
+        <input id="coastal-risk-box" name="button-global" type="radio" onclick="load_coastalrisk_data()" value="coastal" autocomplete="off"  class="no_show">
+        <label for="coastal-risk-box" class="left-menu-header" id="left-menu-header-3">Coastal Risk Reduction <i class="fas fa-water"></i></label>
+        <h4 class="left-menu-text" id="left-menu-text-3">
+          Coastal habitats such as coral reefs, mangroves, salt marsh, or sea grass, attenuate waves and protect
+          the shorelines from the impacts of storms, such as floods and erosion. <a href="coastal.html">More</a> <br>
+        </h4>
+    </div>
+      <!--End of left menu-->
+      
+      <div id="main_content_container">
+          <div class="box-container">
+              <div class="box box-2-global">
+                <div class="map-global"></div>
+              </div>
+              <div id="index-map-legend">
+                  <p class="title2DLegend"> Pollination Key Areas </p>
+                <img src="static/images/legend2d.png" class="img-legend"> </img>
+                <p id="label2DLegendX">Nature's Contributions &#8594; </p>
+                <p id="label2DLegendY">People's Needs &#8594;</p>
+              </div>
+              <!--Information containter-->
+              <i id="infoButton" class="info-button fas fa-info-circle" onclick="showInfo('info-overlay')"></i>
+              <div id="info-overlay">
+                <p class="info_exit" onClick="hideInfo('info-overlay')">&#x2716;</p>
+                      <h2 class="info_head">How to read these maps</h2>
+
+                      <p class="info_text">These maps highlight the areas where Nature's Contribution to People (NCP) is key: where many people are exposed to high pressures requiring potential benefits (e.g pollution loads, coastal risks, or pollination-dependent crops), and nature’s contributions are highest. In these regions (shown in black), ecosystem protection will likely provide the greatest benefits.</p><br> 
+
+                      <p class="info_text">Areas where people’s needs coincide with lower contributions of nature indicate benefit gaps, highlighting potential opportunities for ecosystem restoration to boost NCP – or areas where other investments beyond nature may be necessary to ensure well-being (shown in dark pink)..</p><br> 
+
+                      <p class="info_text">Finally, areas where nature's contributions are relatively high, despite a relatively low "need" (either because there is little biophysical pressure, such as little pollution, or because population density is low) are colored in green.</p><br> 
+
+                      
+                      
+
+              </div>
+          </div>
+      </div>
+</div>
+
+
+    <script src="js/statFunctions.js"></script>
+    <script src="js/zoom.js"></script>
+    <script src="js/projection_global.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/index_main.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149667597-3"></script>
+      <script src="js/gtag.js"></script>
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Visualizador PROAgua</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <!-- Needed for Navbar-->
+    <link rel="stylesheet" href="css/dropdown.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/overlay.css" />
+    
+
+    <script src="lib/js/includehtml.js"></script>
+    <!-- About Overlay -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div w3-include-html="about.html"></div>
+      </div>
+    </div>
+    <!-- End Of About Overlay -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous" ></script>
+    <!-- End Of: Needed for Navbar-->
+
+    <!-- Libs -->
+    <!-- w3 style thingz -->
+    <link rel="stylesheet" href="css/w3-black-theme.css" />
+     <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
+     <!-- tachyons -->
+    <link rel="stylesheet" href="lib/css/tachyons.min.css" />
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+      crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+    <!--Needed for Chart D3.js/C3.js-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="lib/js/c3.min.js"></script>
+    <link rel="stylesheet" href="lib/css/c3.min.css" />
+
+    <script src="js/tabs.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style_new.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+    <link rel="stylesheet" href="css/styleMAP.css" />
+  </head>
+
+
+  <body class="bg-black-60  black" style="overflow: hidden; background-color: rgb(48, 48, 48);">
+
+    <nav id="navbar">
+      <div w3-include-html="html/navbar.html"></div>
+    </nav>
+
+    <div class="w3-twothird" id="maps">
+      
+
+    <div style="clear: both;">
+      
+        <div id="map1" class="map">
+          <div id="mapTitle" >
+            <center>
+              <h2  id="titulo">Loading...</h2>
+              <div id="radio_container" >
+                <div class="switch-field">
+                    <input type="radio" id="btnRiesgos" name="mode" value="Flood" onchange="switchMode('Flood')" checked >
+                    <label for="btnRiesgos">Riesgos</label>
+                    <input type="radio" id="btnUso" name="mode" value="LU" onchange="switchMode('LU')"  />
+                    <label for="btnUso">Uso del suelo</label>
+                </div>      
+            </div>
+            </center>
+          </div>
+          <div id="map1_text">
+            <h1 style="margin: 0;">2019</h1>
+          </div>
+        </div>
+      
+      
+      <hr class="map-diff-line" />
+
+      <!-- Map 2 --> 
+
+      <div id="map2" class="map">
+        <div id="map2_text">
+          <h1 style="margin: 0;">2035</h1>
+        </div>
+        <div class="mapControls_scenario">
+          <div w3-include-html="html/pickEscenario_new.html"></div>
+        </div>
+        <!-- Legend -->
+        <div id="map2_legend" class="map_legend"style="bottom: 1vh;">
+          <div id="leyenda" class="leyendaHover">
+            <h6 id="leyendaTitle" style="margin-bottom: 0; margin-top: 0;">
+              Leyenda 
+            </h6>
+            <div id="leyendaContents"></div> <!-- End leyendaContents-->
+          </div> <!-- End leyenda -->
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+    <!-- Side Panel -->
+
+    <div class="w3-third rightPanel">
+      <div id="intro_text" style="text-align:center;">
+        <h4 style="margin: 0;"><i style="color:grey;">¿Creciendo sosteniblemente o no?</i></h4><h5 style="margin: 0;">Evaluación de escenarios</h5>
+      </div>
+
+      <!--Tabs-->
+      <div id="tabsPanel">
+        <div class="tab">
+          <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'DiagH')">
+            Diagnóstico 
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Escenarios')">Escenarios
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Método')">
+            Método
+          </button>    
+        </div>
+
+        <!-- Tab contents -->
+        <div id="DiagH" class="tabcontent">
+          <div w3-include-html="html/tab_diagnosticoF.html"></div>
+        </div>
+        
+        <div id="Escenarios" class="tabcontent">
+          <div w3-include-html="html/tab_escenarios.html"></div>
+        </div>
+
+        <div id="Método" class="tabcontent">
+          <div w3-include-html="html/tab_method_Flood.html"></div>
+        </div>
+      </div>
+
+     <br>
+      <center><h6 id="chart_header" style='margin-top: 0px;'> Área expuesta a inundaciones de 50 años</h6></center>
+     
+      <div id="chartPEM_flood" class="chart" ></div>
+      <div id="controlyr" style="text-align: center;">
+        Retorno de inundaciones
+        <div  w3-include-html="html/pickYear.html"></div>
+      </div>
+      
+    </div>
+
+
+
+    <script>
+      // Soecial function to show and remove big region image
+      function closeBigImg(){
+        document.getElementById("cover_all_img").style.display = "none";
+      }
+      function showBigImg(){
+        document.getElementById("cover_all_img").style.display = "block";
+      }
+    </script>
+    <div id="cover_all_img">
+      <a href="javascript:void(0)" style="    color: white; font-size: 37px; text-align: right; float: right; padding-right: 30px;" onclick="closeBigImg()">×</a>
+      <img id="big_img" src="static/images/regional_flood.png"  alt="Regional flood"/>
+      <center><p style="color:white;">Los datos regionales para todos los retornos de inundaciones se pueden encontrar <a href="https://drive.google.com/drive/folders/1ihpVgEbDdkeYQVzDgsUGWTXX1SRQb8EX" target="_blank">aquí</a></p></center>
+    </div>
+
+  </body>
+
+  <script src="js/pointer/canvasLayer.js"></script>
+
+  <!-- Needed for Navbar-->
+  <script>
+    includeHTML();
+    // Tabs: Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+  <script src="js/overlay.js"></script>
+  <script src="js/chartPEM_flood.js"></script>
+
+
+  <script src="lib/js/L.Map.Sync.js"></script>
+  <script src="lib/js/leaflet.shpfile.js"></script>
+  <script src="lib/js/shp.js"></script>
+  <script src='js/mapUtils.js'> </script>
+
+  <script src="js/mapsPEM_flood.js"></script>
+
+<!-- w/ pointer 
+  <script src="js/pointer/helperPointer.js"></script>
+  <script src="js/mapsPEM_pointer.js"></script>
+  <script src="js/pointer/index.js"></script>-->
+
+
+  <!-- switchMode -->
+  <script src="js/switchMode.js"></script>
+
+  
+</html>

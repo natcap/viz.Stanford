@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "miningRegionsGJ",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Latitude": 16.51408574, "Longitude": -89.12677427 }, "geometry": { "type": "Point", "coordinates": [ -89.12677, 16.51409 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.514038, "Longitude": -89.13145645 }, "geometry": { "type": "Point", "coordinates": [ -89.13146, 16.51404 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.50752386, "Longitude": -89.10563088000001 }, "geometry": { "type": "Point", "coordinates": [ -89.10563, 16.50752 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.50731045, "Longitude": -89.12670015 }, "geometry": { "type": "Point", "coordinates": [ -89.1267, 16.50731 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.52773153, "Longitude": -89.11755756 }, "geometry": { "type": "Point", "coordinates": [ -89.11756, 16.52773 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.52777899, "Longitude": -89.11287501 }, "geometry": { "type": "Point", "coordinates": [ -89.11288, 16.52778 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.52307168, "Longitude": -89.13155555 }, "geometry": { "type": "Point", "coordinates": [ -89.13156, 16.52307 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.52321465, "Longitude": -89.11750831000001 }, "geometry": { "type": "Point", "coordinates": [ -89.11751, 16.52321 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.52566227, "Longitude": -89.09880285 }, "geometry": { "type": "Point", "coordinates": [ -89.0988, 16.52566 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.52559153, "Longitude": -89.10582666000001 }, "geometry": { "type": "Point", "coordinates": [ -89.10583, 16.52559 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.53229588, "Longitude": -89.11292416000001 }, "geometry": { "type": "Point", "coordinates": [ -89.11292, 16.5323 ] } },
+{ "type": "Feature", "properties": { "Latitude": 16.53243767, "Longitude": -89.09887609 }, "geometry": { "type": "Point", "coordinates": [ -89.09888, 16.53244 ] } }
+]
+}

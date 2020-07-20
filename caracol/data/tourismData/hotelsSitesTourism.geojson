@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "hotelsSitesTourism",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Blancaneux Lodge", "Ownership": "Private", "Type": null, "Management": null, "Latitude": 17.036885, "Longitude": -88.953696 }, "geometry": { "type": "Point", "coordinates": [ -88.95369, 17.03688 ] } },
+{ "type": "Feature", "properties": { "Name": "Gaia Resort", "Ownership": "Private", "Type": null, "Management": null, "Latitude": 17.038826, "Longitude": -88.98443 }, "geometry": { "type": "Point", "coordinates": [ -88.98442, 17.03882 ] } },
+{ "type": "Feature", "properties": { "Name": "Kane Villas", "Ownership": "Private", "Type": null, "Management": null, "Latitude": 17.042449, "Longitude": -88.979731 }, "geometry": { "type": "Point", "coordinates": [ -88.97973, 17.04245 ] } }
+]
+}

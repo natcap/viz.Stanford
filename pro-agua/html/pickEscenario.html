@@ -1,0 +1,48 @@
+ <!-- to embed : 
+  <div w3-include-html="html/pickEscenario.html"></div>
+-->
+
+<div id="radio_container" style="font-size: 1.5vh; padding-left: 1vw;">
+          <tr id="scenario">
+            <td>
+              <!--<p class="row-label">Eligir Escenario</p>-->
+              <div class="input-radio">
+                <input
+                  type="radio"
+                  class="radio_btn"
+                  name="escenarios"
+                  id="btnSost"
+                  value="Sost"
+                  checked="checked"
+                  onchange="updateMap2(mode,'Sost')"
+                  autocomplete="off"
+                />
+                <label for="b_radio-1">Futuro Sostenible</label>
+              </div>
+              <div class="input-radio">
+                <input
+                  type="radio"
+                  class="radio_btn"
+                  name="escenarios"
+                  id="btnReal"
+                  value="Real"
+                  onchange="updateMap2(mode,'Real')"
+                  autocomplete="off"
+                />
+                <label for="b_radio-2">Futuro Real</label>
+              </div>
+              <div class="input-radio">
+                <input
+                  type="radio"
+                  class="radio_btn"
+                  name="escenarios"
+                  id="btnPeor"
+                  value="Peor"
+                  onchange="updateMap2(mode,'Peor')"
+                  autocomplete="off"
+                />
+                <label for="b_radio-3">Futuro Peor</label>
+              </div>
+            </td>
+          </tr>
+</div>

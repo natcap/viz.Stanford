@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "damsGJ",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "type": "dam", "descript": "Chalilo Dam", "source": "Extract from Project_assets", "asset": 2, "threat": 1, "opportun": 0, "desc_short": "Chalilo Dam" }, "geometry": { "type": "Point", "coordinates": [ -89.01389, 16.86124, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "dam", "descript": "Mollejon Dam", "source": "Extract from Project_assets", "asset": 1, "threat": 0, "opportun": 0, "desc_short": "Mollejon Dam" }, "geometry": { "type": "Point", "coordinates": [ -89.04473, 16.95555, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "dam", "descript": "Vaca Dam", "source": "Extract from Project_assets", "asset": 1, "threat": 0, "opportun": 0, "desc_short": "Vaca Dam" }, "geometry": { "type": "Point", "coordinates": [ -89.05582, 17.01877, 0.0 ] } }
+]
+}

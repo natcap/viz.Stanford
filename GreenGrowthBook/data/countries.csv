@@ -1,0 +1,18 @@
+name,location_view,description,country_code
+United States,"52.09024,-85.712891,3.8",,US
+Australia,"-20,150,4.2",,AU
+Bahamas,"24.5,-75,7",,BS
+Belize,"17.5,-88,6",,BZ
+Brazil,"-14,-42,4.2",,BR
+China,"38,125,4.1",,CN
+Costa Rica,"10.5,-84.5,9",,CR
+Ecuador,"40,80,2.35",,EC
+France,"47.378052,15.435973,4.5",,FR
+Kenya,"-0.5,37.2,10",,KE
+Mongolia,"48,125,4.2",,MN
+Myanmar,"22,111,4.5",,MM
+Indonesia,"0,137,4.2",,ID
+South Africa,"-28.559483,30.937506,5.5",,ZA
+United Kingdom,"55.378052,11.435973,4.5",,UK
+Unknown,"40,80,2.35",,U
+World,"40,80,2.35",,W

@@ -1,0 +1,262 @@
+html,
+body {
+  font-size: 14px;
+}
+
+h2 h1{
+  margin: 1px 0;
+}
+
+
+a {
+  color: steelblue;
+}
+a:hover{
+  text-decoration: underline;
+  color:royalblue;
+  cursor: pointer;
+}
+
+.navbarLink:hover{
+  text-decoration: none;
+  color:inherit;
+  font-size:inherit;
+}
+.map-diff-line {
+  grid-area: "map-diff-line";
+  margin: 0 auto;
+  padding: 0;
+  width: 0%;
+  background-color: #ccc;
+}
+
+.map {
+  height: 46vh;
+}
+
+.leyendaHover:hover #leyendaIntegral {
+  display: block;
+}
+.leyendaHover:hover #leyendaMin {
+  display: none;
+}
+
+.leyendaHover #leyendaIntegral {
+  display: none;
+}
+.leyendaHover #leyendaMin {
+  display: block;
+  /*height: 15vh;*/
+}
+
+.h1 #map1_text {
+  font-size: 4vh !important;
+  font-weight: bold;
+}
+
+#maps:hover #mouse_tip {
+  display: block;
+}
+
+.leyendaHover:hover #leyendaIntegral {
+  display: block;
+}
+.leyendaHover:hover #leyendaMin {
+  display: none;
+}
+
+#mouse_tip {
+  display: none;
+  position: absolute;
+  float: left;
+  word-break: break-word;
+  z-index: 10000;
+  width: 115px;
+  font-size: medium;
+  /*background-color: rgba(200, 50, 50, 0.5);*/
+  color: white;
+  /*font-weight: bold;*/
+  text-align: left;
+  border: black;
+}
+
+.leyendaHover #leyendaIntegral {
+  display: none;
+}
+.leyendaHover #leyendaMin {
+  display: block;
+  /*height: 15vh;*/
+}
+
+.h1 #map1_text {
+  font-size: 4vh !important;
+  font-weight: bold;
+}
+
+#map1_text {
+  display: flex;
+  position: absolute;
+  bottom: 46.5vh;
+  left: 52vw;
+  z-index: 1000;
+  color: white;
+
+  font-size: 4vh;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+#map2_text {
+  display: flex;
+  position: absolute;
+  bottom: 4vh;
+  left: 52vw;
+  z-index: 1000;
+  color: white;
+
+  font-size: 4vh;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.mapControls {
+  z-index: 500;
+  padding: 1vh;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.mapControls_new {
+  z-index: 500;
+  padding: 1vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  
+}
+#mapTitle_new {
+  position: absolute;
+  top: 10px;
+  left: 28%;
+
+  z-index: 1000;
+  color: white;
+
+  font-size: 4vh;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#changeButton{
+  font-size: 2vh;
+  padding: 3px;
+  border: solid rgb(170, 221, 241) 1px;
+  color: rgb(170, 221, 241);
+}
+
+#mapTitle {
+    position: absolute;
+    top: 60px;
+    left: 28%;
+}
+
+#map2_controls {
+  display: flex;
+  position: absolute;
+  font-size: 1.5vh;
+  bottom: 2.5vh;
+  left: 52vw;
+}
+
+#map2_controls_yrs{
+  display: flex;
+  font-size: 1.5vh;
+  right: 3vw;
+  min-width: 30px;
+  max-width: 500px;
+  z-index: 1000;
+}
+#map2_legend_flood{
+  position: absolute;
+  top: 55vh;
+  right: 35%;
+  min-width: 30px;
+  max-width: 500px;
+  max-height: 1400px;
+}
+
+#map2_legend{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  min-width: 30px;
+  max-width: 500px;
+  max-height: 1400px;
+}
+
+
+#tabsPanel {
+  border: 1px solid black;
+}
+
+#tabsPanel p {
+  font-size: 12px;
+}
+
+#mapControls {
+  height: 16vh;
+  overflow: visible;
+}
+
+.rightPanel {
+  height: 94vh;
+  padding-right: 1em;
+  padding-left: 1em;
+  overflow: scroll;
+
+}
+
+.chart {
+  position: relative;
+  height: 50vh;
+  /*max-height: 320px;*/
+}
+
+#rightPanelPampa h4{
+  color: #7fc46f;
+}
+
+
+/* Landing page */ 
+
+.titulo {
+      font-size: xx-large;
+      text-align: center;
+      position: absolute;
+      top: 30vh;
+      left: 0;
+      right: 0;
+      color: white;
+      margin: 0 30vh;
+    }
+
+.coolButtonSmall {
+    background-color: black;
+    color: white;
+    opacity: .7;
+    border: 2px solid white;
+    max-width: 60vh;
+    margin: 0 5vh;
+    font-size: x-large;
+}
+.coolButtonSmall:hover{
+  background-color: saddlebrown;
+}
+
+.coolButtonTexts{
+    font-size: large;
+    font-style: italic;
+}

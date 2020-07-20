@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "cmccCommunititesGJ",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "SETTNAME": "Arenal", "DISTRICT": "Cayo", "TYPE": "Village", "POPULATION": 614.0, "X_COORD": 270702.90625, "Y_COORD": 1883367.0 }, "geometry": { "type": "Point", "coordinates": [ -89.15397, 17.02488 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "Benque Viejo", "DISTRICT": "Cayo", "TYPE": "Town", "POPULATION": 6163.0, "X_COORD": 272293.59375, "Y_COORD": 1888898.0 }, "geometry": { "type": "Point", "coordinates": [ -89.13961, 17.075 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "Cristo Rey", "DISTRICT": "Cayo", "TYPE": "Village", "POPULATION": 0.0, "X_COORD": 281043.86378999997, "Y_COORD": 1894896.3637900001 }, "geometry": { "type": "Point", "coordinates": [ -89.05802, 17.13004 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "El Progresso", "DISTRICT": "Cayo", "TYPE": "Village", "POPULATION": 485.0, "X_COORD": 292580.46237999998, "Y_COORD": 1891592.9078800001 }, "geometry": { "type": "Point", "coordinates": [ -88.94931, 17.10127 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "Georgeville", "DISTRICT": "Cayo", "TYPE": "Village", "POPULATION": 925.0, "X_COORD": 289303.59375, "Y_COORD": 1901671.0 }, "geometry": { "type": "Point", "coordinates": [ -88.98106, 17.19202 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "Lower Barton Creek", "DISTRICT": "Cayo", "TYPE": "Community", "POPULATION": 380.0, "X_COORD": 294468.19918, "Y_COORD": 1896932.38809 }, "geometry": { "type": "Point", "coordinates": [ -88.93208, 17.14968 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "San Antonio", "DISTRICT": "Cayo", "TYPE": "Village", "POPULATION": 1848.0, "X_COORD": 284795.0, "Y_COORD": 1889169.0 }, "geometry": { "type": "Point", "coordinates": [ -89.02222, 17.07866 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "San Ignacio", "DISTRICT": "Cayo", "TYPE": "Town", "POPULATION": 10515.0, "X_COORD": 279587.09375, "Y_COORD": 1897709.0 }, "geometry": { "type": "Point", "coordinates": [ -89.07199, 17.15531 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "San Jose Succotz", "DISTRICT": "Cayo", "TYPE": "Village", "POPULATION": 2358.0, "X_COORD": 273490.59375, "Y_COORD": 1889998.0 }, "geometry": { "type": "Point", "coordinates": [ -89.12848, 17.08506 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "Santa Elena", "DISTRICT": "Cayo", "TYPE": "Town", "POPULATION": 7403.0, "X_COORD": 280471.1875, "Y_COORD": 1898278.0 }, "geometry": { "type": "Point", "coordinates": [ -89.06373, 17.16054 ] } },
+{ "type": "Feature", "properties": { "SETTNAME": "Upper Barton Creek", "DISTRICT": "Cayo", "TYPE": "Community", "POPULATION": 193.0, "X_COORD": 293288.50682000001, "Y_COORD": 1894488.5889900001 }, "geometry": { "type": "Point", "coordinates": [ -88.94293, 17.1275 ] } }
+]
+}

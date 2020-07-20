@@ -1,0 +1,804 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+  color:#0e90ce !important;
+}
+p {
+    /*text-align: justify;*/
+}
+
+.my-label {
+  position: absolute;
+  font-size:13px;
+}
+
+.leaflet-tooltip {
+  position: absolute;
+  padding: 6px;
+  background-color: #49505700;
+  border: 0px solid #fff;
+  border-radius: 0px;
+  color: rgb(192, 235, 227);
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.4);
+}
+
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+    position: absolute;
+    pointer-events: none;
+    border: 0px solid transparent;
+    background: transparent;
+    content: "";
+    }
+
+#blue-drop-icon{
+   background: url(./marker/blue_drop_24.png) no-repeat;
+   height:24px;
+   width:24px;
+   border: none;
+
+   display:inline-block;
+}
+
+#green-pentagon-icon{
+   background: url(./marker/green_pentagon_24.png) no-repeat;
+   height:24px;
+   width:24px;
+   border: none;
+
+   display:inline-block;
+}
+
+#green-tree-icon{
+  background: url(./marker/green_tree_24.png) no-repeat;
+  height:24px;
+  width:24px;
+  border: none;
+  color:#b5ff7d;
+
+  display:inline-block;
+}
+
+
+.cluster{
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid black;
+  }
+
+
+.cluster-small-7-2 {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #5ff4ee;
+  }
+
+.cluster-medium-7-2 {
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    line-height: 28px;
+    background-color: #4a9ff5;
+  }
+
+.cluster-large-7-2 {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    background-color: #033fff;
+  }
+
+.cluster-small-7-3 {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #7cb855;
+  }
+
+.cluster-medium-7-3 {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 48px;
+    background-color: #469b4c;
+  }
+
+.cluster-large-7-3 {
+    width: 90px;
+    height: 90px;
+    font-size: 24px;
+    line-height: 90px;
+    background-color: #3c6e57;
+  }
+
+.cluster-small-7-4 {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #52d681;
+  }
+
+.cluster-medium-7-4 {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 48px;
+    background-color: #00ad7c;
+  }
+
+.mapbox {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.opening-page {
+    height: 100%;
+    width: 100%;
+    background-image: url('intro_image.jpeg');
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 10px;
+    margin-top: 1vh;
+  }
+  .img-center:hover{
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+
+
+#map {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.leaflet-control-layers{
+    margin-top: 1vh !important;
+}
+
+.country-display-panel {
+    position:absolute;
+    top:0vh;
+    left:40vw;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: rgba(242, 242, 242, 0.8);
+    border-radius: 0 0 2vh 2vh;
+    border-style: solid;
+    border-color: rgba(242, 242, 242, 0.8) black black black;
+    border-width:1px;
+    padding: 6px;
+}
+
+#title-panel {
+    position:absolute;
+    top:4vh;
+    right:1vw;
+    z-index: 100;
+    width: 33vw;
+    overflow: auto;
+    font-family: 'Maven Pro', sans-serif;
+    padding: 0px;
+    background-color: rgba(230, 230, 230, 0.8);
+    border-radius: 20px;
+}
+
+#subtitle-panel {
+
+    position:absolute;
+    top:22vh;
+    right:1vw;
+    z-index: 100;
+    width: 33vw;
+    height: 20vh;
+    overflow: auto;
+    font-family: 'Maven Pro', sans-serif;
+    padding: 0px;
+    background-color: rgba(242, 242, 242, 0.8);
+    border-radius: 20px;
+}
+
+#right-menu {
+    border-radius: 20px;
+    position:absolute;
+    top:26vh;
+    right:1vw;
+    z-index: 100;
+    width: 33vw;
+    overflow-y: scroll;
+
+    max-height:65vh;
+    margin-top: 2vh;
+    background-color: rgba(255, 255, 255, 1.0);
+    overflow: auto;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+.text-body {
+  text-align: left;
+  font-size: 1vw;
+}
+
+.chapter {
+  display : none;
+}
+
+.right-case {
+  display : block;
+}
+
+#title{
+  display : none;
+}
+
+.h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: right;
+}
+
+.center-div {
+    margin: 0 auto;
+    max-width: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: calc(1em + 1vw)
+}
+
+.country-display{
+  color:black;
+  font-weight: bold;
+  font-size: 1.5vmax;
+}
+
+#right-title{
+  color:hsl(100, 84%, 24%, 1); 
+  font-weight: bold;
+  /*font-size: 2vmax;*/
+}
+#right-title-sub{
+  color:black;
+  font-weight: bold;
+  font-size: 1vmax;
+}
+
+#right-subtitle{
+  color:black;
+  font-weight: bold;
+  font-size: 1vmax;
+}
+
+#right-book-link {
+  font-size : 0.7vmax;
+  text-align: right;
+  display:block;
+  right:1vw;
+}
+
+.my-font {
+    /*font-family: 'Helvetica Neue', sans-serif;*/
+    font-family: 'Akzidenz Grotesk', sans-serif;
+    text-align : center;
+}
+
+.other-font {
+    /*font-family: 'Helvetica Neue', sans-serif;*/
+    font-family: 'Julius Sans One', sans-serif;
+    text-align : center;
+}
+
+
+#left-menu-panel{
+  position:absolute;
+  top:10vh;
+  left:0vh;
+}
+
+#left-menu {
+    position:relative;
+    display: inline-block;
+    top:0vh;
+    width: 4vh;
+    z-index: 100;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 2vh 2vh 0;
+    font-family: 'Righteous', cursive;
+}
+
+#by-type-button-panel {
+    position:absolute;
+    bottom:0;
+    height: 4vh;
+    z-index: 100;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 2vh 0 0;
+    font-family: 'Righteous', cursive;
+}
+
+#buythebook {
+    position: absolute;
+    bottom: 3vh;
+    width: 15vh;
+    left: 6vh;
+    z-index: 10;
+    text-align: center;
+    border-radius: 0 2vh 0 0;
+    font-family: 'Righteous', cursive;
+}
+
+
+#back-button-panel {
+  position:relative;
+  top:6vh;
+  display: block;
+  z-index: 100;
+  text-align:center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0 2vh 2vh 0;
+  font-family: 'Righteous', cursive;
+}
+
+#mechanism-menu {
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  border-radius: 20%;
+  font-family: 'Righteous', cursive;
+  float: left;
+  margin-top: 2vw;
+  margin-left: 1vw;
+}
+#mechanism-img-div{
+  margin-left:1vw;
+}
+
+#mechanism-chapters-list{
+  color:white;
+  font-size: 1.3vw;
+  float: left;
+  margin-top:15vh;
+  margin-right: 5vw;
+}
+
+.clickable{
+  cursor: pointer;
+}
+.left-chapter{
+  height: 3vmin;
+  width: 3vmin;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  margin-top: 1vh;
+  font-size: 1.5vh;
+  line-height: 3vh;
+  background-color : rgb(3, 59, 15);
+}
+.nav-link{
+  font-size: 4vh;
+  padding-left: 10vw;
+}
+.nav-item{
+  width: 20vw;
+  display: inline-block;
+}
+.flex-column{
+  display: inline;
+}
+
+#mech-title{
+  /*width: 17vw;
+  font-size: 4vh;
+  background-color:#999999;
+  border-width: 2px;*/
+}
+
+
+#by-type-button{
+  height: 3vh;
+  width: 20vh;
+  background-color: black;
+  border-radius: 20%;
+  display: inline-block;
+  color: white;
+  margin-right: 1vh;
+  margin-top: 0.5vh;
+  margin-left: 0.5vh;
+  font-size: 1.5vh;
+  line-height: 3vh;
+  background-color : rgb(3, 59, 15);
+}
+
+#back-button{
+  height: 3vh;
+  width: 6vh;
+  background-color: black;
+  border-radius: 20%;
+  display: inline-block;
+  color: white;
+  margin-right: 1vh;
+  margin-top: 0.5vh;
+  margin-left: 1.5vh;
+  margin-bottom: 0.5vh;
+  font-size: 1.5vh;
+  line-height: 3vh;
+  background-color : rgb(3, 59, 15);
+}
+
+span {
+  display: inline-flex;
+  align-items: center;
+}
+.mechanism-menu-element{
+  height: 6vh;
+  width: 8vw;
+  border-radius: 10px;
+  color: white;
+  display: block;
+  margin-right: 0.5vh;
+  margin-top: 0.5vh;
+  margin-left: 0.5vw;
+  font-size: 1.5vh;
+  line-height: 2vh;
+  background-color:hsl(4, 72%, 55%, 0.81);
+}
+
+.left-chapter-helper{
+    height: 3vh;
+    width: 3vh;
+    background-color: hsl(4, 72%, 55%, 0.81);
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    margin-top: 1vh;
+    font-size: 1.5vh;
+    line-height: 3vh;
+  }
+
+  .mechanism-button {
+    margin-top: 0 !important;
+    background-color: black !important;
+  }
+
+
+  .navbar-nav > .active > a {
+    color: aqua;
+    background-color: chartreuse;
+  }
+  .nav-item > a:hover {
+    color: aqua;
+  }
+
+
+  .img-mechanism-active {
+    border-style: solid;
+    border-color: hsl(4, 72%, 55%, 0.81);
+    border-width: 0.5vh;
+  }
+
+  .img-mechanism {
+    width: 17vw;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    background-color: black;
+    margin: auto;
+    float: left;
+    margin-left: 0vw;
+    margin-top: 2vh;
+  }
+
+  .left-menu-sub{
+    display: block;
+    position:absolute;
+    z-index: 100;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2vh 2vh 2vh 2vh;
+    font-family: 'Righteous', cursive;
+    width: 4vh;
+    left:4vh;
+    padding-bottom: 1vh;
+  }
+
+
+.left-case{
+  height: 3vmin;
+  width: 3vmin;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  margin-top: 1vh;
+  font-size: 1.5vh;
+  line-height: 3vh;
+  background-color : rgb(3, 59, 15);
+}
+
+.left-dot-dynamic{
+  border-style: solid;
+  border-color: hsl(4, 72%, 55%, 0.81);
+  border-width: 0.3vh;
+  line-height: 2.4vh;
+}
+
+
+
+.left-menu-name {
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+  margin-top: 6vh;
+  color:rgb(3, 59, 15);
+  font-size: 1.5vh;
+}
+
+.left-menu-cases-name {
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+  margin-top: 3vh;
+  color:rgb(3, 59, 15);
+  font-size: 1.5vh;
+}
+
+.legend {
+    line-height: 29px;
+    padding: 1%;
+    border-radius: 5px;
+    border: 3px;
+    width: 12vw;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.legend i {
+    line-height: 29px;
+    width: 24px;
+    height: 24px;
+    margin-left: 0.5vw;
+    float: left;
+    margin-right: 1vw;
+    border: 1px solid black;
+}
+
+.case-6-1-button{
+  width: 14vw;
+  background-color:rgb(220, 220, 220);
+  cursor: pointer;
+  font-size: 0.9vw;
+  border: 2px solid black;
+  border-radius: 2vh 2vh 2vh 2vh;
+}
+/*.case-6-1-button:hover {background-color: #00b300;}*/
+
+.case-6-1-button:focus { outline-style: none; }
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 1vh;
+  cursor: pointer;
+}
+
+.case-img {
+  float: right;
+  top: 1vh;
+  margin-left:1vw;
+  border-radius: 10px;
+  -webkit-filter: brightness(100%);
+  width: 14vw;
+}
+
+
+.img-credit{
+  text-align: center;
+  font-size: 0.8vw;
+  font-style: italic;
+}
+
+.static-fig-credit{
+  margin-top: -4px;
+  text-align: center;
+  font-size: 0.8vw;
+  font-style: italic;
+
+
+}
+
+.figure-text {
+
+  font-size: 1vw;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+
+.case-img:hover{
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.case-img-hidden {
+  display: none;
+}
+
+.pin {
+  float: right;
+  right: 8.5vw;
+  top: 11vh;
+  z-index:10; /* Just in case of z-index issues, remove if not needed */
+}
+
+#water_marker_control {
+    float:right;
+    margin-left: 1%;
+    width: 13vw;
+    height: 25vh;
+    padding: 0;
+}
+
+.leaflet-control-layers-expanded {
+    padding: 1%;
+    background-color: white;
+    border-radius: 5px;
+    width: 10vw;
+    font-family: 'Maven Pro', sans-serif;
+}
+.dark-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  #static-overlay {
+    position: fixed;
+    width: min-content;
+    height: min-content;
+    top: 0vh;
+    left: 0vw;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    cursor: pointer;
+  }
+  #static-background-overlay{
+    position: fixed;
+    width: 100%;
+    display: none;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0, 0.7);
+    cursor: pointer;
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: inherit;
+    color: #818181;
+    display: inline;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  ul li{
+    margin: 1em 0;
+    color: rgb(204, 68, 68);
+  }
+  ul ul li{
+    color: white;
+  }
+
+  .container {
+    position: relative;
+    width: fit-content;
+    float: right;
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .svg-inline--fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+  }  

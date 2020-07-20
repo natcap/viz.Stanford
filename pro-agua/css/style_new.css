@@ -1,0 +1,418 @@
+html,
+body {
+  font-size: 14px;
+  background-color: rgb(230 230 230);
+}
+
+h2, h1, h6{
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+
+a {
+  color: steelblue;
+}
+a:hover{
+  text-decoration: underline;
+  color:royalblue;
+  cursor: pointer;
+}
+
+.navbarLink:hover{
+  text-decoration: none;
+  color:inherit;
+  font-size:inherit;
+}
+.map-diff-line {
+  grid-area: "map-diff-line";
+  margin: 0 auto;
+  padding: 0;
+  width: 0%;
+  background-color: #ccc;
+}
+
+.map {
+  height: 45.5vh;
+  margin: 0.15% 0.25%;
+}
+
+.leyendaHover:hover #leyendaIntegral {
+  display: block;
+}
+.leyendaHover:hover #leyendaMin {
+  display: none;
+}
+
+.leyendaHover #leyendaIntegral {
+  display: none;
+}
+.leyendaHover #leyendaMin {
+  display: block;
+  /*height: 15vh;*/
+}
+
+.h1 #map1_text {
+  font-size: 4vh !important;
+  font-weight: bold;
+}
+
+#maps:hover #mouse_tip {
+  display: block;
+}
+
+.leyendaHover:hover #leyendaIntegral {
+  display: block;
+}
+.leyendaHover:hover #leyendaMin {
+  display: none;
+}
+
+#mouse_tip {
+  display: none;
+  position: absolute;
+  float: left;
+  word-break: break-word;
+  z-index: 10000;
+  width: 115px;
+  font-size: medium;
+  /*background-color: rgba(200, 50, 50, 0.5);*/
+  color: white;
+  /*font-weight: bold;*/
+  text-align: left;
+  border: black;
+}
+
+.leyendaHover #leyendaIntegral {
+  display: none;
+}
+.leyendaHover #leyendaMin {
+  display: block;
+  /*height: 15vh;*/
+}
+
+
+
+#map1_text {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 1vw;
+  z-index: 500;
+  color: white;
+  font-size: 4vh;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#map2_text {
+  display: flex;
+  position: absolute;
+  bottom: 16vh;
+  right: 1vw;
+  z-index: 500;
+  color: white;
+  font-size: 4vh;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.map_legend {
+  z-index: 500;
+  padding: 1vh;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.mapControls{
+  position: absolute;
+  bottom: 4vh;
+  right: 1vw;
+  z-index: 500;
+  color: white;
+  font-size: 2vh;
+  height: 44px;
+  font-weight: bold;
+  text-align: right;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+#controlyr{
+  color: rgba(0, 0, 0, 0.6);
+  top: 10vh;
+  right: 1vw;
+  z-index: 1000;
+  font-size: 2vh;
+  height: 44px;
+  padding-left: 9px;
+  margin-bottom: 3px;
+}
+
+#controlCity{
+  color: rgba(0, 0, 0, 0.6);
+  top: 10vh;
+  right: 1vw;
+  z-index: 1000;
+  font-size: 2vh;
+  padding-left: 9px;
+  margin-bottom: 3px;
+}
+
+.switch-field {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+  color: black;
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+  padding: 2px 5px;
+  margin-right: -1px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease-in-out;
+  text-shadow: none;
+  font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+    background-color:#7b7e7b;
+    color: white;
+}
+
+.switch-field input:checked + label {
+   background-color: #7b7e7b;
+   color: white;
+}
+
+.switch-field label:first-of-type {
+    border-radius: 18px 0 0 18px;
+    padding-left: 12px;
+}
+
+.switch-field label:last-of-type {
+    border-radius: 0 18px 18px 0;
+    padding-right: 12px;
+}
+
+.mapControls_scenario{
+  position: absolute;
+  bottom: 3vh;
+  right: 1vw;
+  z-index: 1000;
+  color: black;
+  padding: 8px;
+  font-size: 2vh;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+
+.escenarios-field {
+  display: block;
+  position: relative;
+  padding-left: 4vh;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 2vh;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.escenarios-field input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.5vh;
+  width: 2.5vh;
+  border-radius: 50%;
+  border: 2px rgba(0, 0, 0, 0.2) solid;
+}
+
+/* On mouse-over, add a background color */
+.escenarios-field:hover input ~ .checkmark {
+  background-color: #7b7e7b
+}
+
+/* When the radio button is checked, add a blue background */
+.escenarios-field input:checked ~ .checkmark {
+  background-color: #7b7e7b;
+  border: none;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked 
+.escenarios-field input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) 
+.escenarios-field .checkmark:after {
+ 	top: 0.5vh;
+	left: 0.5vh;
+	width: 1.5vh;
+	height: 1.5vh;
+	border-radius: 50%;
+	background: white;
+}*/
+
+
+#mapTitle {
+  width: fit-content;
+    z-index: 500;
+    padding: 0 2vh 2vh 2vh;
+    color: black;
+    position: relative;
+    top: 2px;
+    color: white;
+    background-color: white;
+    height: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#titulo{
+  height: 6vh;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+#map2_controls {
+  font-size: 1.5vh;
+}
+
+#map2_controls_yrs{
+  display: flex;
+  font-size: 1.5vh;
+  right: 3vw;
+  min-width: 30px;
+  max-width: 500px;
+  z-index: 1000;
+}
+#map2_legend_flood{
+  position: absolute;
+  top: 55vh;
+  right: 35%;
+  min-width: 30px;
+  max-width: 500px;
+  max-height: 1400px;
+}
+
+#map2_legend{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  min-width: 30px;
+  max-width: 500px;
+  max-height: 1400px;
+}
+
+
+#tabsPanel {
+  border: 1px solid black;
+}
+
+#tabsPanel p {
+  font-size: 12px;
+}
+
+#mapControls {
+  height: 16vh;
+  overflow: visible;
+}
+
+.rightPanel {
+  height: 94vh;
+  padding-right: 1em;
+  padding-left: 1em;
+  overflow: scroll;
+  background-color: white;
+
+}
+
+.chart {
+  position: relative;
+  height: 32vh;
+}
+#chartTAH1, #chartTAH, #chartPEM1, #chartPEM{
+
+  height: 35vh;
+}
+
+#rightPanelPampa h4{
+  color: #7fc46f;
+}
+
+
+/* Landing page */ 
+
+.coolButtonSmall {
+    background-color: black;
+    color: white;
+    opacity: .7;
+    border: 2px solid white;
+    max-width: 60vh;
+    margin: 0 5vh;
+    font-size: x-large;
+}
+.coolButtonSmall:hover{
+  background-color: saddlebrown;
+}
+
+.coolButtonTexts{
+    font-size: large;
+    font-style: italic;
+}
+
+#cover_all_img{
+  top: 0;
+  bottom: 0;
+  right:0;
+  left:0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.90);
+  z-index: 1000;
+  display: none;
+}
+#big_img{
+  width: 55%;
+  margin:auto;
+  margin-top: 50px;
+  display: block;
+
+}

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "tourismImpactScoreNull",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Douglas D'Silva", "Ownership": "Public", "Env_Impact": -999.0, "Com_Impact": -999.0, "Composite": -999.0 }, "geometry": { "type": "Point", "coordinates": [ -88.991092944729004, 16.971391717303 ] } }
+]
+}

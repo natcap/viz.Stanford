@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata>
+&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt; Belize Protected Areras Map&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+&lt;A NAME = top&gt;&lt;/A&gt;
+&lt;H2&gt; Belize Protected Areras Map&lt;/H2&gt;
+&lt;H3&gt;Table of Contents&lt;/H3&gt;
+&lt;B&gt;
+&lt;UL&gt;
+&lt;A HREF="#t1"&gt;Identification Information&lt;/A&gt;&lt;BR&gt;
+&lt;A HREF="#t2"&gt;Data Quality Information&lt;/A&gt;&lt;BR&gt;
+&lt;A HREF="#t3"&gt;Spatial Data Organization Information&lt;/A&gt;&lt;BR&gt;
+&lt;A HREF="#t4"&gt;Spatial Reference Information&lt;/A&gt;&lt;BR&gt;
+&lt;A HREF="#t5"&gt;Entity and Attribute Information&lt;/A&gt;&lt;BR&gt;
+&lt;A HREF="#t6"&gt;Distribution Information&lt;/A&gt;&lt;BR&gt;
+&lt;A HREF="#t7"&gt;Metadata Reference Information&lt;/A&gt;&lt;BR&gt;
+&lt;/B&gt;
+&lt;/UL&gt;
+&lt;HR&gt;
+&lt;PRE&gt;
+&lt;A NAME = "t1"&gt;&lt;/A&gt;
+&lt;H3&gt;IDENTIFICATION_INFORMATION&lt;/H3&gt;
+
+&lt;B&gt;  Citation:&lt;/B&gt;
+&lt;B&gt;    Citation_Information:&lt;/B&gt;
+&lt;B&gt;      Originator:&lt;/B&gt; Jan Meerman
+&lt;B&gt;      Publication_Date:&lt;/B&gt; 20110218
+&lt;B&gt;      Title:&lt;/B&gt; Belize Protected Areras Map
+&lt;B&gt;      Edition:&lt;/B&gt; 20110218
+&lt;B&gt;      Geospatial_Data_Presentation_Form:&lt;/B&gt; Map
+&lt;B&gt;      Publication_Information:&lt;/B&gt;
+&lt;B&gt;        Publication_Place:&lt;/B&gt; El Progresso, Cayo District, Belize
+&lt;B&gt;        Publisher:&lt;/B&gt; Jan Meerman
+&lt;B&gt;      Other_Citation_Details:&lt;/B&gt;
+Meerman J. C., 2011, Belize Protected Areas Map Shapefile. http:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;      Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;      Larger_Work_Citation:&lt;/B&gt;
+&lt;B&gt;        Citation_Information:&lt;/B&gt;
+&lt;B&gt;          Originator:&lt;/B&gt; Belize Biodiverstiy Mapping Service
+&lt;B&gt;          Publication_Date:&lt;/B&gt;
+&lt;B&gt;          Title:&lt;/B&gt; Belize Biodiversity Mapping Service
+&lt;B&gt;          Publication_Information:&lt;/B&gt;
+&lt;B&gt;            Publication_Place:&lt;/B&gt; Belmopan, Belize.
+&lt;B&gt;            Publisher:&lt;/B&gt;
+&lt;B&gt;          Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;  Description:&lt;/B&gt;
+&lt;B&gt;    Abstract:&lt;/B&gt;
+Digital protected area polygon data were created using the
+various issues of the Government Gazette Statutory
+Instruments with added information of private landholdings
+that opt to qualify as a Private Protected Areas within
+BAPPA. This is a work in progress with several inconsistancies.
+&lt;B&gt;    Purpose:&lt;/B&gt;
+The dataset was developed to aid in the Conservation
+Planning of Belize.
+&lt;B&gt;    Supplemental_Information:&lt;/B&gt;
+These data are not to be taken as legal defenitions of
+names, protected areas or their location. Preferential
+Scale 1:100.000
+This is a work in progress with many inconsistencies.
+&lt;B&gt;  Time_Period_of_Content:&lt;/B&gt;
+&lt;B&gt;    Time_Period_Information:&lt;/B&gt;
+&lt;B&gt;      Range_of_Dates/Times:&lt;/B&gt;
+&lt;B&gt;        Beginning_Date:&lt;/B&gt;
+&lt;B&gt;        Ending_Date:&lt;/B&gt; 20110218
+&lt;B&gt;    Currentness_Reference:&lt;/B&gt; 20110218
+&lt;B&gt;  Status:&lt;/B&gt;
+&lt;B&gt;    Progress:&lt;/B&gt; In work
+&lt;B&gt;    Maintenance_and_Update_Frequency:&lt;/B&gt; Irregular
+&lt;B&gt;  Spatial_Domain:&lt;/B&gt;
+&lt;B&gt;    Bounding_Coordinates:&lt;/B&gt;
+&lt;B&gt;      West_Bounding_Coordinate:&lt;/B&gt; -89.2297
+&lt;B&gt;      East_Bounding_Coordinate:&lt;/B&gt; -87.4350
+&lt;B&gt;      North_Bounding_Coordinate:&lt;/B&gt; 18.4928
+&lt;B&gt;      South_Bounding_Coordinate:&lt;/B&gt; 15.8839
+&lt;B&gt;  Keywords:&lt;/B&gt;
+&lt;B&gt;    Theme:&lt;/B&gt;
+&lt;B&gt;      Theme_Keyword_Thesaurus:&lt;/B&gt; None
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Protected Areas
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Conservation
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Forest Reserve
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Nature Reserve
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Marine Reserve
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Archaeological Reserve
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Bird Sanctuary
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; National Park
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Natural Monument
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Private Reserve
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Spawning Aggregation
+&lt;B&gt;      Theme_Keyword:&lt;/B&gt; Wildlife Sanctuary
+&lt;B&gt;    Place:&lt;/B&gt;
+&lt;B&gt;      Place_Keyword_Thesaurus:&lt;/B&gt; None
+&lt;B&gt;      Place_Keyword:&lt;/B&gt; Belize
+&lt;B&gt;      Place_Keyword:&lt;/B&gt; Caribbean
+&lt;B&gt;      Place_Keyword:&lt;/B&gt; Central America
+&lt;B&gt;  Access_Constraints:&lt;/B&gt;
+None
+&lt;B&gt;  Use_Constraints:&lt;/B&gt;
+&lt;B&gt;  Point_of_Contact:&lt;/B&gt;
+&lt;B&gt;    Contact_Information:&lt;/B&gt;
+&lt;B&gt;      Contact_Organization_Primary:&lt;/B&gt;
+&lt;B&gt;        Contact_Organization:&lt;/B&gt; Belize Tropical Forest Studies
+&lt;B&gt;        Contact_Person:&lt;/B&gt; Jan Meerman
+&lt;B&gt;      Contact_Position:&lt;/B&gt; Director
+&lt;B&gt;      Contact_Address:&lt;/B&gt;
+&lt;B&gt;        Address_Type:&lt;/B&gt; mailing and physical address
+&lt;B&gt;        Address:&lt;/B&gt; P.O. Box 208,
+&lt;B&gt;        City:&lt;/B&gt; Belmopan
+&lt;B&gt;        State_or_Province:&lt;/B&gt; Cayo District
+&lt;B&gt;        Postal_Code:&lt;/B&gt; N.A.
+&lt;B&gt;        Country:&lt;/B&gt; Belize
+&lt;B&gt;      Contact_Voice_Telephone:&lt;/B&gt; 501-820-4017
+&lt;B&gt;      Contact_Facsimile_Telephone:&lt;/B&gt;
+&lt;B&gt;      Contact_Electronic_Mail_Address:&lt;/B&gt; meerman@biological-diversity.info
+&lt;B&gt;      Hours_of_Service:&lt;/B&gt;
+&lt;B&gt;  Native_Data_Set_Environment:&lt;/B&gt;
+ArcView version 3.3 shapefile format
+e:\gis\layers_bze\protected areas\protected_areas_all_2010.shp
+
+&lt;A HREF="#top"&gt;&lt;B&gt;Top&lt;/B&gt;&lt;/A&gt;&lt;BR&gt;
+&lt;HR&gt;
+&lt;A NAME = "t2"&gt;&lt;/A&gt;
+&lt;H3&gt;DATA_QUALITY_INFORMATION&lt;/H3&gt;
+
+&lt;B&gt;  Attribute_Accuracy:&lt;/B&gt;
+&lt;B&gt;    Attribute_Accuracy_Report:&lt;/B&gt;
+&lt;B&gt;  Logical_Consistency_Report:&lt;/B&gt;
+&lt;B&gt;  Completeness_Report:&lt;/B&gt;
+Dataset was available to the Protected Areas Consortium
+dealing with the National Protected Areas Policy and
+Systems Plan. Comments and corrections from this consortium
+were incorporated in
+this file as per 2005. Since then aspiring protected areas
+within the Belize Association for Private Protected Areas
+(BAPPA) has been incorporated. Adding and modifying PA's
+based on published Staturory instruments is a continuous
+process.
+Latest modification is the modification of the Crooked Tree
+Lagoon Complex, this PA has notoriously ill defined boundaries.
+&lt;B&gt;  Positional_Accuracy:&lt;/B&gt;
+&lt;B&gt;    Horizontal_Positional_Accuracy:&lt;/B&gt;
+&lt;B&gt;      Horizontal_Positional_Accuracy_Report:&lt;/B&gt;
+&lt;B&gt;    Vertical_Positional_Accuracy:&lt;/B&gt;
+&lt;B&gt;      Vertical_Positional_Accuracy_Report:&lt;/B&gt;
+&lt;B&gt;  Lineage:&lt;/B&gt;
+&lt;B&gt;    Source_Information:&lt;/B&gt;
+&lt;B&gt;      Source_Citation:&lt;/B&gt;
+&lt;B&gt;        Citation_Information:&lt;/B&gt;
+&lt;B&gt;          Originator:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Publication_Date:&lt;/B&gt; 20050417
+&lt;B&gt;          Title:&lt;/B&gt; Belize Protected Areas Map
+&lt;B&gt;          Edition:&lt;/B&gt; 20050101
+&lt;B&gt;          Geospatial_Data_Presentation_Form:&lt;/B&gt; map
+&lt;B&gt;          Publication_Information:&lt;/B&gt;
+&lt;B&gt;            Publication_Place:&lt;/B&gt; El Progresso, Cayo District, Belize
+&lt;B&gt;            Publisher:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Other_Citation_Details:&lt;/B&gt;
+Government of Belize Gazette 1994 - 2005
+&lt;B&gt;          Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;          Larger_Work_Citation:&lt;/B&gt;
+&lt;B&gt;            Citation_Information:&lt;/B&gt;
+&lt;B&gt;              Originator:&lt;/B&gt; Belize Biodiverstiy Mapping Service
+&lt;B&gt;              Publication_Date:&lt;/B&gt;
+&lt;B&gt;              Title:&lt;/B&gt; Belize Biodiversity Mapping Service
+&lt;B&gt;              Publication_Information:&lt;/B&gt;
+&lt;B&gt;                Publication_Place:&lt;/B&gt; Belmopan, Belize.
+&lt;B&gt;                Publisher:&lt;/B&gt;
+&lt;B&gt;              Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;      Source_Scale_Denominator:&lt;/B&gt;
+&lt;B&gt;      Type_of_Source_Media:&lt;/B&gt;
+&lt;B&gt;      Source_Time_Period_of_Content:&lt;/B&gt;
+&lt;B&gt;        Time_Period_Information:&lt;/B&gt;
+&lt;B&gt;          Range_of_Dates/Times:&lt;/B&gt;
+&lt;B&gt;            Beginning_Date:&lt;/B&gt;
+&lt;B&gt;            Ending_Date:&lt;/B&gt;
+&lt;B&gt;        Source_Currentness_Reference:&lt;/B&gt;
+&lt;B&gt;      Source_Citation_Abbreviation:&lt;/B&gt;
+&lt;B&gt;      Source_Contribution:&lt;/B&gt;
+&lt;B&gt;    Source_Information:&lt;/B&gt;
+&lt;B&gt;      Source_Citation:&lt;/B&gt;
+&lt;B&gt;        Citation_Information:&lt;/B&gt;
+&lt;B&gt;          Originator:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Publication_Date:&lt;/B&gt; 20050625
+&lt;B&gt;          Title:&lt;/B&gt; Belize Protected Areas Map
+&lt;B&gt;          Edition:&lt;/B&gt; 20050625
+&lt;B&gt;          Geospatial_Data_Presentation_Form:&lt;/B&gt; map
+&lt;B&gt;          Publication_Information:&lt;/B&gt;
+&lt;B&gt;            Publication_Place:&lt;/B&gt; El Progresso, Cayo District, Belize
+&lt;B&gt;            Publisher:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Other_Citation_Details:&lt;/B&gt;
+Government of Belize Gazette 1994 - 2005
+&lt;B&gt;          Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;          Larger_Work_Citation:&lt;/B&gt;
+&lt;B&gt;            Citation_Information:&lt;/B&gt;
+&lt;B&gt;              Originator:&lt;/B&gt; Belize Biodiverstiy Mapping Service
+&lt;B&gt;              Publication_Date:&lt;/B&gt;
+&lt;B&gt;              Title:&lt;/B&gt; Belize Biodiversity Mapping Service
+&lt;B&gt;              Publication_Information:&lt;/B&gt;
+&lt;B&gt;                Publication_Place:&lt;/B&gt; Belmopan, Belize.
+&lt;B&gt;                Publisher:&lt;/B&gt;
+&lt;B&gt;              Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;      Source_Scale_Denominator:&lt;/B&gt;
+&lt;B&gt;      Type_of_Source_Media:&lt;/B&gt;
+&lt;B&gt;      Source_Time_Period_of_Content:&lt;/B&gt;
+&lt;B&gt;        Time_Period_Information:&lt;/B&gt;
+&lt;B&gt;          Range_of_Dates/Times:&lt;/B&gt;
+&lt;B&gt;            Beginning_Date:&lt;/B&gt;
+&lt;B&gt;            Ending_Date:&lt;/B&gt;
+&lt;B&gt;        Source_Currentness_Reference:&lt;/B&gt;
+&lt;B&gt;      Source_Citation_Abbreviation:&lt;/B&gt;
+&lt;B&gt;      Source_Contribution:&lt;/B&gt;
+&lt;B&gt;    Source_Information:&lt;/B&gt;
+&lt;B&gt;      Source_Citation:&lt;/B&gt;
+&lt;B&gt;        Citation_Information:&lt;/B&gt;
+&lt;B&gt;          Originator:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Publication_Date:&lt;/B&gt; 20080101
+&lt;B&gt;          Title:&lt;/B&gt; Belize Protected Areas Map
+&lt;B&gt;          Edition:&lt;/B&gt; 20080101
+&lt;B&gt;          Geospatial_Data_Presentation_Form:&lt;/B&gt; map
+&lt;B&gt;          Publication_Information:&lt;/B&gt;
+&lt;B&gt;            Publication_Place:&lt;/B&gt; El Progresso, Cayo District, Belize
+&lt;B&gt;            Publisher:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Other_Citation_Details:&lt;/B&gt;
+Government of Belize Gazette 1994 - 2007
+BAPPA
+&lt;B&gt;          Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;          Larger_Work_Citation:&lt;/B&gt;
+&lt;B&gt;            Citation_Information:&lt;/B&gt;
+&lt;B&gt;              Originator:&lt;/B&gt; Belize Biodiverstiy Mapping Service
+&lt;B&gt;              Publication_Date:&lt;/B&gt;
+&lt;B&gt;              Title:&lt;/B&gt; Belize Biodiversity Mapping Service
+&lt;B&gt;              Publication_Information:&lt;/B&gt;
+&lt;B&gt;                Publication_Place:&lt;/B&gt; Belmopan, Belize.
+&lt;B&gt;                Publisher:&lt;/B&gt;
+&lt;B&gt;              Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;      Source_Scale_Denominator:&lt;/B&gt;
+&lt;B&gt;      Type_of_Source_Media:&lt;/B&gt;
+&lt;B&gt;      Source_Time_Period_of_Content:&lt;/B&gt;
+&lt;B&gt;        Time_Period_Information:&lt;/B&gt;
+&lt;B&gt;          Range_of_Dates/Times:&lt;/B&gt;
+&lt;B&gt;            Beginning_Date:&lt;/B&gt;
+&lt;B&gt;            Ending_Date:&lt;/B&gt;
+&lt;B&gt;        Source_Currentness_Reference:&lt;/B&gt;
+&lt;B&gt;      Source_Citation_Abbreviation:&lt;/B&gt;
+&lt;B&gt;      Source_Contribution:&lt;/B&gt;
+&lt;B&gt;    Source_Information:&lt;/B&gt;
+&lt;B&gt;      Source_Citation:&lt;/B&gt;
+&lt;B&gt;        Citation_Information:&lt;/B&gt;
+&lt;B&gt;          Originator:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Publication_Date:&lt;/B&gt; 20080101
+&lt;B&gt;          Title:&lt;/B&gt; Belize Protected Areas Map
+&lt;B&gt;          Edition:&lt;/B&gt; 20080101
+&lt;B&gt;          Geospatial_Data_Presentation_Form:&lt;/B&gt; map
+&lt;B&gt;          Publication_Information:&lt;/B&gt;
+&lt;B&gt;            Publication_Place:&lt;/B&gt; El Progresso, Cayo District, Belize
+&lt;B&gt;            Publisher:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Other_Citation_Details:&lt;/B&gt;
+Government of Belize Gazette 1994 - 2007
+BAPPA
+&lt;B&gt;          Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;          Larger_Work_Citation:&lt;/B&gt;
+&lt;B&gt;            Citation_Information:&lt;/B&gt;
+&lt;B&gt;              Originator:&lt;/B&gt; Belize Biodiverstiy Mapping Service
+&lt;B&gt;              Publication_Date:&lt;/B&gt;
+&lt;B&gt;              Title:&lt;/B&gt; Belize Biodiversity Mapping Service
+&lt;B&gt;              Publication_Information:&lt;/B&gt;
+&lt;B&gt;                Publication_Place:&lt;/B&gt; Belmopan, Belize.
+&lt;B&gt;                Publisher:&lt;/B&gt;
+&lt;B&gt;              Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;      Source_Scale_Denominator:&lt;/B&gt;
+&lt;B&gt;      Type_of_Source_Media:&lt;/B&gt;
+&lt;B&gt;      Source_Time_Period_of_Content:&lt;/B&gt;
+&lt;B&gt;        Time_Period_Information:&lt;/B&gt;
+&lt;B&gt;          Range_of_Dates/Times:&lt;/B&gt;
+&lt;B&gt;            Beginning_Date:&lt;/B&gt;
+&lt;B&gt;            Ending_Date:&lt;/B&gt;
+&lt;B&gt;        Source_Currentness_Reference:&lt;/B&gt;
+&lt;B&gt;      Source_Citation_Abbreviation:&lt;/B&gt;
+&lt;B&gt;      Source_Contribution:&lt;/B&gt;
+&lt;B&gt;    Source_Information:&lt;/B&gt;
+&lt;B&gt;      Source_Citation:&lt;/B&gt;
+&lt;B&gt;        Citation_Information:&lt;/B&gt;
+&lt;B&gt;          Originator:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Publication_Date:&lt;/B&gt; 20080710
+&lt;B&gt;          Title:&lt;/B&gt; Belize Protected Areas Map
+&lt;B&gt;          Edition:&lt;/B&gt; 20080720
+&lt;B&gt;          Geospatial_Data_Presentation_Form:&lt;/B&gt; map
+&lt;B&gt;          Publication_Information:&lt;/B&gt;
+&lt;B&gt;            Publication_Place:&lt;/B&gt; El Progresso, Cayo District, Belize
+&lt;B&gt;            Publisher:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Other_Citation_Details:&lt;/B&gt;
+Government of Belize Gazette 1994 - 2007
+BAPPA
+&lt;B&gt;          Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;          Larger_Work_Citation:&lt;/B&gt;
+&lt;B&gt;            Citation_Information:&lt;/B&gt;
+&lt;B&gt;              Originator:&lt;/B&gt; Belize Biodiverstiy Mapping Service
+&lt;B&gt;              Publication_Date:&lt;/B&gt;
+&lt;B&gt;              Title:&lt;/B&gt; Belize Biodiversity Mapping Service
+&lt;B&gt;              Publication_Information:&lt;/B&gt;
+&lt;B&gt;                Publication_Place:&lt;/B&gt; Belmopan, Belize.
+&lt;B&gt;                Publisher:&lt;/B&gt;
+&lt;B&gt;              Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;      Source_Scale_Denominator:&lt;/B&gt;
+&lt;B&gt;      Type_of_Source_Media:&lt;/B&gt;
+&lt;B&gt;      Source_Time_Period_of_Content:&lt;/B&gt;
+&lt;B&gt;        Time_Period_Information:&lt;/B&gt;
+&lt;B&gt;          Range_of_Dates/Times:&lt;/B&gt;
+&lt;B&gt;            Beginning_Date:&lt;/B&gt;
+&lt;B&gt;            Ending_Date:&lt;/B&gt;
+&lt;B&gt;        Source_Currentness_Reference:&lt;/B&gt;
+&lt;B&gt;      Source_Citation_Abbreviation:&lt;/B&gt;
+&lt;B&gt;      Source_Contribution:&lt;/B&gt;
+&lt;B&gt;    Source_Information:&lt;/B&gt;
+&lt;B&gt;      Source_Citation:&lt;/B&gt;
+&lt;B&gt;        Citation_Information:&lt;/B&gt;
+&lt;B&gt;          Originator:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Publication_Date:&lt;/B&gt; 20110218
+&lt;B&gt;          Title:&lt;/B&gt; Belize Protected Areas Map
+&lt;B&gt;          Edition:&lt;/B&gt; 20110218
+&lt;B&gt;          Geospatial_Data_Presentation_Form:&lt;/B&gt; map
+&lt;B&gt;          Publication_Information:&lt;/B&gt;
+&lt;B&gt;            Publication_Place:&lt;/B&gt; El Progresso, Cayo District, Belize
+&lt;B&gt;            Publisher:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Other_Citation_Details:&lt;/B&gt;
+Land Information Center
+Government of Belize Gazette 1984 - 2011
+BAPPA
+&lt;B&gt;          Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;          Larger_Work_Citation:&lt;/B&gt;
+&lt;B&gt;            Citation_Information:&lt;/B&gt;
+&lt;B&gt;              Originator:&lt;/B&gt; Belize Biodiverstiy Mapping Service
+&lt;B&gt;              Publication_Date:&lt;/B&gt;
+&lt;B&gt;              Title:&lt;/B&gt; Belize Biodiversity Mapping Service
+&lt;B&gt;              Publication_Information:&lt;/B&gt;
+&lt;B&gt;                Publication_Place:&lt;/B&gt; Belmopan, Belize.
+&lt;B&gt;                Publisher:&lt;/B&gt;
+&lt;B&gt;              Online_Linkage:&lt;/B&gt; &lt;A HREF = "HTTP://biological-diversity.info"&gt;HTTP://biological-diversity.info&lt;/A&gt;
+&lt;B&gt;      Source_Scale_Denominator:&lt;/B&gt;
+&lt;B&gt;      Type_of_Source_Media:&lt;/B&gt;
+&lt;B&gt;      Source_Time_Period_of_Content:&lt;/B&gt;
+&lt;B&gt;        Time_Period_Information:&lt;/B&gt;
+&lt;B&gt;          Range_of_Dates/Times:&lt;/B&gt;
+&lt;B&gt;            Beginning_Date:&lt;/B&gt;
+&lt;B&gt;            Ending_Date:&lt;/B&gt;
+&lt;B&gt;        Source_Currentness_Reference:&lt;/B&gt;
+&lt;B&gt;      Source_Citation_Abbreviation:&lt;/B&gt;
+&lt;B&gt;      Source_Contribution:&lt;/B&gt;
+&lt;B&gt;    Process_Step:&lt;/B&gt;
+&lt;B&gt;      Process_Description:&lt;/B&gt;
+Origianal file originating from the Lands Information
+Center within the Ministry of National Resources (pre
+1996). Corrected
+and updated using Statutory instruments published in the
+Governement Gazette 1984 - 2011. Additional input received
+from: Coastal Zone Management Institute; Forest Department
+and "consortium" involved with the National Protected Areas
+Policy and Systems Plan (2005) + Belize
+Association for Private Protected Areas (BAPPA) database as
+per 2007.
+&lt;B&gt;      Source_Used_Citation_Abbreviation:&lt;/B&gt;
+&lt;B&gt;      Process_Date:&lt;/B&gt;
+&lt;B&gt;      Source_Produced_Citation_Abbreviation:&lt;/B&gt;
+&lt;B&gt;      Process_Contact:&lt;/B&gt;
+&lt;B&gt;        Contact_Information:&lt;/B&gt;
+&lt;B&gt;          Contact_Person_Primary:&lt;/B&gt;
+&lt;B&gt;            Contact_Organization:&lt;/B&gt; Belize Tropical Forest Studies
+&lt;B&gt;            Contact_Person:&lt;/B&gt; Jan Meerman
+&lt;B&gt;          Contact_Position:&lt;/B&gt; Director
+&lt;B&gt;          Contact_Address:&lt;/B&gt;
+&lt;B&gt;            Address_Type:&lt;/B&gt; mailing and physical address
+&lt;B&gt;            Address:&lt;/B&gt; P.O. Box 208,
+&lt;B&gt;            City:&lt;/B&gt; Belmopan
+&lt;B&gt;            State_or_Province:&lt;/B&gt; Cayo District
+&lt;B&gt;            Postal_Code:&lt;/B&gt; N.A.
+&lt;B&gt;            Country:&lt;/B&gt; Belize
+&lt;B&gt;          Contact_Voice_Telephone:&lt;/B&gt; 501-820-4017
+&lt;B&gt;          Contact_Facsimile_Telephone:&lt;/B&gt;
+&lt;B&gt;          Contact_Electronic_Mail_Address:&lt;/B&gt; meerman@biological-diversity.info
+&lt;B&gt;          Hours_of_Service:&lt;/B&gt;
+
+&lt;A HREF="#top"&gt;&lt;B&gt;Top&lt;/B&gt;&lt;/A&gt;&lt;BR&gt;
+&lt;HR&gt;
+&lt;A NAME = "t3"&gt;&lt;/A&gt;
+&lt;H3&gt;SPATIAL_DATA_ORGANIZATION_INFORMATION&lt;/H3&gt;
+
+&lt;B&gt;  Direct_Spatial_Reference_Method:&lt;/B&gt; Vector
+&lt;B&gt;  Point_and_Vector_Object_Information:&lt;/B&gt;
+&lt;B&gt;    SDTS_Terms_Description:&lt;/B&gt;
+&lt;B&gt;      SDTS_Point_and_Vector_Object_Type:&lt;/B&gt; GT-polygon composed of chains
+&lt;B&gt;      Point_and_Vector_Object_Count:&lt;/B&gt; 218
+
+&lt;A HREF="#top"&gt;&lt;B&gt;Top&lt;/B&gt;&lt;/A&gt;&lt;BR&gt;
+&lt;HR&gt;
+&lt;A NAME = "t4"&gt;&lt;/A&gt;
+&lt;H3&gt;SPATIAL_REFERENCE_INFORMATION&lt;/H3&gt;
+
+&lt;B&gt;  Horizontal_Coordinate_System_Definition:&lt;/B&gt;
+&lt;B&gt;    Planar:&lt;/B&gt;
+&lt;B&gt;      Grid_Coordinate_System:&lt;/B&gt;
+&lt;B&gt;        Grid_Coordinate_System_Name:&lt;/B&gt; Universal Transverse Mercator
+&lt;B&gt;        Universal_Transverse_Mercator:&lt;/B&gt;
+&lt;B&gt;          UTM_Zone_Number:&lt;/B&gt;  16
+&lt;B&gt;          Transverse_Mercator:&lt;/B&gt;
+&lt;B&gt;            Scale_Factor_at_Central_Meridian:&lt;/B&gt; 0.999600
+&lt;B&gt;            Longitude_of_Central_Meridian:&lt;/B&gt; -87.000000
+&lt;B&gt;            Latitude_of_Projection_Origin:&lt;/B&gt; 0.000000
+&lt;B&gt;            False_Easting:&lt;/B&gt; 500000.000000
+&lt;B&gt;            False_Northing:&lt;/B&gt; 0.000000
+&lt;B&gt;      Planar_Coordinate_Information:&lt;/B&gt;
+&lt;B&gt;        Planar_Coordinate_Encoding_Method:&lt;/B&gt; Coordinate pair
+&lt;B&gt;        Coordinate_Representation:&lt;/B&gt;
+&lt;B&gt;          Abscissa_Resolution:&lt;/B&gt;
+&lt;B&gt;          Ordinate_Resolution:&lt;/B&gt;
+&lt;B&gt;        Planar_Distance_Units:&lt;/B&gt; Meters
+&lt;B&gt;    Geodetic_Model:&lt;/B&gt;
+&lt;B&gt;      Horizontal_Datum_Name:&lt;/B&gt; North American Datum of 1927
+&lt;B&gt;      Ellipsoid_Name:&lt;/B&gt; Clarke 1866
+&lt;B&gt;      Semi-major_Axis:&lt;/B&gt; 6378206.4000000
+&lt;B&gt;      Denominator_of_Flattening_Ratio:&lt;/B&gt; 294.98
+
+&lt;A HREF="#top"&gt;&lt;B&gt;Top&lt;/B&gt;&lt;/A&gt;&lt;BR&gt;
+&lt;HR&gt;
+&lt;A NAME = "t5"&gt;&lt;/A&gt;
+&lt;H3&gt;ENTITY_AND_ATTRIBUTE_INFORMATION&lt;/H3&gt;
+
+&lt;B&gt;  Detailed_Description:&lt;/B&gt;
+&lt;B&gt;    Entity_Type:&lt;/B&gt;
+&lt;B&gt;      Entity_Type_Label:&lt;/B&gt; pa20050412.dbf
+&lt;B&gt;      Entity_Type_Definition:&lt;/B&gt; Shapefile Attribute Table
+&lt;B&gt;      Entity_Type_Definition_Source:&lt;/B&gt; None
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Id
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Range_Domain:&lt;/B&gt;
+&lt;B&gt;          Range_Domain_Minimum:&lt;/B&gt; 1
+&lt;B&gt;          Range_Domain_Maximum:&lt;/B&gt; 105
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Name
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Unrepresentable_Domain:&lt;/B&gt; Character Field
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Status
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Unrepresentable_Domain:&lt;/B&gt; Character Field
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Zone
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Unrepresentable_Domain:&lt;/B&gt; Character Field
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Iucn_cat
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Unrepresentable_Domain:&lt;/B&gt; Character Field
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Gazettte
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Codeset_Domain:&lt;/B&gt;
+&lt;B&gt;          Codeset_Name:&lt;/B&gt; Date
+&lt;B&gt;          Codeset_Source:&lt;/B&gt; and number of gazette
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Mgmt
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Codeset_Domain:&lt;/B&gt;
+&lt;B&gt;          Codeset_Name:&lt;/B&gt; Name
+&lt;B&gt;          Codeset_Source:&lt;/B&gt; Organization responsible for managment
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Comgmt
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Codeset_Domain:&lt;/B&gt;
+&lt;B&gt;          Codeset_Name:&lt;/B&gt; Name
+&lt;B&gt;          Codeset_Source:&lt;/B&gt; Co-management organization
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Notes
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Codeset_Domain:&lt;/B&gt;
+&lt;B&gt;          Codeset_Name:&lt;/B&gt; Various
+&lt;B&gt;          Codeset_Source:&lt;/B&gt; Comments
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Acres
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Range_Domain:&lt;/B&gt;
+&lt;B&gt;          Range_Domain_Minimum:&lt;/B&gt; 0.079
+&lt;B&gt;          Range_Domain_Maximum:&lt;/B&gt; 264003
+&lt;B&gt;    Attribute:&lt;/B&gt;
+&lt;B&gt;      Attribute_Label:&lt;/B&gt; Hectares
+&lt;B&gt;      Attribute_Definition:&lt;/B&gt;
+&lt;B&gt;      Attribute_Definition_Source:&lt;/B&gt;
+&lt;B&gt;      Attribute_Domain_Values:&lt;/B&gt;
+&lt;B&gt;        Range_Domain:&lt;/B&gt;
+&lt;B&gt;          Range_Domain_Minimum:&lt;/B&gt; 0.032
+&lt;B&gt;          Range_Domain_Maximum:&lt;/B&gt; 106839
+&lt;B&gt;  Overview_Description:&lt;/B&gt;
+&lt;B&gt;    Entity_and_Attribute_Overview:&lt;/B&gt;
+&lt;B&gt;    Entity_and_Attribute_Detail_Citation:&lt;/B&gt;
+
+&lt;A HREF="#top"&gt;&lt;B&gt;Top&lt;/B&gt;&lt;/A&gt;&lt;BR&gt;
+&lt;HR&gt;
+&lt;A NAME = "t6"&gt;&lt;/A&gt;
+&lt;H3&gt;DISTRIBUTION_INFORMATION&lt;/H3&gt;
+
+&lt;B&gt;  Distributor:&lt;/B&gt;
+&lt;B&gt;    Contact_Information:&lt;/B&gt;
+&lt;B&gt;      Contact_Organization_Primary:&lt;/B&gt;
+&lt;B&gt;        Contact_Organization:&lt;/B&gt; Belize Tropical Forest Studies
+&lt;B&gt;        Contact_Person:&lt;/B&gt; Jan Meerman
+&lt;B&gt;      Contact_Position:&lt;/B&gt; Director
+&lt;B&gt;      Contact_Address:&lt;/B&gt;
+&lt;B&gt;        Address_Type:&lt;/B&gt; mailing and physical address
+&lt;B&gt;        Address:&lt;/B&gt; P.O. Box 208,
+&lt;B&gt;        City:&lt;/B&gt; Belmopan
+&lt;B&gt;        State_or_Province:&lt;/B&gt; Cayo District
+&lt;B&gt;        Postal_Code:&lt;/B&gt; N.A.
+&lt;B&gt;        Country:&lt;/B&gt; Belize
+&lt;B&gt;      Contact_Voice_Telephone:&lt;/B&gt; 501-820-4017
+&lt;B&gt;      Contact_Facsimile_Telephone:&lt;/B&gt;
+&lt;B&gt;      Contact_Electronic_Mail_Address:&lt;/B&gt; meerman@biological-diversity.info
+&lt;B&gt;      Hours_of_Service:&lt;/B&gt;
+&lt;B&gt;  Resource_Description:&lt;/B&gt;
+The Belize Protected Areas Map Shapefile was originally
+produced as
+part of the National Protected Areas Policy and Systems
+Plan (2005) and updated for the Land Use Policy Formulation
+Project (2011).
+&lt;B&gt;  Distribution_Liability:&lt;/B&gt;
+Users must assume responsibility to determine the
+appropriate use of these data. The boundaries can not be
+seen as legal defenitions. Files as are is.
+
+&lt;A HREF="#top"&gt;&lt;B&gt;Top&lt;/B&gt;&lt;/A&gt;&lt;BR&gt;
+&lt;HR&gt;
+&lt;A NAME = "t7"&gt;&lt;/A&gt;
+&lt;H3&gt;METADATA_REFERENCE_INFORMATION&lt;/H3&gt;
+
+&lt;B&gt;  Metadata_Date:&lt;/B&gt; 20110218
+&lt;B&gt;  Metadata_Review_Date:&lt;/B&gt;
+&lt;B&gt;  Metadata_Contact:&lt;/B&gt;
+&lt;B&gt;    Contact_Information:&lt;/B&gt;
+&lt;B&gt;      Contact_Organization_Primary:&lt;/B&gt;
+&lt;B&gt;        Contact_Organization:&lt;/B&gt; Belize Tropical Forest Studies
+&lt;B&gt;        Contact_Person:&lt;/B&gt; Jan Meerman
+&lt;B&gt;      Contact_Position:&lt;/B&gt; Director
+&lt;B&gt;      Contact_Address:&lt;/B&gt;
+&lt;B&gt;        Address_Type:&lt;/B&gt; Mailing and physical address
+&lt;B&gt;        Address:&lt;/B&gt; P.O. Box 208,
+&lt;B&gt;        City:&lt;/B&gt; Belmopan
+&lt;B&gt;        State_or_Province:&lt;/B&gt; Cayo District
+&lt;B&gt;        Postal_Code:&lt;/B&gt; N.A.
+&lt;B&gt;        Country:&lt;/B&gt; Belize
+&lt;B&gt;      Contact_Voice_Telephone:&lt;/B&gt; 501-820-4017
+&lt;B&gt;      Contact_Facsimile_Telephone:&lt;/B&gt;
+&lt;B&gt;      Contact_Electronic_Mail_Address:&lt;/B&gt; meerman@biological-diversity.info
+&lt;B&gt;      Hours_of_Service:&lt;/B&gt;
+&lt;B&gt;  Metadata_Standard_Name:&lt;/B&gt; FGDC CSDGM
+&lt;B&gt;  Metadata_Standard_Version:&lt;/B&gt; FGDC-STD-001-1998
+&lt;A HREF="#top"&gt;&lt;B&gt;Top&lt;/B&gt;&lt;/A&gt;&lt;BR&gt;
+&lt;/PRE&gt;&lt;/BODY&gt; &lt;/HTML&gt;
+<Esri><CreaDate>20200309</CreaDate><CreaTime>17395000</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20110725</SyncDate><SyncTime>16530800</SyncTime><ModDate>20110725</ModDate><ModTime>17073200</ModTime><ArcGISFormat>1.0</ArcGISFormat><ArcGISstyle>FGDC CSDGM Metadata</ArcGISstyle><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\Project" Date="20190702" Time="093102">Project CMCC_GeographicScope2 D:\Belize\Caracol\data\data_from_partners\DataLayers_GeographicScope\CMCC_GeographicScope2_proj.shp PROJCS['NAD_1983_UTM_Zone_16N',GEOGCS['GCS_North_American_1983',DATUM['D_North_American_1983',SPHEROID['GRS_1980',6378137.0,298.257222101]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]],PROJECTION['Transverse_Mercator'],PARAMETER['False_Easting',500000.0],PARAMETER['False_Northing',0.0],PARAMETER['Central_Meridian',-87.0],PARAMETER['Scale_Factor',0.9996],PARAMETER['Latitude_Of_Origin',0.0],UNIT['Meter',1.0]] 'NAD_1927_To_WGS_1984_2 + WGS_1984_(ITRF00)_To_NAD_1983' PROJCS['NAD_1927_UTM_Zone_16N',GEOGCS['GCS_North_American_1927',DATUM['D_North_American_1927',SPHEROID['Clarke_1866',6378206.4,294.9786982]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]],PROJECTION['Transverse_Mercator'],PARAMETER['False_Easting',500000.0],PARAMETER['False_Northing',0.0],PARAMETER['Central_Meridian',-87.0],PARAMETER['Scale_Factor',0.9996],PARAMETER['Latitude_Of_Origin',0.0],UNIT['Meter',1.0]] NO_PRESERVE_SHAPE # NO_VERTICAL</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20191205" Time="132841">CalculateField "CMCC Region" NAME "Chiquibul Forest Reserve" VB #</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20191205" Time="132911">CalculateField "CMCC Region" NAME "Vaca Forest Reserve" VB #</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20191205" Time="132935">CalculateField "CMCC Region" NAME "Chiquibul National Park" VB #</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20191205" Time="133216">CalculateField "CMCC Region" NAME "Eligio Panti" VB #</Process></lineage><itemProps><itemLocation><linkage Sync="TRUE">file://\\LAPTOP-29NPL9E4\D$\Belize\Caracol\data\misc_useful_layers\protected_areas_parcel_update\protected_areas_parcel_update</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation></itemProps><copyHistory><copy source="D:\Belize\Caracol\data\misc_useful_layers\protected_areas_parcel_update" dest="\\LAPTOP-29NPL9E4\D$\Belize\Caracol\data\misc_useful_layers\protected_areas_parcel_update\protected_areas_parcel_update" date="20200309" time="17395000"></copy></copyHistory></DataProperties></Esri><dataqual><lineage><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\Users\ETORRE~1.MNR\AppData\Local\Temp\xml9ACF.tmp</srcused><procdate Sync="TRUE">20110613</procdate><proctime Sync="TRUE">14514900</proctime></procstep><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\Temp\Protmetadata.xml</srcused><procdate Sync="TRUE">20110627</procdate><proctime Sync="TRUE">13333500</proctime></procstep><srcinfo><typesrc>disc</typesrc><srccitea>LIC</srccitea></srcinfo><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">X:\MAP DOCUMENTS\Protected Areas\Bze_ProtectedArea_2011_UTM</srcused><procdate Sync="TRUE">20110628</procdate><proctime Sync="TRUE">14235200</proctime></procstep></lineage></dataqual><idinfo><native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.0.1770</native><descript><langdata>English</langdata><abstract>Digital protected area polygon data was created using the legal descritpions of the boundaries as published on the Government Gazette Statutory Instruments (legal decrees).</abstract><purpose>The dataset was developed to assist the Ministry of Natural Resources and the Environment and Government of Belize for better decision making, sustainable developement and consevation of our Natural Resources.</purpose><supplinf>The Protected Areas dataset was created in conjunction with Forest Department and Fisheries Department.</supplinf></descript><citation><citeinfo><origin>Land Information Centre</origin><pubdate>20110615</pubdate><title>Protected Areas of Belize</title><ftname Sync="TRUE">Bze_ProtectedArea_2011_UTM</ftname><geoform Sync="TRUE">vector digital data</geoform><onlink>http://mnre.gov.bz</onlink><edition>2011</edition><pubtime>12:00 PM</pubtime><pubinfo><pubplace>Ministry of Natural Resources and the Environment, City of Belmopan, Cayo  District</pubplace><publish>Land Information Centre</publish></pubinfo></citeinfo></citation><timeperd><current>publication date</current><timeinfo><sngdate><caldate>20110615</caldate><time>12:.00 PM</time></sngdate></timeinfo></timeperd><status><progress>Complete</progress><update>Continually</update></status><spdom><bounding><westbc Sync="TRUE">-89.229658</westbc><eastbc Sync="TRUE">-87.434957</eastbc><northbc Sync="TRUE">18.491850</northbc><southbc Sync="TRUE">15.883950</southbc></bounding><lboundng><leftbc Sync="TRUE">264557.073800</leftbc><rightbc Sync="TRUE">453438.000000</rightbc><bottombc Sync="TRUE">1757228.297500</bottombc><topbc Sync="TRUE">2044537.274500</topbc></lboundng></spdom><keywords><theme><themekt>Refers to the Protected Areas Dataset of Belize</themekt><themekey>Protected Areas</themekey><themekey>Forest Reserve</themekey><themekey>National Park</themekey><themekey>Nature Reserve</themekey><themekey>Wildlife Sanctuary</themekey><themekey>Natural Monument</themekey><themekey>Archaeological Reserve</themekey><themekey>Marine Reserve</themekey><themekey>Spawning Aggregation Site Reserves</themekey><themekey>Nassau Grouper &amp; Species Protection</themekey><themekey>Private Reserve</themekey><themekey>Public Reserve</themekey><themekey>Mangrove Reserve</themekey><themekey>Forest Act</themekey><themekey>National Park System Act</themekey><themekey>Ancient Monuments and Antiquities Act</themekey><themekey>Fisheries Act</themekey><themekey>Voluntary Agreement</themekey><themekey>National Lands Act</themekey><themekey>National</themekey><themekey>TIDE</themekey><themekey>Forest Department</themekey><themekey>Belize Audobon Society</themekey><themekey>Friends for Conservation and Development</themekey><themekey>National Institute of Culture and History</themekey><themekey>International</themekey></theme><place><placekey>Country</placekey><placekt>Refers to the Country pertaining to the Database</placekt><placekey>Marine</placekey><placekey>Longitude</placekey><placekey>Latitude</placekey></place></keywords><useconst>Data cannot be reproduced without a written consent from the Commissioner of Lands and Surveys, Lands and Survey Department, Ministry of Natural Resources and the Environment.</useconst><natvform Sync="TRUE">Shapefile</natvform><ptcontac><cntinfo><cntpos>Principal Land Information Officer</cntpos><cntaddr><addrtype>mailing and physical address</addrtype><city>Belmopan</city><state>Cayo District</state><postal>501</postal><country>Belize</country><address>Cohune Walk</address></cntaddr><cntvoice>501-802-2711</cntvoice><cntfax>501-822-2333</cntfax><cntemail>lic@mnrei.gov/bz, plio@mnrei.gov.bz</cntemail><hours>9</hours><cntperp><cntper>Mrs. Carren Williams</cntper><cntorg>Land Information Centre, Lands and Survey Department, Ministry of Natural Resources and the Environment</cntorg></cntperp></cntinfo></ptcontac><secinfo><secclass>Restricted</secclass></secinfo></idinfo><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.0.1770</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">Bze_ProtectedArea_2011_UTM</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">264557.0738</westBL><eastBL Sync="TRUE">453438</eastBL><northBL Sync="TRUE">2044537.2745</northBL><southBL Sync="TRUE">1757228.2975</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-89.229658</westBL><eastBL Sync="TRUE">-87.434957</eastBL><northBL Sync="TRUE">18.49185</northBL><southBL Sync="TRUE">15.88395</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><metainfo><langmeta>english</langmeta><metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn><metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv><mettc Sync="TRUE">local time</mettc><metc><cntinfo><cntaddr><addrtype>REQUIRED: The mailing and/or physical address for the organization or individual.</addrtype><city>REQUIRED: The city of the address.</city><state>REQUIRED: The state or province of the address.</state><postal>REQUIRED: The ZIP or other postal code of the address.</postal></cntaddr><cntvoice>REQUIRED: The telephone number by which individuals can speak to the organization or individual.</cntvoice><cntperp><cntper>Mrs. Carren Williams</cntper><cntorg>Land Information Centre, Lands and Surveys Department, Ministry of Natural Resources and the Envrironment</cntorg></cntperp><cntpos>Principal land Information Officer</cntpos></cntinfo></metc><metd Sync="TRUE">20110725</metd><metsi><metsc>Restricted</metsc></metsi><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distinfo><resdesc Sync="TRUE">Downloadable Data</resdesc><stdorder><digform><digtinfo><transize Sync="TRUE">0.949</transize><dssize Sync="TRUE">0.949</dssize></digtinfo><digtopt><offoptn><offmedia>CD-ROM</offmedia></offoptn></digtopt></digform><fees>Free of cost</fees><ordering>Can be downloaded from www.mnre.gov.bz</ordering></stdorder><distrib><cntinfo><cntperp><cntper>Carren Williams</cntper><cntorg>Land Information Centre, Lands and Surveys Department. Ministry of Natural Resources and the Environment</cntorg></cntperp><cntpos>Principal Land Information Centre</cntpos><cntaddr><addrtype>mailing and physical address</addrtype><address>Cohune Walk Area</address><city>Belmopan</city><state>Cayo District</state><postal>501</postal><country>Belize</country></cntaddr><cntvoice>501-802-2711</cntvoice><cntfax>501-822-2333</cntfax><cntemail>lic@mnrei.gov.bz / plio@mnrei.gov.bz</cntemail><hours>9</hours></cntinfo></distrib></distinfo><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\mnresvrfile\lic\IABIN\Project Outputs\PA-Shapefiles\Bze_ProtectedArea_2011_UTM.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.949</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><spdoinfo><direct Sync="TRUE">Vector</direct><ptvctinf><esriterm Name="Bze_ProtectedArea_2011_UTM"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polygon</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">139</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm><sdtsterm Name="Bze_ProtectedArea_2011_UTM"><sdtstype Sync="TRUE">G-polygon</sdtstype><ptvctcnt Sync="TRUE">139</ptvctcnt></sdtsterm></ptvctinf></spdoinfo><spref><horizsys><cordsysn><geogcsn Sync="TRUE">GCS_North_American_1927</geogcsn><projcsn Sync="TRUE">NAD_1927_UTM_Zone_16N</projcsn></cordsysn><planar><planci><plance Sync="TRUE">coordinate pair</plance><plandu Sync="TRUE">meters</plandu><coordrep><absres Sync="TRUE">0.000000</absres><ordres Sync="TRUE">0.000000</ordres></coordrep></planci><gridsys><gridsysn Sync="TRUE">Universal Transverse Mercator</gridsysn><utm><utmzone Sync="TRUE">16</utmzone><transmer><sfctrmer Sync="TRUE">0.999600</sfctrmer><longcm Sync="TRUE">-87.000000</longcm><latprjo Sync="TRUE">0.000000</latprjo><feast Sync="TRUE">500000.000000</feast><fnorth Sync="TRUE">0.000000</fnorth></transmer></utm></gridsys></planar><geodetic><horizdn Sync="TRUE">North American Datum of 1927</horizdn><ellips Sync="TRUE">Clarke 1866</ellips><semiaxis Sync="TRUE">6378206.400000</semiaxis><denflat Sync="TRUE">294.978698</denflat></geodetic></horizsys></spref><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">NAD_1927_UTM_Zone_16N</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="Bze_ProtectedArea_2011_UTM"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">139</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><eainfo><detailed Name="Bze_ProtectedArea_2011_UTM"><enttyp><enttypl Sync="TRUE">Bze_ProtectedArea_2011_UTM</enttypl><enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">139</enttypc><enttypd>Protected Areas of Belize</enttypd><enttypds>Ministry of Natural Resources and the Environment</enttypds></enttyp><attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">NAME</attrlabl><attalias Sync="TRUE">NAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">30</attwidth><attrdef>The Official Name of the Protected Area</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr><attr><attrlabl Sync="TRUE">ZONE</attrlabl><attalias Sync="TRUE">ZONE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth><attrdef>The description of Extraction Zone as declared by the Fisheries Department</attrdef><attrdefs>Fisheries Department</attrdefs></attr><attr><attrlabl Sync="TRUE">Country</attrlabl><attalias Sync="TRUE">Country</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>The Country, territory or administrative unit of geographical that  a protected area jurisdictionally resides within as given by and ISO 3166-2 subnational code</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr><attr><attrlabl Sync="TRUE">SUB_LOC</attrlabl><attalias Sync="TRUE">SUB_LOC</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>The principle subdivision that a protected area geographically resides within given by and ISO 3166-2 sub-national code</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr><attr><attrlabl Sync="TRUE">DESIG</attrlabl><attalias Sync="TRUE">DESIG</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>The Type of protected area as legally/officialy established or recognised.</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr><attr><attrlabl Sync="TRUE">Status</attrlabl><attalias Sync="TRUE">Status</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Current legal or official standing of the site (e.g. proposed, designated)</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr><attr><attrlabl Sync="TRUE">Latitude</attrlabl><attalias Sync="TRUE">Latitude</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Refers to the angular distance (location) for the center point of each protected areas polygon north of the earth's equator</attrdef><attrdefs>Ministry of Natural Resources and the Environment</attrdefs></attr><attr><attrlabl Sync="TRUE">Longitude</attrlabl><attalias Sync="TRUE">Longitude</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Refers to the angular distance (location) for the center point of each protected areas polygon west of the earth's equator</attrdef><attrdefs>Ministry of Natural Resources and the Environment</attrdefs></attr><attr><attrlabl Sync="TRUE">IUCNCAT</attrlabl><attalias Sync="TRUE">IUCNCAT</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Refers to the classification of IUCN Category (Ia, Ib, II, III, IV, V or Vi) adopted for national protected areas.</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr><attr><attrlabl Sync="TRUE">MARINE</attrlabl><attalias Sync="TRUE">MARINE</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">16</attwidth><attrdef>Given by a (1) for True of (0) for False.  Marine Sites as defined for the WDPA encompass any portion of the marine environment in whole or in part according to geographic location and management strategy</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs><atnumdec Sync="TRUE">6</atnumdec></attr><attr><attrlabl Sync="TRUE">Legislatio</attrlabl><attalias Sync="TRUE">Legislatio</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Local law coverning the establishment of the Protected Areas </attrdef><attrdefs>Land Information Centre</attrdefs></attr><attr><attrlabl Sync="TRUE">STATUS_YR</attrlabl><attalias Sync="TRUE">STATUS_YR</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">16</attwidth><attrdef>The year in which the current status was officially decreed</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs><atnumdec Sync="TRUE">6</atnumdec></attr><attr><attrlabl Sync="TRUE">LEGAL_DECR</attrlabl><attalias Sync="TRUE">LEGAL_DECR</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Reference to the legal decree that established the protected area</attrdef><attrdefs>Land Information Centre</attrdefs></attr><attr><attrlabl Sync="TRUE">Statutory</attrlabl><attalias Sync="TRUE">Statutory</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">16</attwidth><attrdef>The legal statutory instrument number of the official decree</attrdef><attrdefs>Land Information Centre</attrdefs><atnumdec Sync="TRUE">6</atnumdec></attr><attr><attrlabl Sync="TRUE">STATUS_Y_1</attrlabl><attalias Sync="TRUE">STATUS_Y_1</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">16</attwidth><attrdef>Refers to the year in which the current status was officially revised</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs><atnumdec Sync="TRUE">6</atnumdec></attr><attr><attrlabl Sync="TRUE">Date_Enter</attrlabl><attalias Sync="TRUE">Date_Enter</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Date in which the current status was officially decreed</attrdef><attrdefs>Land Information Centre</attrdefs></attr><attr><attrlabl Sync="TRUE">Documented</attrlabl><attalias Sync="TRUE">Documented</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">16</attwidth><attrdef>The area in acres as stated on the official decree</attrdef><attrdefs>Land Information Centre</attrdefs><atnumdec Sync="TRUE">6</atnumdec></attr><attr><attrlabl Sync="TRUE">REP_AREA__</attrlabl><attalias Sync="TRUE">REP_AREA__</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">16</attwidth><attrdef>The area in square kilometers as stated on the official decree</attrdef><attrdefs>Land Information Centre</attrdefs><atnumdec Sync="TRUE">6</atnumdec></attr><attr><attrlabl Sync="TRUE">Habitat</attrlabl><attalias Sync="TRUE">Habitat</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Current ecosystem of the protected area</attrdef><attrdefs>Land Information Centre</attrdefs></attr><attr><attrlabl Sync="TRUE">GOV_TYPE</attrlabl><attalias Sync="TRUE">GOV_TYPE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>A description of the governance structure of a protected area, confirming to the governance matrix described in the IUCN Guidlines on protected areas.</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr><attr><attrlabl Sync="TRUE">MANG_AUTH</attrlabl><attalias Sync="TRUE">MANG_AUTH</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>The organization(s) or agency(s) responsible for management of the protected area.</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr><attr><attrlabl Sync="TRUE">DESIG_TYPE</attrlabl><attalias Sync="TRUE">DESIG_TYPE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">254</attwidth><attrdef>Provides information for nationally or internationally designated sites. Provides information if a protected area is recognized under international conventions such as  UNSECO World Heritage, UNSECO Biosphere Reserve or RAMSAR</attrdef><attrdefs>World Data Base on Protected Areas</attrdefs></attr></detailed><overview><eaover>This database was designed to meet the Data Santards for the World Database on Protected Areas.</eaover><eadetcit>Attributes information derived from the Data Santards for the World Database on Protected Areas.</eadetcit></overview></eainfo><mdDateSt Sync="TRUE">20110725</mdDateSt></metadata>

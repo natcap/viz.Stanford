@@ -1,0 +1,390 @@
+h1, h2, h3, h4, h5 {
+  color: #E1AD01;  /* first colorsheet : #F7B733*/
+  font-weight: normal;
+}
+
+h2 {
+	margin: 1%;
+}
+
+h5 {
+	font-size: 2.2vh !important;
+	color: #E1AD01 !important ;
+}
+
+h6 {
+	font-size: 1.6vh !important;
+	color: #E1AD01 !important;
+	font-style: italic !important;
+}
+
+
+.panels {
+			background-color: #302e25; /* first colorsheet : #003366*/
+		}
+.layerTitle {
+			color: cadetblue; /* first colorsheet : #darkorange*/ 
+		} 
+
+p {
+	color:white;   
+}
+
+strong *{
+			color: yellow;   /*cadetblue*/
+		}
+
+html *{
+   			
+   			font-family: Verdana !important;
+		}
+
+/* Scroll Bar Styling*/
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E1AD01; 
+  border-radius: 10px;
+}
+
+
+.leaflet-popup-close-button {
+	display: none;
+}
+
+		#mapid {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			z-index: 1;
+
+		}
+
+		.panels {
+			background-color: #302e25; /*Andrea's: #003366*/
+		}
+
+		#panel {
+			display: inline-block;
+			float: right;
+			padding: 1.5%;
+			width: 30%;
+			top: 2%;
+			right: 15px;
+			height: 88%;
+			opacity: 0.98;
+			border: 2px;
+			border-color: #F7B733;
+			z-index: 99;	
+			border-radius: 25px;
+			box-shadow: none;
+			position: absolute;
+			z-index: 500;
+			overflow: scroll;
+			position: absolute;
+			right: 15px;
+		}
+
+		.layerChecks {
+			opacity: 1;
+			color: #DFDCE3;
+
+		}
+
+		h4, .layerTitle {
+			color: #E34234; /* first colorsheet : #darkorange*/ 
+			font-size: 2.7vh;
+		} 
+
+		#miniMap {
+			position: absolute;
+			display: inline-block;
+			float: left;
+			left: 15px;
+			top: 8%;
+		}
+
+
+		.button {
+			border-radius: 8px;
+		    margin: 1vh;
+		    display: inline;
+		    font-size: 2vh; 
+		}
+
+		.buttonPressed {
+			border-radius: 8px;
+		    margin: 1vh;
+		    display: inline;
+		    font-size: 2vh; 
+		    background-color: #E1AD01;
+		}
+
+
+
+		.LULCpanel {
+			position: absolute;
+			display: inline-block;
+			float: right;
+			padding: 1.5%;
+			width: 12%;
+			height: 500px;
+			color: #DFDCE3;
+			z-index: 99;
+			border-radius: 25px;
+			opacity: 0.95;
+			background-color: #302e25;
+
+		}
+
+
+		#LULCPanel3 {
+			top: 2%;
+			right: 35%;
+			position: absolute;
+			width: 60%;
+			height: auto;
+			max-height: 88%;
+			overflow: scroll;
+			opacity: 1;
+
+		}
+
+
+		#LULCPanel2 {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+			height: auto;
+			z-index: 501;
+			background-color: #302e25;
+			padding: 1.5%;
+			border-radius: 25px;
+
+		}
+
+		#LULCPanel1 {
+			top: 2%;
+			right: 65%;
+			position: absolute;
+			display: none;
+
+		}
+
+		.AboutPanel {
+			display: inline-block;
+			float: right;
+			padding: 1.5%;
+			width: 40%;
+			height: 70%;
+			overflow: scroll;
+			color: #DFDCE3;
+			z-index: 100;
+			top: 2%;
+			right: 35%;
+			position: absolute;
+			border-radius: 25px;
+			opacity: 0.95;
+			background-color: #302e25;
+
+		}
+
+
+		.dataLinkClose {
+			display: none;
+		}
+
+		.dataLink {
+			color: #DFDCE3;
+			font-size: 1.7vh;
+			color: #E1AD01 ;
+			display: inline-block;
+		}
+
+
+		.exitButton {
+			background-color: #994000;
+			float: right;
+		}
+
+		.close {
+			display: none;
+		}
+
+		.LULCclose{
+			display: none;
+		}
+
+		#LULCclose{
+			display: none;
+		}
+
+		#interactiveLegend{
+			display: inline-block;
+			float: left;
+			padding: 1.5%;
+			width: 20%;
+			height: auto;
+			max-height: 50%;
+			overflow: scroll;
+			color: #DFDCE3;
+			z-index: 98;
+			bottom: 5%;
+			left: 15px;
+			position: absolute;
+			border-radius: 25px;
+			opacity: 0.95;
+
+		}
+
+		.panelOption{
+			padding: 0.2%;
+			font-size: 14px;
+		}
+
+		.leaflet-control-layers {
+			z-index: 900;
+
+		}
+
+		.leaflet-control{
+			z-index: 900;
+		}
+
+		.image{
+			opacity: 1;
+			border-radius: 25px;
+		}
+
+		.teamPicture{
+			border-radius: 50%;
+		}
+
+
+
+		.buttonOn {
+			color: #E34234;
+		}
+
+		.ILImage {
+			border-radius: 8px;
+			z-index: 500;
+			opacity: 1;
+		}
+		.leaflet-right .leaflet-control {
+    		float: left;
+    		left: 15px;
+		}
+
+		.leaflet-bottom {
+			position: none;
+		}
+
+		.teamDescriptor {
+			display: inline-block;
+			width: 30%;
+			top: 0;
+		}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+	background:#302e25;
+	opacity: 0.95;
+	color: #DFDCE3;
+	font-size: 2.3vh;
+
+}
+
+.resrouceImage {
+	width: 35%;
+}
+
+.introPanelOut {
+	display: inline-block;
+	float: right;
+	padding: 1.5%;
+	width: 30%;
+	height: 70%;
+	overflow: scroll;
+	color: #DFDCE3;
+	z-index: 600;
+	top: 2%;
+	right: 35%;
+	position: absolute;
+	border-radius: 25px;
+	opacity: 0.95;
+	background-color: #302e25;
+
+
+}
+
+.introPanel {
+	display: inline-block;
+	float: right;
+	padding: 1.5%;
+	width: 30%;
+	height: 70%;
+	overflow: scroll;
+	color: #DFDCE3;
+	z-index: 600;
+	top: 2%;
+	right: 35%;
+	position: absolute;
+	border-radius: 25px;
+	opacity: 0.95;
+	background-color: #302e25;
+
+
+}
+
+.tutorialArrow{
+	z-index: 900;
+	position: absolute;
+}
+
+#tutorialArrow1{
+	right: 30%;
+	top: 15%;
+}
+
+.tutorialBorder{
+	border-style: solid;
+	border-width: 6px;
+	border-color: #E34234;
+}
+
+.closeBorder{
+	border-style: none;
+}
+
+#partnerImage{
+	background-color: #aeaeae;
+	border-radius: 25px;
+	margin: 10px;
+}
+
+#natCapLogo {
+	display: inline-block;
+}
+
+#natCapText {
+	display: inline-block;
+}
+
+#staticFigure{
+	border-radius: 25px;
+}
+
+#allDataDownload{
+	font-size: 2.2vh;
+}

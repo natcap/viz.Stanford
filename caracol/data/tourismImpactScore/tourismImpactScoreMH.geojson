@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "tourismImpactScoreMH",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Big Rock", "Ownership": "Public", "Env_Impact": 4.0, "Com_Impact": 10.0, "Composite": 40.0 }, "geometry": { "type": "Point", "coordinates": [ -88.97469894921, 17.03313970091 ] } },
+{ "type": "Feature", "properties": { "Name": "Granite Falls", "Ownership": "Public", "Env_Impact": 7.0, "Com_Impact": 9.0, "Composite": 63.0 }, "geometry": { "type": "Point", "coordinates": [ -88.95022715456, 16.97974437201 ] } },
+{ "type": "Feature", "properties": { "Name": "Pinol Sands", "Ownership": "Public", "Env_Impact": 4.0, "Com_Impact": 8.0, "Composite": 32.0 }, "geometry": { "type": "Point", "coordinates": [ -88.98310494691, 17.0120907065 ] } },
+{ "type": "Feature", "properties": { "Name": "Rio on Pools", "Ownership": "Public", "Env_Impact": 7.0, "Com_Impact": 8.0, "Composite": 56.0 }, "geometry": { "type": "Point", "coordinates": [ -88.97750894847, 16.98699871315 ] } },
+{ "type": "Feature", "properties": { "Name": "Rio Frio Cave", "Ownership": "Public", "Env_Impact": 4.0, "Com_Impact": 8.0, "Composite": 32.0 }, "geometry": { "type": "Point", "coordinates": [ -89.00011594223, 16.97960171513 ] } }
+]
+}

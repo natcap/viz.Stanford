@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "damsFullInfoLink",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "type": "dam", "descript": "Chalilo Dam", "source": "Extract from Project_assets", "asset": 2, "threat": 1, "opportun": 0, "desc_short": "Chalilo Dam", "infoLink": "https:\/\/en.wikipedia.org\/wiki\/Chalillo_Dam" }, "geometry": { "type": "Point", "coordinates": [ -89.013889154012958, 16.861240876254993, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "dam", "descript": "Mollejon Dam", "source": "Extract from Project_assets", "asset": 1, "threat": 0, "opportun": 0, "desc_short": "Mollejon Dam", "infoLink": "https:\/\/en.wikipedia.org\/wiki\/Category:Hydroelectric_power_stations_in_Belize" }, "geometry": { "type": "Point", "coordinates": [ -89.044730787088781, 16.955547300626407, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "dam", "descript": "Vaca Dam", "source": "Extract from Project_assets", "asset": 1, "threat": 0, "opportun": 0, "desc_short": "Vaca Dam", "infoLink": "https:\/\/en.wikipedia.org\/wiki\/Category:Hydroelectric_power_stations_in_Belize" }, "geometry": { "type": "Point", "coordinates": [ -89.05582387511464, 17.018766784613657, 0.0 ] } }
+]
+}

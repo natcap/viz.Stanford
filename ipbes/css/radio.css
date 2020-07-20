@@ -1,0 +1,171 @@
+/* CSS for user settings - radio button section */
+
+/* CSS for user settings - radio button section */
+
+#radio_container {
+  background: rgba(255, 255, 255, 0.096);
+  color: white;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  padding: 0.3rem 0.3rem 0.5rem 0.3rem;
+  margin: 1rem;
+  font-size: 0.7rem;
+  width: 17rem;
+}
+
+/* radio btn */
+
+#radio_container input {
+  border: 1px solid white;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+#radio_container input:checked {
+  border: 2px solid white;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.205);
+}
+
+/* affect also the label on check */
+
+input[type="radio"]:checked+label {
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+}
+
+input[type="radio"]+label {
+  color: white;
+}
+
+input[type="radio"]:hover+label {
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+}
+
+#radio_container input:hover {
+  border: 2px solid white;
+  opacity: 1;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
+
+tr {
+  padding: 0;
+  height: 4rem;
+}
+
+.row-label {
+  margin: 0;
+  color: gray;
+  position: relative;
+  top: 0;
+}
+
+td {
+  width: 100%;
+  padding: 0;
+  vertical-align: middle;
+  margin: auto;
+}
+
+table {
+  padding: 0;
+  width: 100%;
+}
+
+.low_opacity {
+  opacity: 0.5;
+}
+
+.radio_btn {
+  margin-bottom: 2px;
+  -webkit-appearance: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  outline: none;
+  border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: white;
+}
+
+.input-radio {
+  display: block;
+  float: left;
+  width: 33%;
+  text-align: center;
+  height: 2.5rem;
+}
+
+.mode-button {
+  width: 31%;
+  height: 2.5rem;
+  float: left;
+  margin: 1%;
+  font-size: 0.7rem;
+  background: none;
+  color: white;
+  border-image-slice: 1;
+  border-width: 2px;
+  outline: none;
+  border-width: 3px;
+}
+
+.mode-button:hover {
+  border-width: 3px;
+  background: rgba(255, 255, 255, 0.205);
+}
+
+.mode-button.selected {
+  border-width: 3px;
+  background: rgba(255, 255, 255, 0.205);
+}
+
+.year-button {
+  width: 48%;
+  border: 1px solid white;
+  height: 2.5rem;
+  float: left;
+  margin: 1%;
+  font-size: 0.7rem;
+  background: none;
+  color: white;
+  border-image-slice: 1;
+  border-width: 1px;
+  outline: none;
+}
+
+.year-button:hover {
+  border-width: 2px;
+  background: rgba(255, 255, 255, 0.205);
+}
+
+.year-button.selected {
+  border-width: 2px;
+  background: rgba(255, 255, 255, 0.205);
+}
+
+#UN-button {
+  border-color: #ff126d;
+  ;
+}
+
+#pop-button {
+  border-color: #6a3d9e;
+}
+
+#NC-button {
+  border-color: #0b6828;
+}
+
+.input-wrapper {
+  text-align: center;
+}

@@ -1,0 +1,318 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\froman\fcharset0 Times-Roman;\f4\froman\fcharset0 TimesNewRomanPSMT;\f5\fswiss\fcharset0 ArialMT;
+\f6\fmodern\fcharset0 Courier;\f7\fnil\fcharset0 Baskerville;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red50\green102\blue255;\red22\green25\blue31;
+\red58\green62\blue68;\red237\green236\blue236;\red243\green235\blue0;\red93\green93\blue93;\red155\green44\blue1;
+\red26\green26\blue26;\red16\green60\blue192;\red246\green246\blue246;\red52\green61\blue68;\red71\green85\blue110;
+\red242\green245\blue249;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13840\viewh15600\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs48 \cf0 CSS\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs24 \cf0 @general \
+#specific ?\
+.special ?
+\fs48 \
+\
+Latex compiler
+\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs20 \cf2 \cb0 \CocoaLigature0 ./build.sh --nospellcheck --open
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f1\fs20 \cf2 \cb0 \CocoaLigature0 cd Desktop/Pdm/report/master-thesis-cha/\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs48 \cf0 Markdown
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b \cf0 Formules
+\b0 \
+![equation](http://_lien_)\
+lien: http://www.sciweavers.org/free-online-latex-equation-editor\
+\
+\pard\pardeftab720
+
+\f2 \cf0 \expnd0\expndtw0\kerning0
+in line : \cf1 \cb3 \expnd0\expndtw0\kerning0
+$\\frac\{n\}\{2\}$\cf0 \cb1 \expnd0\expndtw0\kerning0
+\
+pas in-line : \cf1 \cb3 \expnd0\expndtw0\kerning0
+$$\\frac\{n\}\{2\}$$
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b \cf0 Renvois 
+\b0 (see http://pandoc.org/MANUAL.html#header-identifiers)\
+Apr\'e8s la figure \{#fig:mymy\}\
+see @fig:mymy or \\ref\{fig:sub1\}\
+\
+Apr\'e8s le title \{#sec:roly\}\
+see \\ref\{sec:prout\}
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\b \cf0 \expnd0\expndtw0\kerning0
+Figures
+\b0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs26 \cf4 \expnd0\expndtw0\kerning0
+\{width=50%\}\
+\
+Subfigures\
+\
+![Chloropleth map, graduate symbol map, dot density map [@datavizz], and heatmap/isopleth [@heatmap_img] (figures to be merged \{todo MERGE SUBFIGURES\})](../images/subfigures/map1/map1.png)\
+\
+
+\fs18 \\begin\{figure\}\
+\\centering\
+\\begin\{subfigure\}\{.5\\textwidth\}\
+  \\centering\
+  \\includegraphics[width=.4\\linewidth]\{images/fourtypes.png\}\
+  \\caption\{A subfigure\}\
+  \\label\{fig:sub1\}\
+\\end\{subfigure\}%\
+\\begin\{subfigure\}\{.5\\textwidth\}\
+  \\centering\
+  \\includegraphics[width=.4\\linewidth]\{images/fourtypes.png\}\
+  \\caption\{A subfigure\}\
+  \\label\{fig:sub2\}\
+\\end\{subfigure\}\
+\\caption\{A figure with two subfigures\}\
+\\label\{fig:test\}\
+\\end\{figure\}
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 pour le nom du titre: 
+\f2 \cf5 \cb6 \expnd0\expndtw0\kerning0
+# Introduction \{#intro\}
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720
+
+\f2 \cf5 \cb6 \expnd0\expndtw0\kerning0
+see [section 1.4](#intro)\cb1 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs26 \cf4 \expnd0\expndtw0\kerning0
+\{== \cb7 \expnd0\expndtw0\kerning0
+Highlight en jaune\cb1 \expnd0\expndtw0\kerning0
+ ==\}\
+\pard\pardeftab720
+
+\fs24 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs26 \cf4 \expnd0\expndtw0\kerning0
+\{>> Side comment <<\}\
+\pard\pardeftab720
+
+\fs24 \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs26 \cf4 \expnd0\expndtw0\kerning0
+\{++ Something will be added ++\}
+\fs24 \expnd0\expndtw0\kerning0
+\
+
+\fs26 \expnd0\expndtw0\kerning0
+\{-- Something will be removed \}
+\fs24 \expnd0\expndtw0\kerning0
+\
+
+\fs26 \expnd0\expndtw0\kerning0
+\{--Something will be removed --\} *\
+\{~~ This will be replaced ~> by that ~~~\}
+\f0\fs48 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+Git\
+\pard\pardeftab720
+
+\f3\fs30 \cf8 \cb2 \expnd0\expndtw0\kerning0
+git status\
+git add <file>\
+git add <directory>\
+git add -p (asks you for each commit? y/n)\
+git commit -am \'ab\'a0msg\'a0\'bb\
+git push\
+\
+\cf9 D\'92abord: git fetch : update depuis le repo !\
+\cf8 git checkout . = reprends depuis la derni\'e8re branche\
+git stash : commit dans l\'92air \
+git stash pop : te remets le commit dans l\'92air !
+\f0\fs48 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f4\fs24 \cf2 \cb0 \CocoaLigature0  git checkout name_of_branch \cf0 \cb1 : switch to name_of_branch\
+\cf2 \cb0  git checkout -b name_of_new_branch \cf0 \cb1 :create new empty branch\
+\cf2 \cb0  git checkout -b name_of_new_branch origin/repo_branch_name\cf0 \cb1  : create new branch from repo\
+\cf2 \cb0  git branch \cf0 \cb1 : see all LOCAL branches\
+\cf2 \cb0  git remote -v \cf0 \cb1 : see  which global branch corresponds to right now
+\f1\fs20 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs48 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\i\fs22 \cf0 directory = local\
+repository = global\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\i0\b\fs24 \cf0 \ul \ulc0 Initiate repo
+\b0\fs48 \ulnone \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs24 \cf0 git init : dans le directory, cr\'e9e .git subrepo/ (ou 
+\f3\fs30 \cf8 \cb2 \expnd0\expndtw0\kerning0
+git init <directory>\cf0 )\cb1  pour en cr\'e9er un nvo\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+git clone <repo> (<directory>)\
+\cf8 \cb2 git config --global --edit\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \ul Add files\
+\pard\pardeftab720
+
+\f3\b0\fs30 \cf8 \cb2 \expnd0\expndtw0\kerning0
+\ulnone cd\
+view hidden files 
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 defaults write com.apple.finder AppleShowAllFiles 1\
+
+\f3\fs30 \cf8 \cb2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 hide hidden files 
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 defaults write com.apple.finder AppleShowAllFiles 0
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs48 \cf0 \
+Run file.html \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs28 \cf0 Locally\
+
+\fs20 - Browser : X cross origin requests not supported (from file:// \'85)\
+- Local host :\
+	- easily : 
+\f5\fs26 \cf10 run "python -m SimpleHTTPServer". Go to {\field{\*\fldinst{HYPERLINK "http://localhost:8000/"}}{\fldrslt \cf11 \ul \ulc11 http://localhost:8000}}
+\f0\fs20 \cf0 \
+	- through 
+\f1 \cf2 \cb0 \CocoaLigature0  heroku local 
+\f0 \cf0 \cb1 \CocoaLigature1 doesn\'92t work  because virtualenv wouldn\'92t install properly (with Anaconda Python: virtualenv is an issue)\
+	- through FLASK : 
+\f1 \cf2 \cb0 \CocoaLigature0 python flask_front_end_app.py 
+\f0 \cf0 \cb1 \CocoaLigature1 and then in BROWER : http://localhost:5050/\
+
+\fs28 \
+Online\
+\pard\pardeftab720
+
+\f1\fs26 \cf12 \cb13 \expnd0\expndtw0\kerning0
+heroku login\
+cd webviz_trial\
+heroku create\
+\pard\pardeftab720
+
+\f6\fs28 \cf14 \cb15 \expnd0\expndtw0\kerning0
+heroku git:remote -a peru-viz\
+git add .\
+$ git commit -am "make it better"\
+$ git push heroku master
+\f1\fs26 \cf12 \cb13 \expnd0\expndtw0\kerning0
+\
+git push heroku master\
+heroku ps:scale web=1\
+heroku open\
+View logs ::  heroku logs --tail\
+\pard\pardeftab720
+
+\f0\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs20 \cf0 Heroku API :\
+
+\f1 \cf2 \cb0 \CocoaLigature0 git add .\
+git commit -m \'ab\'a0blah\'a0\'bb\
+git push heroku master\
+heroku open\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs48 \cf0 \cb1 \CocoaLigature1 \
+Javascript \
+\pard\pardeftab720
+
+\f7\fs32 \cf10 SYNTAX\
+data.attribute\
+\
+for attr = blue, yellow, red\
+data[attr]\
+\pard\pardeftab720
+
+\f0\fs48 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 D3\
+\pard\pardeftab720
+
+\f7\fs32 \cf10  input domain \
+output range
+\f0\fs48 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1\fs20 \cf2 \cb0 \CocoaLigature0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs48 \cf0 \cb1 \CocoaLigature1 Jupyter\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs22 \cf0 command line (in the working directory) : 
+\f1 \cf2 \cb0 \CocoaLigature0 jupyter notebook\
+Runs on 
+\fs20 http://localhost:8888/
+\f0\fs48 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1\fs20 \cf2 \cb0 \CocoaLigature0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs48 \cf0 \cb1 \CocoaLigature1 \
+Website\
+
+\fs28 build html in master-thesis-cha\
+move it to website-github \
+push in www\
+\
+\
+<a> target=\'ab\'a0_blank\'a0\'bb pr ouvrir lien ds un nouvel onglet !!\
+}

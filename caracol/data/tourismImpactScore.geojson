@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "tourismImpactScore",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Big Rock", "Ownership": "Public", "Env_Impact": 4.0, "Com_Impact": 10.0, "Composite": 40.0 }, "geometry": { "type": "Point", "coordinates": [ -88.974698949211998, 17.033139700909999 ] } },
+{ "type": "Feature", "properties": { "Name": "Offering Cave", "Ownership": "Public", "Env_Impact": 5.0, "Com_Impact": 6.0, "Composite": 30.0 }, "geometry": { "type": "Point", "coordinates": [ -89.056808370292003, 17.046864589104999 ] } },
+{ "type": "Feature", "properties": { "Name": "Caracol", "Ownership": "Public", "Env_Impact": 10.0, "Com_Impact": 2.0, "Composite": 20.0 }, "geometry": { "type": "Point", "coordinates": [ -89.117809909811996, 16.763079772646002 ] } },
+{ "type": "Feature", "properties": { "Name": "Cristo Rey Waterfall", "Ownership": "Private", "Env_Impact": 0.0, "Com_Impact": 2.0, "Composite": 1.0 }, "geometry": { "type": "Point", "coordinates": [ -89.040647026065002, 17.128022345917 ] } },
+{ "type": "Feature", "properties": { "Name": "Douglas D'Silva", "Ownership": "Public", "Env_Impact": 1.0, "Com_Impact": 8.0, "Composite": -999.0 }, "geometry": { "type": "Point", "coordinates": [ -88.991092944729004, 16.971391717303 ] } },
+{ "type": "Feature", "properties": { "Name": "Granite Falls", "Ownership": "Public", "Env_Impact": 7.0, "Com_Impact": 9.0, "Composite": 63.0 }, "geometry": { "type": "Point", "coordinates": [ -88.950227154559002, 16.979744372005001 ] } },
+{ "type": "Feature", "properties": { "Name": "Natural Arch", "Ownership": "Public", "Env_Impact": 7.0, "Com_Impact": 2.0, "Composite": 14.0 }, "geometry": { "type": "Point", "coordinates": [ -89.0488662, 16.6189467 ] } },
+{ "type": "Feature", "properties": { "Name": "Nohoch Che'en", "Ownership": "Public", "Env_Impact": 9.0, "Com_Impact": 2.0, "Composite": 18.0 }, "geometry": { "type": "Point", "coordinates": [ -89.095879818445994, 16.613260100514001 ] } },
+{ "type": "Feature", "properties": { "Name": "Pinol Sands", "Ownership": "Public", "Env_Impact": 4.0, "Com_Impact": 8.0, "Composite": 32.0 }, "geometry": { "type": "Point", "coordinates": [ -88.983104946907005, 17.012090706498999 ] } },
+{ "type": "Feature", "properties": { "Name": "Rio on Pools", "Ownership": "Public", "Env_Impact": 7.0, "Com_Impact": 8.0, "Composite": 56.0 }, "geometry": { "type": "Point", "coordinates": [ -88.977508948470003, 16.986998713153 ] } },
+{ "type": "Feature", "properties": { "Name": "Rio Frio Cave", "Ownership": "Public", "Env_Impact": 4.0, "Com_Impact": 8.0, "Composite": 32.0 }, "geometry": { "type": "Point", "coordinates": [ -89.000115942232995, 16.979601715129 ] } },
+{ "type": "Feature", "properties": { "Name": "Sapodilla Waterfall", "Ownership": "Public", "Env_Impact": 3.0, "Com_Impact": 8.0, "Composite": 24.0 }, "geometry": { "type": "Point", "coordinates": [ -89.008227668714994, 17.028535065627 ] } },
+{ "type": "Feature", "properties": { "Name": "Barton Creek Cave", "Ownership": "Private", "Env_Impact": 3.0, "Com_Impact": 1.0, "Composite": 3.0 }, "geometry": { "type": "Point", "coordinates": [ -88.9282906, 17.1128645 ] } }
+]
+}

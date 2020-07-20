@@ -1,0 +1,21 @@
+#modeling_method{
+    background: rgba(61, 61, 61, 0.212);
+    width: 100%;
+    padding: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+}
+.modelingSection{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+.modeling_left{
+    width: 40%;
+    padding: 0 1rem;
+  
+}
+.modeling_right{
+    width: 40%;
+}

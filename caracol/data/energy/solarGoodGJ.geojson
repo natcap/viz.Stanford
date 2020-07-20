@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "solarGoodGJ",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.5840305519104001, "aspect_mea": 157.87868774414062, "GHI_mean": 1820.838270168472, "Area": 22493.58, "PV_out": 40957.17 }, "geometry": { "type": "Point", "coordinates": [ -89.00263, 16.85668 ] } },
+{ "type": "Feature", "properties": { "VALUE": 2.0, "slope_mean": 1.5029490709304809, "aspect_mea": 143.79100616455079, "GHI_mean": 1825.2230496132354, "Area": 22491.47, "PV_out": 41051.95 }, "geometry": { "type": "Point", "coordinates": [ -89.08375, 16.80708 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.4880443668365479, "aspect_mea": 193.80278921127319, "GHI_mean": 1840.5350277653067, "Area": 22493.04, "PV_out": 41399.23 }, "geometry": { "type": "Point", "coordinates": [ -89.023, 16.78735 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.640878937244415, "aspect_mea": 140.49152923583983, "GHI_mean": 1832.6653911466331, "Area": 22494.81, "PV_out": 41225.46 }, "geometry": { "type": "Point", "coordinates": [ -88.95228, 16.75009 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.637105028629303, "aspect_mea": 221.94394653320313, "GHI_mean": 1814.2910163699523, "Area": 22494.01, "PV_out": 40810.68 }, "geometry": { "type": "Point", "coordinates": [ -88.98422, 16.71048 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.643773212432861, "aspect_mea": 170.80976593017579, "GHI_mean": 1803.1967232003528, "Area": 22494.22, "PV_out": 40561.5 }, "geometry": { "type": "Point", "coordinates": [ -88.97542, 16.67532 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.686535522937775, "aspect_mea": 147.63482466987941, "GHI_mean": 1810.5439453125, "Area": 22492.4, "PV_out": 40723.48 }, "geometry": { "type": "Point", "coordinates": [ -89.04648, 16.61364 ] } },
+{ "type": "Feature", "properties": { "VALUE": 2.0, "slope_mean": 1.6607931900024411, "aspect_mea": 211.59356753031412, "GHI_mean": 1808.0456178408335, "Area": 22491.66, "PV_out": 40665.95 }, "geometry": { "type": "Point", "coordinates": [ -89.07447, 16.60252 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.5782123041152949, "aspect_mea": 199.73304541905722, "GHI_mean": 1823.6323282835065, "Area": 22489.67, "PV_out": 41012.89 }, "geometry": { "type": "Point", "coordinates": [ -89.15042, 16.73321 ] } },
+{ "type": "Feature", "properties": { "VALUE": 2.0, "slope_mean": 1.6593798828124999, "aspect_mea": 142.78643051147461, "GHI_mean": 1808.718017578125, "Area": 22493.51, "PV_out": 40684.42 }, "geometry": { "type": "Point", "coordinates": [ -89.00595, 16.90408 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.569148125648498, "aspect_mea": 181.90182876586914, "GHI_mean": 1809.2064337209388, "Area": 22493.51, "PV_out": 40695.4 }, "geometry": { "type": "Point", "coordinates": [ -89.00593, 16.90272 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.6781628894805909, "aspect_mea": 156.73317398071288, "GHI_mean": 1816.2187392946328, "Area": 22493.76, "PV_out": 40853.59 }, "geometry": { "type": "Point", "coordinates": [ -88.99596, 16.89198 ] } },
+{ "type": "Feature", "properties": { "VALUE": 1.0, "slope_mean": 1.613375089168549, "aspect_mea": 148.17850479125977, "GHI_mean": 1817.9279300885642, "Area": 22494.21, "PV_out": 40892.85 }, "geometry": { "type": "Point", "coordinates": [ -88.97764, 16.88945 ] } }
+]
+}

@@ -1,0 +1,8 @@
+.popover-title{
+    color: var(--light_blue);
+    background-color:rgb(41, 41, 41);
+}
+.popover-content{
+ color: var( --inprinted_c);
+}
+

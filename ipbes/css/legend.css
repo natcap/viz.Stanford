@@ -1,0 +1,131 @@
+#legend {
+  color: white;
+  padding: 0.3rem 0.3rem 0.5rem 0.3rem;
+  margin: 0 1vh;
+  font-size: 1rem;
+  z-index: 1;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.5vh;
+  width: 150px;
+}
+
+#legendBar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#legendHeader {
+  display: inline-block;
+  font-size: 0.6rem;
+  width: inherit;
+  text-align: center;
+}
+
+.legendMinMax{
+  display: inline-block;
+  font-size: 0.6rem;
+  margin: 3px 0 0.5rem 0;
+}
+
+#legendValue_max{
+  float: right;
+}
+#legendValue_min{
+  float: left;
+  padding-left: 3px;
+}
+
+
+.leaflet-bottom .leaflet-control {
+  background-color:rgba(5, 13, 24, 0.392);
+  padding: 0.3rem;
+  padding-right: 0;
+  padding-left: 0.6rem;
+}
+
+.legendList {
+  font-size:30px;
+  line-height: 35%;
+}
+
+li span {
+  font-size:12px;
+  position: relative;
+  left: -20px;
+  bottom: 4px;
+  color: white;
+}
+
+.leaflet-control-attribution {
+  margin-left: 10rem !important;
+}
+
+
+/* The container */
+.labelcontainer {
+  font-size:12px;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.labelcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.labelcheckmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  border: 1.5px solid rgb(20, 35, 56);
+}
+
+/* On mouse-over, add a grey background color */
+.labelcontainer:hover input ~ .labelcheckmark {
+  background-color: rgb(152, 171, 189)
+}
+
+/* When the checkbox is checked, add a blue background */
+.labelcontainer input:checked ~ .labelcheckmark {
+  background-color: rgb(152, 171, 189)
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.labelcheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.labelcontainer input:checked ~ .labelcheckmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.labelcontainer .labelcheckmark:after {
+  left: 3px;
+  top: -5px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

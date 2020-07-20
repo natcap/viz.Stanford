@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<title>NatCap Viz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/natcap.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Natural Capital Viz</b></h4>
+    <!--<p class="w3-text-grey">
+      <p style="font-style: italic; font-color: grey;">"Men build too many walls and not enough bridges."</p>
+    Isaac Newton.</p>-->
+    <p class="w3-text-grey">Here, you will find examples and resources to facilitate synthetizing, visualizing and communicating Ecosystem Services Data</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>INSPIRATION</a> 
+    <a href="#toolbox" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>TOOLBOX</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Natural Capital Data Viz</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black" onclick="filterSelection('all')">ALL</button>
+      <button class="w3-button w3-white" onclick="filterSelection('natcaps')"><i class="fa fa-diamond w3-margin-right"></i>NatCap's</button>
+      <button class="w3-button w3-white w3-hide-small" onclick="filterSelection('webmaps')"><i class="fa fa-photo w3-margin-right"></i>Webmaps</button>
+      <button class="w3-button w3-white w3-hide-small" onclick="filterSelection('art')"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+    </div>
+  </header>
+
+
+<!-- Testing writing html in js here 
+<div id="theDiv">
+<div class="w3-third w3-container w3-margin-bottom filterDiv art webmaps">
+      <a href='https://arcg.is/0XGrDO' target='_blank'>
+      <img src="images/nomadic.png"
+      alt="Image" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-white">
+        
+      </div>
+</div>
+</div>-->
+
+  
+  <!-- First Inspiration Grid-->
+  <div class="w3-row-padding filterDiv natcaps webmaps">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='http://www.myanmarnaturalcapital.org/en' target='_blank'><img src="/images/myanmar.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Myanmar's Natural Capital</b></p>
+        <p>Myanmar's Natural Capital website presents interactively an assessment led by World Wide Fund for Nature, at the request of the Government of Myanmar, will help Myanmar make those connections. The assessment includes information about where the country’s natural capital is located, what ecosystem services it provides to people, and how those services will change under different climate change and development scenarios. See <a href='http://www.myanmarnaturalcapital.org/en/ecosystem/provide-habitat' target='_blank'><i>Explore Ecosystem Services</i></a> for interactive maps of Myanmar's natural assets—land, water, soil, plants, wildlife and air—that provides benefits to people.</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container">
+      <a href='http://viz.naturalcapitalproject.org/ipbes/' target='_blank'><img src="images/natureforpeople.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Nature's Contributions to People, worldwide</b></p>
+        <p>As part of UN's <a href='https://www.ipbes.net/' target='_blank'>IPBES</a> Global Assessment,  we mapped key ecosystem services worldwide at a fine resolution, under future scenarios (Chaplin-Kramer, in press). Where does nature contributes to people the most today, and where will people be most at risk in the future? This interactive viewer helps to explore these dense maps and facilitates comparisons across different regions, services, scenarios. Informing science-based policies, with the right maps in the right hands!
+        <span class="light"> By Charlotte Weil, Anna Hääg & team</span>
+      </p>
+      </div>
+    </div>
+
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='http://viz.naturalcapitalproject.org/pro-agua/' target='_blank'><img src="images/proagua.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Natural Resilience in the Amazon</b></p>
+        <p>The PRO Agua project (<i>Proyecto Resiliencia y Ordenamiento Territorial del Agua</i>) takes place in the tri-national area where Bolivia, Brazil and Peru meet and where watersheds are affected by floods, and pollution from illegal mining.  This collaborative endeavour ambitions to  demonstrate the benefits of ecosystem services and integrated watershed management for the health and well-being of the growing population.
+        <span class="light"> [¡En Español!] By Charlotte Weil & team </span>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-margin-bottom filterDiv natcaps webmaps">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='https://charlottegiseleweil.github.io/NatCapTraining/' target='_blank'><img src="images/training.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>NatCap Training Program</b></p>
+        <p>NatCap offers a wide range of courses to help people learn about approaches and tools to use ecosystem services to inform decisions. Including on-line course, webinars, regional workshops, hands-on practice and tools in remote courses and seminars, customized workshops, and a the “training track” at the Natural Capital Symposium. <a href='https://naturalcapitalproject.stanford.edu/training-program/' target-='_blank'>Learn more!</a>
+          <span class="light">By D. Tekin & team</span></p>
+      </div>
+    </div>
+
+
+    <div class="w3-third w3-container">
+      <a href='http://viz.naturalcapitalproject.org/GreenGrowthBook' target='_blank'><img src="images/gg.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Green Growth That Works</b></p>
+        <p>This book provides detailed examples of Natural Capital Policy and Finance Mechanisms around the World.
+        <span class="light">By Charlotte Weil, Gunes Yurdakul & Cyril Van Schreven </span> </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container">
+      <a href='https://ecoparis.github.io/' target='_blank'><img src="images/ecoparis.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>EcoParis: Ecosystem Services in Paris</b></p>
+        <p>EcoParis is an interactive visualization of map data of ecosystem services in urban and peri-urban areas in the Ile-de-France region from the IDEFESE project.
+        <span class="light"> By A. Ferragni, K. Sinnathamby, R. Liautaud </span>
+        </p>
+      </div>
+    </div>
+
+
+  <!-- Third Examples Row --> 
+  <div class="w3-row-padding w3-margin-bottom filterDiv natcaps webmaps invest">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='https://joannalcy.github.io/hra-dashboard/' target='_blank'><img src="images/hra.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>InVEST Viewer: HRA Model</b></p>
+        <p>Prototyping the next phase of NatCap's Platform, this dashboard supports visualizing InVEST Habitat Risk Assessment results. It is intended to give users a quick glance on how much risk do stressors cause to the habitats, and what are the areas of high, medium or low risks.<a href='http://data.naturalcapitalproject.org/nightly-build/invest-users-guide/html/habitat_risk_assessment.html' target='_blank'> More about InVEST HRA model.</a>
+          <span class="light"> By Joanna Lin </span></p>
+      </div>
+      </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='http://vulpes.sefs.uw.edu/ttapp/cv-dash.php' target='_blank'><img src="images/cv.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>InVEST Viewer: Coastal Vulnerability</b></p>
+        <p>Another of the InVEST Dashboards automating common synthesis and visualization tasks that may be necessary after using InVEST, specifically for the Coastal Vulnerability model, differentiating at a glance areas with relatively high or low exposure to erosion and inundation during storms. <a href='http://data.naturalcapitalproject.org/nightly-build/invest-users-guide/html/coastal_vulnerability.html#interpreting-results' target='_blank'> More about InVEST CV model.</a>
+           <span class="light"> By Dave Fisher </span>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="w3-third w3-container">
+      <a href='https://trumancfy.github.io/Data_Viz_2018/' target='_blank'><img src="images/swy.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>InVEST Viewer: Seasonal Water Yield</b></p>
+        <p>Still at a prototype stage, this proposed InVEST dashboards explores Seasonal Water Yield model results, focusing on Baseflow and Quickflow, in Myanmar.<a href='http://data.naturalcapitalproject.org/nightly-build/invest-users-guide/html/seasonal_water_yield.html' target='_blank'> More about InVEST SWY model.</a>
+        <span class="light"> By Fengyu Cai & team </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fourth Examples Row -->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='http://viz.naturalcapitalproject.org/rangelands' target='_blank'><img src="images/rangelands.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>NatCap's Rangelands model</b></p>
+        <p>The Rangelands Dashboards displays sample outputs of NatCap’s Rangeland Production Model, in the Gobi desert, Mongolia.
+        <span class="light"> By Ginger Kowal</span>
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='http://hydrolab.io/ffr/#6/25.904/15.795/FFR-CNT-NME-CNN-LKE' target='_blank'><img src="images/f.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Mapping the world's free flowing rivers</b></p>
+        <p>Understanding the many factors impacting river ecosystems is crucial to understand which rivers should be prioritized for conservation or restoration  <a href='https://www.worldwildlife.org/pages/free-flowing-rivers' target='_blank'>(Read more)</a>. This website provides a visualization for the status and pressures on the world’s river from Grill et al. (2019) <a href='https://www.nature.com/articles/s41586-019-1111-9' target='_blank'> Mapping the world's free-flowing rivers</a>.
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='https://charlottegiseleweil.github.io/webviz_natcap/index.html' target='_blank'><img src="images/tana.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Multi-Objective Optimization Viewer</b></p>
+        <p><a href='https://charlottegiseleweil.github.io/webviz_natcap/intro.html' target='_blank'>The Upper-Tana Nairobi Water Fund</a> has a triple objective: to maximize water yield, minimize sediment export and soil erosion. This dahsboard helps understanding the trade-offs - a key to a optimize between competing objectives.
+        <span class="light"> By Charlotte Weil </span>
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Random Examples Row -->
+<div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='https://www.nationalgeographic.com/animals/2019/07/endangered-species-in-every-US-state-interactive-map/?cmpid=org=ngp::mc=crm-email::src=ngp::cmp=editorial::add=Animals_20190822&rid=97971DB20B122974B60A8686F6A0BDC0' target='_blank'><img src="images/natgeo_species.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>US Endangered Species Map</b></p>
+        <p>This National Geographic’s  interactive map highlights lesser-known endangered species across America.
+        <span class="light"> By Soren Walljasper </span>
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='http://www.pik-potsdam.de/~bodirsky/demand_scenarios/#page1' target='_blank'><img src="images/fooddemand.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Future Food Demand</b></p>
+        <p>Interactive Infogrpahics of global future food demand scenarios for the 21st century.
+        <span class="light"> By Kai Schefferski  </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container filterDiv webmaps">
+      <a href='http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2080-2099&tab=global&grcp=rcp85' target='_blank'><img src="images/climateimpactlab.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Climate Impact Map</b></p>
+        <p>* This map shows historical and projected temperature data.
+        <span class="light"> By Climate Impact Lab   </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- VESL Examples Row -->
+<div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='https://vesl.jpl.nasa.gov/ice-sheets/greenland-ice-retreat/' target='_blank'><img src="images/nasa_c.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Coastline Retreat From Sea-Rise</b></p>
+        <p>This interactive simulation shows the retreat of the Southwestern portion of the Greenland ice sheet over the last 12,000 years.
+        <span class="light"> By NASA Virtual Earth System Laboratory </span>
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='https://vesl.jpl.nasa.gov/sea-level/slr-eustatic/' target='_blank'><img src="images/nasa_i.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Greenland Ice Retreat Simulation</b></p>
+        <p>This interactive simulation ties grounded ice loss in Antarctica and Greenland to coastline retreat in Florida, the Gulf Coast, and California. 
+        <span class="light"> By NASA Virtual Earth System Laboratory  </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container filterDiv webmaps">
+      <a href='https://vesl.jpl.nasa.gov/' target='_blank'><img src="images/nasa.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>NASA VESL Gallery</b></p>
+        <p>More simulations related to glaciers, ice sheets, sea level, and solid earth.
+        <span class="light"> By NASA Virtual Earth System Laboratory  </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fifth Examples Row -->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='http://cons.scienceontheweb.net/belize/' target='_blank'><img src="images/belize1.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Belize Coastal Mgm't Portal</b></p>
+        <p>This map portal displays Belize's Integrated Coastal Management Plan.
+        <span class="light"> By Gregg Verutes </span>
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='https://app.beescape.org/' target='_blank'><img src="images/beescape.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Beescape</b></p>
+        <p>Get a bee's eye view of your landscape - This tool will help you understand how the landscape surrounding managed honey bee hives placed in an apiary, garden, or farm stacks up in terms of floral resources bees can find, the insecticides they encounter, and for wild bees, the nesting sites that are available. 
+        <span class="light"> Work led by Eric Lonsdorf.  </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container filterDiv webmaps">
+      <a href='http://www.pollinationmapper.org/app-pollinationmapper/' target='_blank'><img src="images/poll.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Pollination Mapper (Beta)</b></p>
+        <p>This interactive decision support tool to help inform grower’s choice of pollination strategies for their specialty crop farms in the US. It allows you to select your farm, try different approaches to pollination, compare and save the results. Set up a user profile to return to your session in the future and try new strategies. 
+        <span class="light"> By the Integrated Crop Pollination Project. Work led by Eric Lonsdorf, Taylor Ricketts, with software developers at Azavea.  </span>
+        </p>
+      </div>
+    </div>
+  </div>
+<br>
+ 
+
+  <!-- Sixth Examples Row -->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='http://msp.naturalcapitalproject.org/msp_concierge_master/' target='_blank'><img src="images/mp.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Marine Planning Concierge</b></p>
+        <p>The NatCap Marine Planning Concierge is designed to make it easier to learn about, get inspired by, and implement marine spatial planning. It builds upon coastal InVEST models and other NatCap's marine tools.
+        <span class="light"> By Gregg Verutes </span>
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='http://marineapps.naturalcapitalproject.org/bahamas/' target='_blank'><img src="images/baha.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Bahamas Hazard Viewer</b></p>
+        <p>This interactive dashboard displays InVEST Costal Vulnerability model results, in the Bahamas. <a href='https://naturalcapitalproject.stanford.edu/training-program/' target-='_blank'>Learn more!</a>
+        <span class="light"> By Gregg Verutes </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container filterDiv webmaps">
+      <a href='https://coastalresilience.org/tools/apps/#apps_id%7Cassess-risk%7C1' target='_blank'><img src="images/tnc.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>TNC's Coastal Resilience Apps</b></p>
+        <p>The Nature Conservancy has developped its own suite of visualization apps specific to case studies around the world.</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Seventh Examples Row -->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv art">
+      <a href='http://www.awavenavr.com/' target='_blank'><img src="images/vra.jpg" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Virtual Reality Journey in the Amazon</b></p>
+        <p>Awavena tells a story of nature and its cultural and spiritual benefits featuring the Yawanawa people who have protected 200,000 hectares of rainforest from mining and destruction.  This immersive experience integrates the role that plants play in the identity and cultural heritage of indigenous people. The data displayed in the movie was collected and modeled from Lidar and 3D imaging technologies.
+        <span class="light"> By Lynette Wallworth in collaboration with the Yawanawa people</span>
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='https://formisfunction.io/' target='_blank'><img src="images/stephen.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Intuitively sensed Natural Capital</b></p>
+        <p>Californian wildfires in 2018 were the deadliest and most destructive on record, with a total of 8,527 fires burning an area of 1,893,913 acres (766,439 ha). Digital artist Stephen Standridge created this piece from the forest, right the fires erupted, sensing the dryness...
+          <span class="light"> By Stephen Standridge </span></p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container">
+      <a href='https://store.steampowered.com/app/409020/The_Stanford_Ocean_Acidification_Experience/' target='_blank'><img src="images/vro.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Ocean Acification in Virtual Reality</b></p>
+        <p>Using latest Virtual Reality technology, Stanford researchers have produced a virtual underwater ecosystem to allow you to observe firsthand what coral reefs are expected to look like by the end of the century if we do not curb our CO2 emissions.
+        <span class="light"> By Anna Muller & team </span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Eight Examples Row -->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv natcaps webmaps">
+      <a href='https://phawthorne.github.io/mc-vis/' target='_blank'><img src="images/peter.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Trade-Offs Curves Dashboard</b></p>
+        <p>This simple dashboard displays trade-offs curves and the corresponding land use management maps, for 2 specific landscapes optimized for 3 specific ecosystem services. 
+        <span class="light"> By Peter Hawthorne </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom filterDiv">
+      <a href='http://watershedtool.org/' target='_blank'><img src="images/wstool.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Watershed Conservation Screening Tool</b></p>
+        <p>This simple tool will quickly measure the potential for five common watershed conservation activities to reduce sediment and nutrient pollution in a source watershed.
+        </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom filterDiv art webmaps">
+      <a href='https://arcg.is/0XGrDO' target='_blank'><img src="images/nomadic.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Making Pastoralists Count</b></p>
+        <p>This beautiful ArcGIS-based storymap presents Geospatial methods for the health surveillance of nomadic populations, with a very rich multi-media approach.
+        <span class="light"> By Stace Maples & Hannah Binzen Wild</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- 9th Examples Row -->
+<div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+      <a href='https://maps.coastalresilience.org/gulfmex/' target='_blank'><img src="images/coastalTNC.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Coastal Defense App </b></p>
+        <p>One of TNC's Coastal Resilience apps, the Coastal Defense app examines how coastal habitats such as oyster reefs, coral reefs, tidal marshes, mangroves, beach dunes, and seagrass help protect coastal areas by reducing wave energy hitting the shore. This app is being used in <a href='https://maps.coastalresilience.org/seflorida/' target='_blank'>Southeast Florida</a> and <a href='https://maps.coastalresilience.org/gulfmex/' target='_blank'>Gulf of Mexico</a>.
+        <span class="light"> By The Nature Conservancy </span>
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href='raster_weights_dashboard.html' target='_blank'><img src="images/justin.png" alt="Image" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Spatial Priotization Viewer in Python</b></p>
+        <p>This tools allows users to see how they could combine multiple ecosystem services into a single indicator via specifying different "weights" for each ecosystem service. It also illustrates a working example that implements how to do raster math on the client side within an html/js file. <a href='http://pebat.umn.edu' target='_blank'>More information</a>
+        <span class="light"> By Justin Johnson</span>
+      </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/boo.png" alt="Image" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Your favorite visualization</b></p>
+        <p> Email us @ <a href='mailto:chweil@stanford.edu'>chweil@stanford.edu</a> to have your project featured!
+        <span class="light"> By you</span>
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+<!--
+MORE
+
+California Coastal Climate Adapatation
+http://marineapps.naturalcapitalproject.org/california/index.html?utm_source=Marine+Policy+Paper+Announcement+List&utm_campaign=cce18d832a-MARINE+POLICY+PAPER+ANNOUNCEMENT&utm_medium=email&utm_term=0_6f75e7e693-cce18d832a-445018937&mc_cid=cce18d832a&mc_eid=358c54f5fa
+
+NATURE-BASED STRATEGIES FOR ADAPTATION PLANNING
+Rising sea levels, population growth along coastlines and increasing hazards associated with storms threaten California's coastal communities.
+
+Our team engaged coastal planners, managers, and the public to codevelop a multiscaled decision-support tool that highlights where nature-based and other suitable coastal zone strategies can protect at-risk coastal populations and infrustructure.  
+
+Read more:
+https://oceansolutions.stanford.edu/news-stories/new-tool-merges-climate-science-law-and-policy-protect-california-coastline?utm_source=Marine+Policy+Paper+Announcement+List&utm_campaign=cce18d832a-MARINE+POLICY+PAPER+ANNOUNCEMENT&utm_medium=email&utm_term=0_6f75e7e693-cce18d832a-445018937&mc_cid=cce18d832a&mc_eid=358c54f5fa
+
+By Gregg + Center of Oceans Solutions
+-->
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>-->
+
+
+
+
+
+
+<hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr>
+
+
+
+
+
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="toolbox">
+    <h1><b>Toolbox for Natural Capital Data Visualization</b></h1>
+    <p>This guidance document aims to support ES analysts striving to effectively communicate natural capital information, specifically to synthesize and visualize complex ecosystem services model outputs. It proposes approaches to ES visualizations and summaries in the form of a toolbox tailored to the specific needs of ES analysts, supported by fundamental and applied data visualization guidelines.</p>
+    <p>Effective data visualization are highly context-specific, thus there is no "one-size-fits-all"; the toolbox suggests a variety a display strategies and examples. Remember to tailor to the targeted audience and their level of expertise and familiarity with the context, the goal of the display, the time and type of media.
+
+    For a quick answer to a specific display need, table 3.5.2 summarizes the relevant options for the main display tasks</p>
+        <hr>
+        <p>
+      
+      <button class="w3-button w3-third w3-dark-grey w3-padding-large w3-margin"><a href='http://www.charlotteweil.fr/masterthesis/docs/toolbox.html' target='_blank'>
+        <i class="fa fa-file w3-margin-right"></i>Read online</a>
+      </button>
+      <button class="w3-button w3-third w3-dark-grey w3-padding-large w3-margin"><a href='http://www.charlotteweil.fr/masterthesis/docs/toolbox.pdf' target='_blank'>
+        <i class="fa fa-download w3-margin-right"></i>Download PDF</a>
+      </button>
+    </p>
+    <hr>
+
+<hr><hr><hr><hr><hr><hr>
+
+
+    <h2 id='contact'> Contact</h2>
+    <div class="w3-quarter">
+          <h4>Charlotte Weil 
+                <a class="fa fa-envelope w3-xlarge" href="mailto:weilcharlotte@gmail.com"></a>
+              </h4>
+          <p>Researcher Data Scientist,
+          The Natural Capital Project at Stanford University</p>
+
+
+
+          <!-- Contacts: 
+            Justin
+            jj.png
+            Ask me about
+            - Bokeh (Python Interactive Viz), 
+            - Hosting viz on AWS
+            - Visualizing rasters -->
+        </div>
+
+
+<hr><hr><hr><hr><hr><hr><hr><hr>
+<hr><hr><hr><hr><hr><hr><hr><hr>
+
+  
+  <div class="w3-black w3-center w3-padding-24">Visit <a href="https://naturalcapitalproject.stanford.edu/" title="footer" target="_blank" class="w3-hover-opacity">naturalcapitalproject.stanford.edu</a></div>
+
+<!-- End page content -->
+</div>
+
+<script src="js/w3main.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>

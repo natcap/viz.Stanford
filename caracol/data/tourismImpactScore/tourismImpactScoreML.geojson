@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "tourismImpactScoreML",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Natural Arch", "Ownership": "Public", "Env_Impact": 7.0, "Com_Impact": 2.0, "Composite": 14.0 }, "geometry": { "type": "Point", "coordinates": [ -89.0488662, 16.6189467 ] } }
+]
+}

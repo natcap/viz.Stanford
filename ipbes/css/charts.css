@@ -1,0 +1,213 @@
+/*Styling for the distribution chart of impacted people*/
+
+#distribution-chart {
+  color: white;
+  position: absolute;
+  bottom: 2.5vh;
+  right: 18rem;
+  font-size: 0.7rem;
+  visibility: hidden;
+  z-index: 100;
+  background: rgba(61, 61, 61, 0.212);
+  padding: 0;
+  padding-left: 1rem;
+  height: 18rem;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.x path {
+  display: none;
+}
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+#distri-chart-head {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color:var(--primary_c)
+}
+
+#distri-chart-choosen-scenario {
+  display: inline;
+}
+
+#distri-x-axis {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 300;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+#distri-y-axis {
+  position: relative;
+  margin: 0;
+  right: 7.5rem;
+  top: -10rem;
+  font-weight: 300;
+  font-size: 1rem;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  color: white;
+}
+
+#compare-scenarios {
+  height: fit-content;
+  /* position: absolute; */
+  max-width: 17rem;
+  padding: 0;
+  /* margin: auto; */
+  margin: 0;
+  /* visibility: hidden; */
+  top: 1.5vh;
+  bottom: 1.5vh;
+  right: 1.5vh;
+  flex-grow: 1;
+}
+
+#compare-scenario-header {
+  margin-bottom: 0;
+  font-size: 3vh;
+  font-weight: 300;
+  text-align: center;
+  color: var(--light_blue);
+}
+
+/*Scenario chart*/
+
+#scenario-chart {
+  font-size: 0.7rem;
+  color: white;
+  margin: auto;
+  margin-top: 1.5vh;
+  background: rgba(61, 61, 61, 0.212);
+}
+
+.scenario-chart-head {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color:var(--primary_c)
+}
+
+.bar.positive {
+  fill: rgba(216, 28, 28, 0.733);
+}
+
+.bar.negative {
+  fill: rgb(56, 179, 58);
+}
+
+.bar.greenGrowth {
+  fill: rgb(42, 129, 43);
+}
+
+.bar.regionalRivalry {
+  fill: rgb(184, 152, 13);
+}
+
+.bar.fossilFuels {
+  fill: rgb(112, 12, 151);
+}
+
+.labelText {
+  fill: white;
+  text-anchor: middle;
+}
+
+/*Population chart*/
+
+#population-chart {
+  color: white;
+  width: 16rem;
+  text-align: right;
+  margin: auto;
+  font-size: 0.7rem;
+}
+
+.population-value-box {
+  width: 7rem;
+  float: left;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 0.2rem;
+  padding: 0.8rem 0.4rem 0.4rem 0;
+}
+
+#population-chart-header {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding-right: 0.6rem;
+  text-align: center;
+}
+
+.population-chart-value {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.population-chart-scenario {
+  margin: 0;
+  font-size: 0.7rem;
+  color: lightgray;
+}
+
+.population-chart-unit {
+  margin: 0;
+  font-size: 0.6rem;
+  color: grey;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+  color: white;
+  pointer-events: none;
+}
+
+.tooltip_positive {
+  color: red;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.tooltip_negative {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.tooltip_scenario {
+  padding: 0;
+  margin: 0;
+}

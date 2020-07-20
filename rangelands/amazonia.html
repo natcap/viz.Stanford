@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!-- To include Spanish accents -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+
+<html>
+<head>
+      <!-- Needed for Navbar-->
+    <link rel="stylesheet" href="lib/css/tachyons.min.css" />
+    <link rel="stylesheet" href="css/dropdown.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/overlay.css" />
+    <script src="lib/js/includehtml.js"></script>
+    <!-- About Overlay -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div w3-include-html="about.html"></div>
+      </div>
+    </div>
+    <!-- End Of About Overlay -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+    <!-- End Of: Needed for Navbar-->
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styleMAP.css"/>
+
+  <!-- w3 style thingz -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="lib/css/tachyons.min.css" />
+  <link rel="stylesheet" href="css/dropdown.css" />
+
+
+</head>
+
+<body class="bg-black-80 white avenir fw5">
+  <nav id="navbar">
+      <div w3-include-html="html/navbar.html"></div>
+  </nav>
+
+
+
+<div class="w3-row w3-container w3-padding-large">
+  <h1> About the <em>Rangeland Production Model</em> (RPM)  </h1>
+  <p><i> Website in development. Please report bugs & suggestions to <a href='mailto:gkowal@stanford.edu'>Ginger Kowal</a>.</i></p>
+</div>
+
+<div class="w3-row">
+  <div class="w3-third w3-container">
+    <i class="material-icons icon">cloud_queue</i></h1>
+    <h2>Why?</h2>
+    <p>Informed management of livestock on rangelands underpins both the livelihoods of communities that depend on livestock for sustenance, and the conservation of wildlife that often depend on livestock-dominated landscapes for habitat. Understanding spatial patterns of rangeland productivity is therefore crucial to designing global development strategies that balance social and environmental benefits. </p>
+  </div>
+  <div class="w3-third w3-container">
+    <i class="material-icons icon">wifi_tethering</i></h1>
+    <h2>What?</h2>
+    <p>The Rangeland Production Model (RPM) uses gridded climate and soils data to quantify the
+productivity of a rangeland area to support ruminant
+livestock and wildlife populations. The model uses
+a remotely sensed vegetation index to estimate
+spatially disaggregated livestock densities at a
+monthly timestep by comparing modeled forage
+productivity in the absence of grazing to observed
+vegetation detected by the remotely sensed index.
+With this estimated livestock density and gridded
+climate inputs, the model predicts the combined
+impacts of livestock management and climate in
+controlling rangeland condition and livestock diet
+sufficiency.</p>
+  </div>
+  <div class="w3-third w3-container">
+    <i class="material-icons icon">list</i></h1>
+    <h2>How?</h2>
+    <img class="responsive-img" src="images/fig1.png" style="padding:5px;"><!--width="50px"-->
+    <p> <i>Overview of the main drivers and outputs of the Rangeland Production Model.</i></p>
+    <br>
+    <p>Read the complete model documentation <a href="documentation.html">here</a></p>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+
+<div class="w3-row w3-container">
+  <h2>Who? </h2>
+
+  <div class="w3-row w3-center">
+    <a href="https://naturalcapitalproject.stanford.edu/" targe="_blank"><img src="images/logos/natcap.png" style="height: 190px; padding:20px" alt="Logo NatCap"></a>
+    <a href="https://www.nsf.gov" targe="_blank"><img src="images/logos/nsf.png" style="height: 150px; padding:20px" alt="Logo "></a>
+    <a href="https://www.nasa.gov" targe="_blank"><img src="images/logos/nasa.png" style="height: 150px; padding:20px" alt="Logo "></a>
+    <br>
+    
+    <p>The Rangeland Production Model is developed by <a href="https://naturalcapitalproject.stanford.edu/" targe="_blank">The Naural Capital Project</a>, with funding from NSF and NASA.</p>
+
+    <div class="w3-quarter w3-center">
+        <a href="http://gingerkowal.com/" target="_blank"><img src="images/gingerkowal.png" alt="Pic" style="width:45%" class="w3-circle w3-hover-opacity"></a>
+        <h3>Ginger Kowal</h3>
+        <h3 class="icon-row w3-center">
+              <a class="inline-icon" href="mailto:gkowal@stanford.edu">
+                <i class="zmdi zmdi-email"></i></a>
+              <a class="inline-icon" href="https://scholar.google.com/citations?user=VMI17n4AAAAJ&hl=en" target="_blank"><i class="zmdi zmdi-library"></i></a>
+              <a class="inline-icon" href="https://github.com/vakowal" target="_blank"><i class="zmdi zmdi-github"></i></a>
+              <a class="inline-icon" href="https://twitter.com/kowalva?lang=en" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
+              <a class="inline-icon" href="https://www.linkedin.com/in/ginger-kowal-87047162" target="_blank"><i class="zmdi zmdi-linkedin"></i></a>
+           </h3>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <!-- Needed for Navbar-->
+  <script>includeHTML();</script>
+  <script src="js/overlay.js"></script>
+  
+</html>

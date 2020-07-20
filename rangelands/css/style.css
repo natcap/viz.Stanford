@@ -1,0 +1,20 @@
+html,
+body {
+  background-color:black;
+  color:#e6e6e6;
+  font-family:"Avenir";
+  font-weight: 5;
+  
+}
+
+em{
+  color:olivedrab;
+}
+
+.icon{
+  color:lightgrey;
+}
+
+.padding-XL {
+    padding: 2vh 6vh !important;
+}
