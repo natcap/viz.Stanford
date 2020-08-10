@@ -352,6 +352,13 @@
     popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
 	});
 
+	var communityWaterIcon = L.icon({
+    iconUrl: 'img/water.png',
+
+    iconSize:     [25, 25], // size of the icon
+    iconAnchor:   [10, 20], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+	});
 //Popup On Mouse Over
 
  function popUpOnMouseHover(feature, layer){ //isolate this function out
@@ -382,7 +389,7 @@ function openPhotoOnClick(feature, layer){
 //PopUp Content
 
 function popUpCulturalSites(feature, layer){
-	layer.bindPopup("<h6>Cultural Sites</h6>" + feature.properties.Attraction + "<br>" + "<h6>Click icon for more info</h6>");
+	layer.bindPopup("<h6>Cultural Sites</h6>" + feature.properties.Name + "<br>" + "<h6>Click icon for more info</h6>");
 	popUpOnMouseHover(feature, layer);
 	openPhotoOnClick(feature, layer);
 }
@@ -450,7 +457,7 @@ function popUpplc(feature, layer){
 }
 
 function popUpTourismScore(feature, layer){
-	layer.bindPopup(feature.properties.Name + "<h6>Tourism Impact Score</h6>" + "<br>" + "Environmental Impact: " + feature.properties.Env_Impact + "/10" + "<br>" + "Community Impact: " + feature.properties.Com_Impact + "/10" + "<br>" + "<h6>High values indicate that development at that site is likely to have a large impact</h6>");
+	layer.bindPopup(feature.properties.Name + "<h6>Impacts of Site Development for Tourism</h6>" + "<br>" + "Environmental Impact: " + feature.properties.Env_Impact + "/10" + "<br>" + "Community Impact: " + feature.properties.Com_Impact + "/10" + "<br>" + "<h6>High Environmental Impact Scores indicate that development at this site is likely to have a large impact on the surrounding environment, and high Community Impact Scores indicate that development here is likely to have negative impact on more downstream communities, sites, and businesses.</h6>");
 	popUpOnMouseHover(feature, layer);
 }
 
@@ -486,14 +493,17 @@ mymap.getPane('road').style.pointerEvents = 'none';
 
 	var water = L.layerGroup([waterWays, waterBody, majorRivers]);
 
+	var communityWater = L.geoJSON.ajax("data/communityWaterSites.geojson", {
+		pointToLayer: function (json, latlng, iconName) {return returnIconMarker(json, latlng, communityWaterIcon)}});
+
 	var hotelLodging = L.geoJSON.ajax("data/hotelResorts.geojson", {
 		pointToLayer: function (json, latlng, iconName) {return returnIconMarker(json, latlng, hotelLodgingIcon)}, 
 		onEachFeature:popUpHotelSites}).on('click', hotelLinkClick);
 
-	var tourismSites = L.geoJSON.ajax("data/tourismData/tourismSitesInfo.geojson", {
+	var tourismSites = L.geoJSON.ajax("data/tourismData/naturalSitesTourism.geojson", {
 		pointToLayer: function (json, latlng, iconName) {return returnIconMarker(json, latlng, tourismSitesIcon)}, 
 		onEachFeature: popUpNatureSites});
-	var culturalSites = L.geoJSON.ajax("data/tourismData/culturalSitesTourismInfo.geojson", {
+	var culturalSites = L.geoJSON.ajax("data/tourismData/culturalSitesTourism.geojson", {
 		pointToLayer: function (json, latlng, iconName) {return returnIconMarker(json, latlng, culturalSitesIcon)}, 
 		onEachFeature: popUpCulturalSites}); 
 
@@ -750,6 +760,13 @@ document.getElementById("CMCCCommunitiesCheckBox").onclick = function(){
 	document.getElementById("roadsCheckBox").onclick = function(){
 		layerLegendToggle(allRoads, roadsIL, roadsCheck);
 	}	
+
+
+	communityWaterIL = "communityWaterIL"
+	communityWaterCheck = "communityWaterCheckBox"
+	document.getElementById("communityWaterCheckBox").onclick = function(){
+		layerLegendToggle(communityWater, communityWaterIL, communityWaterCheck);
+	}
 
 
 	//Variable declaractions for functions below

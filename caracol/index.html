@@ -63,12 +63,13 @@
 	<br>
 	<!--Layer Checkboxes and Data Download Links-->
 	<div><a class="dataLinkClose" href="https://drive.google.com/drive/folders/1PQ_kx2aS3zHSLpcjkmxq6OLNitKgsQPN" id="allDataDownload" target="_blank"> Download all Data </a></div>
-	<div class="layerChecks" id="newRoad"><input type = "checkbox" id="newRoadCheckBox"><b> Improved Caracol Road  </b><a class="dataLinkClose" href="https://drive.google.com/file/d/1Oz184Vvsxv_2-pHPiof6dIvRW7Vn5_1s/view" target="_blank">  download</a></div> 
+	<div class="layerChecks" id="newRoad"><input type = "checkbox" id="newRoadCheckBox"> Improved Caracol Road <a class="dataLinkClose" href="https://drive.google.com/file/d/1Oz184Vvsxv_2-pHPiof6dIvRW7Vn5_1s/view" target="_blank">  download</a></div> 
 	<div class="layerChecks" id="CMCCCommunities"><input type = "checkbox" id="CMCCCommunitiesCheckBox"> CMCC Communities <a class="dataLinkClose" href="https://drive.google.com/file/d/1zF_AgOAO6xVEH-0tQYDyy7sh5h5fcMrP/view?usp=sharing" target="_blank"> download</a></div>
 	<div class="layerChecks" id="watersheds"><input type = "checkbox" id="watershedsCheckBox"> Waterways <a class="dataLinkClose" href="https://drive.google.com/file/d/1rtmFK1iMqntzRj3pXvpggB8Gpg5jIs_M/view?usp=sharing" target="_blank"> download</a></div>
 	<div class="layerChecks" id="CMCCAreas"><input type = "checkbox" id="CMCCAreasCheckBox"> Protected Areas <a class="dataLinkClose" href="https://drive.google.com/file/d/1gVqUt-YqC8xwK4uVnaDOTh7FKT4nedod/view?usp=sharing" target="_blank"> download</a></div>
 	<div class="layerChecks" id="Roads"><input type = "checkbox" id="roadsCheckBox"> Roads <a class="dataLinkClose" href="https://drive.google.com/file/d/1Qc4mFB_7cXng83i8Oya3-wc7fGaAJ6OD/view?usp=sharing" target="_blank"> download</a></div>
-	<div class="layerChecks" id="tourismArchKey"><input type = "checkbox" id="tourismArchKeyCheckBox"> Natural & Cultural Sites <a class="dataLinkClose" href="https://docs.google.com/document/d/19cuUkXI-JI_9XogK8MqClx1oF2X5yANsAfa13NnzmHo/edit" target="_blank"> download</a></div>
+	<div class="layerChecks" id="tourismArchKey"><input type = "checkbox" id="tourismArchKeyCheckBox"> Natural & Cultural Sites <a class="dataLinkClose" href="https://drive.google.com/file/d/1yxUVKX0yi5IS0tgyWGXfxGmoGBmZFKhv/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="communityWater"><input type = "checkbox" id="communityWaterCheckBox"> Community Water Withdrawal <a class="dataLinkClose" href="https://drive.google.com/file/d/1lyT1YpNq6kqiWqIYb8bu87P4dkuhm7gP/view?usp=sharing" target="_blank"> download</a></div>
 
 	<hr>
 	<!--Economic Activities -->
@@ -86,8 +87,8 @@
 	<br>
 	<!-- Future Development Impact-->
 	<div class="layerChecks layerTitle" id="allMining"> Future Development </div>
-	<div class="layerChecks" id="tourismExpanded"><input type = "checkbox" id="tourismExpandedCheckBox"> Tourism Impact Scores <a class="dataLinkClose" href="https://drive.google.com/file/d/1G6t3Jt0hi-ZMwGzWAY3HliodMUMw5klO/view?usp=sharing" target="_blank"> download</a></div>
-	<div class="layerChecks" id="impactHeatmap"><input type = "checkbox" id="heatmapCheckBox"> <b>Impact: Benefits Impaired </b><a class="dataLinkClose" href="https://drive.google.com/file/d/1BHDgK7LPF0uRbf_PultMoiwA9fuQyA-f/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="tourismExpanded"><input type = "checkbox" id="tourismExpandedCheckBox"> Impacts of Site Development <a class="dataLinkClose" href="https://drive.google.com/file/d/1G6t3Jt0hi-ZMwGzWAY3HliodMUMw5klO/view?usp=sharing" target="_blank"> download</a></div>
+	<div class="layerChecks" id="impactHeatmap"><input type = "checkbox" id="heatmapCheckBox"> Impact: Benefits Impaired <a class="dataLinkClose" href="https://drive.google.com/file/d/1BHDgK7LPF0uRbf_PultMoiwA9fuQyA-f/view?usp=sharing" target="_blank"> download</a></div>
 	<br>
 	<!-- Energy -->
 	<div class="layerChecks layerTitle" id="allEnergySites"><!--<input type = "checkbox" id="allEnergySitesCheckBox">--> Energy </div>
@@ -131,8 +132,10 @@
 
 
 <!-- LULC Panel  -->
-<div class= "LULCclose panels" id= "LULCPanel3"> <button type= "button" class= "exitButton" onclick="LULCPanelClose()">X</button><h3>Scenario Comparisons</h3>
-<button type= "button" class="button" id= "downloadFigureButton" onclick="downladFigure()"> Enlarge</button>
+<div class= "LULCclose panels" id= "LULCPanel3"> <button type= "button" class= "exitButton" onclick="LULCPanelClose()">X</button><h3>Scenario Comparisons </h3><button type= "button" class="button" id= "downloadFigureButton" onclick="downladFigure()"> <img src="img/expand.png" width = "30"></button> <a href="scripts/staticFigureBelize.png" download="staticFigure">
+  <button type= "button" class="button"><img src="img/download.png" alt="W3Schools" width="30"></button>
+</a>
+
 <br>
 	<img src="scripts/staticFigureBelize.png" id= "staticFigure" width= 100%>
 <br>

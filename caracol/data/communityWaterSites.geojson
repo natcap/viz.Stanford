@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "communityWaterSites",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "type": "water source", "descript": "water source for San Antonio on Privassion Creek", "source": "digitized from workshop map" }, "geometry": { "type": "Point", "coordinates": [ -88.99785, 17.03418, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "water source", "descript": "water source for El Progreso, Upper & Lower Barton Creek and Georgeville on Barton Creek", "source": "digitized from workshop map" }, "geometry": { "type": "Point", "coordinates": [ -88.87535, 17.07006, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "water source", "descript": "water source for Cristo Rey on Macal River", "source": "digitized from workshop map" }, "geometry": { "type": "Point", "coordinates": [ -89.06305, 17.12339, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "hydro station", "descript": "estimated water source for Benque Viejo, at an existing hydrology station", "source": "estimated from gauging station" }, "geometry": { "type": "Point", "coordinates": [ -89.14272, 17.07469, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "hydro station", "descript": "estimated water source for San Ignacio, at an existing hydrology station", "source": "estimated from gauging station" }, "geometry": { "type": "Point", "coordinates": [ -89.06786, 17.15544, 0.0 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "type": "hydro station", "descript": "estimated water source for Cristo Rey, at an existing hydrology station", "source": "estimated from gauging station" }, "geometry": { "type": "Point", "coordinates": [ -89.05303, 17.13406, 0.0 ] } }
+]
+}
