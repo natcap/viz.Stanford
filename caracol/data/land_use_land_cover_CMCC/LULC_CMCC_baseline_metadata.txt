@@ -1,0 +1,15 @@
+
+Data for the CMCC Sustainable Development Plan
+----------------------------------------------
+
+File name: LULC_CMCC_baseline.shp
+
+Description: Land use/land cover map for the CMCC area
+
+Source: Based on Meerman, J. and Clabaugh, J. 2017. Biodiversity and Environmental Resource Data System of Belize. Online. http://www.biodiversity.bz for Belize, and the national land cover map for Guatemala 2010. In Belize, roads were added, provided by the Economic Development Council (EDC) 2013. More specific agriculture areas in Belize were also estimated using a variety of sources (see the Technical Appendix for this study for more information.) 
+
+Format: GeoTIFF raster
+
+Projection: NAD_1983_UTM_Zone_16N
+
+Also provided is an ArcMap layer file, which can be used to symbolize the map as is shown in the study reports.

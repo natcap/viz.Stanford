@@ -1,0 +1,13 @@
+
+Data for the CMCC Sustainable Development Plan
+----------------------------------------------
+
+File name: primary_roads_CMCC.shp
+
+Description: Primary roads (George Price Highway) in the CMCC area
+
+Source: GoB Economic Development Council (EDC), 2013
+
+Format: ESRI shapefile
+
+Projection: NAD_1983_UTM_Zone_16N

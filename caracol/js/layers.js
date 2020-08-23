@@ -5,6 +5,12 @@
 		"weight": 0.5,
 	};
 
+	var illegalAgStyle = {
+		"color": "#580000",
+		"fillOpacity":0.9,
+		"weight": 0.5,
+	};
+
 	var agExpansionStyle = {
 		"color": "#ff6b1a",
 		"fillOpacity":0.5,
@@ -30,6 +36,11 @@
 
 	var allRoadsStyle = {
 		"color": "#cd7f32",
+		"weight": 3,
+	};
+
+	var secondaryRoadsStyle = {
+		"color": "#cd7f32",
 		"weight": 1,
 	};
 
@@ -39,6 +50,12 @@
 
 	var CMCCGeographicZoneStyle = {
 		"color": "#FC4A1A",
+		"stroke-width": 2,
+		"fillOpacity":0,
+	}
+
+	var belmopanWatershedStyle = {
+		"color": "#0000ff",
 		"stroke-width": 2,
 		"fillOpacity":0,
 	}
@@ -251,6 +268,77 @@
 		"stroke": "#623200",
 		"weight": 0.5,
 	}
+
+		var agricultureLULCStyle = {
+		"color": "#fafad2",
+		"fillOpacity":1,
+		"stroke": "#fafad2",
+		"weight": 0.5,
+	}
+
+		var developedLULCStyle = {
+		"color": "#808080",
+		"fillOpacity":1,
+		"stroke": "#808080",
+		"weight": 0.5,
+	}
+
+		var forestBroadleafLULCStyle = {
+		"color": "#7a8b22",
+		"fillOpacity":1,
+		"stroke": "#7a8b22",
+		"weight": 0.5,
+	}
+
+		var forestPineLULCStyle = {
+		"color": "#008080",
+		"fillOpacity":1,
+		"stroke": "#008080",
+		"weight": 0.5,
+	}
+
+		var pastureLULCStyle = {
+		"color": "#eb9da7",
+		"fillOpacity":1,
+		"stroke": "#eb9da7",
+		"weight": 0.5,
+	}
+
+		var plantationLULCStyle = {
+		"color": "#9966cc",
+		"fillOpacity":1,
+		"stroke": "#9966cc",
+		"weight": 0.5,
+	}
+
+		var shrublandLULCStyle = {
+		"color": "#dde96b",
+		"fillOpacity":1,
+		"stroke": "#dde96b",
+		"weight": 0.5,
+	}
+
+		var roadLULCStyle = {
+		"color": "#000000",
+		"fillOpacity":1,
+		"stroke": "#000000",
+		"weight": 0.5,
+	}
+
+		var unvegetatedLULCStyle = {
+		"color": "#d3a146",
+		"fillOpacity":1,
+		"stroke": "#d3a146",
+		"weight": 0.5,
+	}
+
+		var waterLULCStyle = {
+		"color": "#8095ff",
+		"fillOpacity":1,
+		"stroke": "#8095ff",
+		"weight": 0.5,
+	}
+
 
 //Icon Declarations 
 	var hotelLodgingIcon = L.icon({
@@ -482,7 +570,10 @@ mymap.getPane('road').style.pointerEvents = 'none';
 //Layer Data Load In
 	var newRoad = new L.Shapefile("data/newRoad.zip", {style: roadStyle, pane: 'road'});
 
-	var agZones = new L.Shapefile("data/ag_defined_v1.zip", {style: currentAgStyle});
+	var legalAgZones = L.geoJSON.ajax("data/legalAgZones.geojson", {style: currentAgStyle});
+	var illegalAgZones = L.geoJSON.ajax("data/illegalAgZones.geojson", {style: illegalAgStyle});
+
+	var agZones = L.layerGroup([legalAgZones, illegalAgZones]);
 
 	var agExpansion = L.geoJSON.ajax("data/belizeExpansionLayers/agExpansionLayerClip.geojson", {style: agExpansionStyle});
 
@@ -517,6 +608,8 @@ mymap.getPane('road').style.pointerEvents = 'none';
 
 	var cmccGeographicZone = new L.geoJSON.ajax("data/protectedAreas.geojson", {style:CMCCGeographicZoneStyle});
 
+	var belmopanWatershed = new L.geoJSON.ajax("data/belmopanWatershed.geojson", {style: belmopanWatershedStyle});
+
 	var bullRidgeCompartmentBoundry = new L.geoJSON.ajax("data/timberConcessions/bullRidgeCompartmentBoundryGJ.geojson", {style: currentTimberStyle, onEachFeature: popUpBullRidge});
 	var CFR = new L.Shapefile("data/timberConcessions/CFR.zip", {style: currentTimberInactiveStyle});
 	var fdPortionMPR = new L.geoJSON.ajax("data/timberConcessions/fdPortionMPR.geojson", {style: currentTimberInactiveStyle, onEachFeature: popUpfd});
@@ -541,7 +634,8 @@ mymap.getPane('road').style.pointerEvents = 'none';
 		pointToLayer: function (json, latlng, iconName) {return returnIconMarker(json, latlng, damsIcon)}, 
 		onEachFeature:popUpDams})/*.on('click', damsLinkClick)*/;
 
-	var allRoads = new L.Shapefile("data/allRoads.zip", {style: allRoadsStyle});
+	var allRoads = new L.geoJSON.ajax("data/primaryRoads.geojson", {style: allRoadsStyle});
+	var secondaryRoads = new L.geoJSON.ajax("data/secondaryRoads.geojson", {style: secondaryRoadsStyle});
 
 	var currentMining = new L.geoJSON.ajax("data/miningRegionsGJ.geojson", {pointToLayer:returncurrentMiningMarker});
 	var miningSingle = L.marker([16.51408574, -89.12677427], {icon: currentMiningIcon}).bindTooltip("Click icon for more information").on('click', miningMarkerClick);
@@ -597,6 +691,18 @@ mymap.getPane('road').style.pointerEvents = 'none';
 
 	var carbonAllClasses = L.layerGroup([carbonClass1, carbonClass2, carbonClass3]);
 
+	var agricultureLULC = L.geoJSON.ajax('data/agricultureLULC.geojson', {style: agricultureLULCStyle});
+	var developedLULC = L.geoJSON.ajax('data/developedLULC.geojson', {style: developedLULCStyle});
+	var forestBroadleafLULC = L.geoJSON.ajax('data/forestBroadleafLULC.geojson', {style: forestBroadleafLULCStyle});
+	var forestPineLULC = L.geoJSON.ajax('data/forestPineLULC.geojson', {style: forestPineLULCStyle});
+	var pastureLULC = L.geoJSON.ajax('data/pastureLULC.geojson', {style: pastureLULCStyle});
+	var plantationLULC = L.geoJSON.ajax('data/plantationLULC.geojson', {style: plantationLULCStyle});
+	var roadsLULC = L.geoJSON.ajax('data/roadsLULC.geojson', {style: roadLULCStyle});
+	var shrublandLULC = L.geoJSON.ajax('data/shrublandLULC.geojson', {style: shrublandLULCStyle});
+	var unvegetatedLULC = L.geoJSON.ajax('data/unvegetatedLULC.geojson', {style: unvegetatedLULCStyle});
+	var waterLULC = L.geoJSON.ajax('data/waterLULC.geojson', {style: waterLULCStyle});
+
+	var lulcAllClasses = L.layerGroup([agricultureLULC, developedLULC, forestBroadleafLULC, forestPineLULC, pastureLULC, plantationLULC, roadsLULC, shrublandLULC, unvegetatedLULC, waterLULC]);
 
 
 //Layer Toggling
@@ -728,6 +834,11 @@ document.getElementById("CMCCCommunitiesCheckBox").onclick = function(){
 		layerLegendToggle(heatmapAllClasses, heatmapIL, heatmapCheck);
 	}
 
+	belmopanWatershedIL = "belmopanWatershedIL"
+	belmopanWatershedCheck = "belmopanWatershedCheckBox"
+	document.getElementById("belmopanWatershedCheckBox").onclick = function(){
+		layerLegendToggle(belmopanWatershed, belmopanWatershedIL, belmopanWatershedCheck);
+	}
 
 	currentTimberIL = "currentTimberIL"
 	timberCheck = "timberCheckBox"
@@ -755,12 +866,23 @@ document.getElementById("CMCCCommunitiesCheckBox").onclick = function(){
 		layerLegendToggle(cmccGeographicZone, CMCCAreasIL, CMCCAreasCheck);
 	}	
 
+	lulcMapIL = "lulcMapIL"
+	lulcMapCheck = "lulcMapCheckBox"
+	document.getElementById("lulcMapCheckBox").onclick = function(){
+		layerLegendToggle(lulcAllClasses, lulcMapIL, lulcMapCheck);
+	}	
+
 	roadsIL = "roadsIL"
 	roadsCheck = "roadsCheckBox"
 	document.getElementById("roadsCheckBox").onclick = function(){
 		layerLegendToggle(allRoads, roadsIL, roadsCheck);
 	}	
 
+	secondaryRoadsIL = "secondaryRoadsIL"
+	secondaryRoadsCheck = "secondaryRoadsCheckBox"
+	document.getElementById("secondaryRoadsCheckBox").onclick = function(){
+		layerLegendToggle(secondaryRoads, secondaryRoadsIL, secondaryRoadsCheck);
+	}
 
 	communityWaterIL = "communityWaterIL"
 	communityWaterCheck = "communityWaterCheckBox"
