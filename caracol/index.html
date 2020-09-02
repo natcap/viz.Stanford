@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149667597-4"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-149667597-4');
+		</script>	
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<title>SDP CMCC Belize</title>
@@ -52,7 +61,7 @@
 	<!-- Buttons -->
 	<div id='buttonsRow'>
 		<button type= "button" class="button closeBorder" id="LULCScenarioButton">
-			Scenarios</button>
+			SDP Activities</button>
 		<button type= "button" class="button closeBorder" style="display: inline;" id="dataDownloadButton">
 			Data Download</button>
 		<button type= "button" class="button closeBorder" style="display: inline;" id="aboutPanelButton">
@@ -134,12 +143,27 @@
 
 
 
+
+
 <!-- LULC Panel  -->
-<div class= "LULCclose panels" id= "LULCPanel3"> <button type= "button" class= "exitButton" onclick="LULCPanelClose()">X</button><h3>Scenario Comparisons </h3><button type= "button" class="button" id= "downloadFigureButton" onclick="downladFigure()"> <img src="img/expand.png" width = "30"></button> <a href="scripts/staticFigureBelize.png" download="staticFigure">
-  <button type= "button" class="button"><img src="img/download.png" alt="W3Schools" width="30"></button>
-</a>
+<div class= "LULCclose panels" id= "LULCPanel3"> <button type= "button" class= "exitButton" onclick="LULCPanelClose()">X</button>
+
+	<h2>Sustainable Development Plan Activities</h2>
+
+	<img src="img/FinalScenario.png" id= "staticFigure" width= 100%>
+
+	<br><br><br>
+
+
+
+	<h3>Scenario Comparisons </h3>
+	<button type= "button" class="button" id= "downloadFigureButton" onclick="downladFigure()"> <img src="img/expand.png" width = "30">
+	</button> 
+	<a href="scripts/staticFigureBelize.png" download="staticFigure"><button type= "button" class="button"><img src="img/download.png" alt="Donwload" width="30"></button></a>
 
 <br>
+
+
 	<img src="scripts/staticFigureBelize.png" id= "staticFigure" width= 100%>
 <br>
 <button type= "button" class="close" id= "expandFigureButton" onclick="expandFigureOpen()">Click to Expand Figure</button>
@@ -162,11 +186,24 @@
 	<img src="img/placeholdersmall.png" height="100" width="100">
 </div>
 
+
+
+
+
+
+
+
+
+
 <!--About panel on top of scenarios, also easy to x out of it TO DO !!!-->
 <div class= "close panels" id=AboutPanel>
 <div w3-include-html="html/about.html"></div>
 
 </div>
+
+
+
+
 
 <!-- Intro Tutorial -->
 
@@ -175,20 +212,27 @@
 <div class="panels introPanel" id=introPanel1>
 	<h2>Welcome!</h2>
 	This viewer shows different scenarios for development in the CMCC Region in Belize. 
+
 	<button type= "button" class="button" style="display: inline;" id="skipTutorialButton">Skip Tutorial</button>
-	<h3>Mapping Elements</h3>
-	To visualize the information we have an interactive map where you can turn layers on and off to explore different factors. To the right of the page you have the main selection panel where you have buttons that allow for greater interaction with the map, as well as checkboxes that can be clicked to turn layers on and off. Make sure to click and hover over icons and layers for additional information!
+
+	<h3>Map controls</h3>
+	Turn layers on and off to explore the data. Hover and click on the map layers for additional information!
 	<br>
 	<br>
-	An interactive legend on the bottom left corner of the map will respond to the layers you are displaying on the map. 
+	Legend will update in the bottom left corner. 
 	<br>
-	<button type= "button" class="button" style="display: inline;" id="prev1Button">Previous</button>
+	<!--<button type= "button" class="button" style="display: inline;" id="prev1Button">Previous</button>-->
 	<button type= "button" class="button" style="display: inline;" id="next1Button">Next</button>
+
+	<!-- Google Form for detailed Analytics -->
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpLkfgLFXc59aiZpRqQizh2cQpMd_e04w98nkMNocZYWK_Ow/viewform?embedded=true" width="640" height="531" frameborder="0" marginheight="0" marginwidth="0">Analytics loading…</iframe>
+	<!-- End form -->
+
 </div>
 
 <div class="close" id=introPanel2>
 	<h3>The Buttons</h3>
-	<button type= "button" class="button" style="display: inline;" id="close2TutorialButton">Finish Tutorial</button>
+	
 	<br>
 	<h4>Scenarios Button</h4>
 	This button shows a figure comparing different future scenarios for development in this region and the impact on ecosystem services.
@@ -197,8 +241,12 @@
 	<h4>About Button</h4>
 	This button will take you to a panel where you can find and download additional resources about this project, including reports, method descriptions, and links to additional information.
 	<br>
-	<button type= "button" class="button" style="display: inline;" id="prev2Button">Previous</button>
-	<button type= "button" class="button" style="display: inline;" id="next2Button">Start</button>
+	<button type= "button" class="button" style="display: inline;" id="close2TutorialButton">Start Exploring!</button>
+	<!--<button type= "button" class="button" style="display: inline;" id="prev2Button">Previous</button>
+	<button type= "button" class="button" style="display: inline;" id="next2Button">Start</button>-->
+
+
+
 </div>
 
 <div class="close" id=introPanel3>
@@ -209,6 +257,9 @@
 	<br>
 	<button type= "button" class="button" style="display: inline;" id="prev3Button">Previous</button>
 	<button type= "button" class="button" style="display: inline;" id="next3Button">Finish</button>
+
+	
+
 </div>
 <!--</div>-->
 
