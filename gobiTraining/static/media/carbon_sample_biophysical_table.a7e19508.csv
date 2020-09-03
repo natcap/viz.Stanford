@@ -1,0 +1,20 @@
+lucode,Is_tropical_forest,c_above,c_below,c_soil,c_dead,Description
+1,0,0.57,0,0,0,Glacier
+2,0,30,0,0,0,High mountain taiga
+3,0,29,0,0,0,Evergreen forest
+4,0,16,0,0,0,Mixed forest
+5,0,4,0,0,0,High mountain steppe
+6,0,2.4,0,0,0,Steppe
+7,0,0.52,0,0,0,Shrubland
+8,0,1.55,0,0,0,Dry steppe
+9,0,0.57,0,0,0,Desert steppe
+10,0,0.57,0,0,0,Semi desert
+11,0,0.57,0,0,0,Desert
+12,0,0.2,0,0,0,Barren land
+13,0,0.2,0,0,0,Sand
+14,0,16,0,0,0,Riparian meadow
+15,0,8.99,0,0,0,Cropland (fallow)
+16,0,8.99,0,0,0,Cropland (fallow)
+17,0,8.99,0,0,0,Cropland (fallow)
+18,0,0,0,0,0,Urban
+19,0,0,0,0,0,Lakes Rivers

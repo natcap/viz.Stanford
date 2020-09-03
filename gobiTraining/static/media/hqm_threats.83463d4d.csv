@@ -1,0 +1,8 @@
+THREAT,MAX_DIST,WEIGHT,DECAY,DESCRIP
+urban,5,0.01,exponential,
+railways,0.5,0.15,exponential,
+nightlight,1,0.01,exponential,
+mine,1.5,0.15,exponential,
+herders,1,0.01,exponential,
+all_road,0.5,0.1,exponential,
+all_ag,0.25,0.06,exponential,
