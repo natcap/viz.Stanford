@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gobiTraining/static/css/main.912ab2fb.chunk.css",
-    "main.js": "/gobiTraining/static/js/main.4b044217.chunk.js",
-    "main.js.map": "/gobiTraining/static/js/main.4b044217.chunk.js.map",
+    "main.js": "/gobiTraining/static/js/main.d936a3d9.chunk.js",
+    "main.js.map": "/gobiTraining/static/js/main.d936a3d9.chunk.js.map",
     "runtime-main.js": "/gobiTraining/static/js/runtime-main.5a336880.js",
     "runtime-main.js.map": "/gobiTraining/static/js/runtime-main.5a336880.js.map",
     "static/css/2.0b5659ac.chunk.css": "/gobiTraining/static/css/2.0b5659ac.chunk.css",
     "static/js/2.a0f94e78.chunk.js": "/gobiTraining/static/js/2.a0f94e78.chunk.js",
     "static/js/2.a0f94e78.chunk.js.map": "/gobiTraining/static/js/2.a0f94e78.chunk.js.map",
     "index.html": "/gobiTraining/index.html",
-    "precache-manifest.603e379d42f1656c49f4ceb5b0abe8a6.js": "/gobiTraining/precache-manifest.603e379d42f1656c49f4ceb5b0abe8a6.js",
+    "precache-manifest.7999888843ced24e80cbfaa4c04c1ecc.js": "/gobiTraining/precache-manifest.7999888843ced24e80cbfaa4c04c1ecc.js",
     "service-worker.js": "/gobiTraining/service-worker.js",
     "static/css/2.0b5659ac.chunk.css.map": "/gobiTraining/static/css/2.0b5659ac.chunk.css.map",
     "static/css/main.912ab2fb.chunk.css.map": "/gobiTraining/static/css/main.912ab2fb.chunk.css.map",
@@ -64,6 +64,6 @@
     "static/css/2.0b5659ac.chunk.css",
     "static/js/2.a0f94e78.chunk.js",
     "static/css/main.912ab2fb.chunk.css",
-    "static/js/main.4b044217.chunk.js"
+    "static/js/main.d936a3d9.chunk.js"
   ]
 }
