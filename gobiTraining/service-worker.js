@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gobiTraining/precache-manifest.7999888843ced24e80cbfaa4c04c1ecc.js"
+  "/gobiTraining/precache-manifest.47ad58d3e7f1a3c3e432b2b11d40d4dd.js"
 );
 
 self.addEventListener('message', (event) => {

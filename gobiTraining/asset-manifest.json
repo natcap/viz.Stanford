@@ -1,29 +1,21 @@
 {
   "files": {
     "main.css": "/gobiTraining/static/css/main.912ab2fb.chunk.css",
-    "main.js": "/gobiTraining/static/js/main.d936a3d9.chunk.js",
-    "main.js.map": "/gobiTraining/static/js/main.d936a3d9.chunk.js.map",
+    "main.js": "/gobiTraining/static/js/main.bc3b09a8.chunk.js",
+    "main.js.map": "/gobiTraining/static/js/main.bc3b09a8.chunk.js.map",
     "runtime-main.js": "/gobiTraining/static/js/runtime-main.5a336880.js",
     "runtime-main.js.map": "/gobiTraining/static/js/runtime-main.5a336880.js.map",
     "static/css/2.0b5659ac.chunk.css": "/gobiTraining/static/css/2.0b5659ac.chunk.css",
-    "static/js/2.a0f94e78.chunk.js": "/gobiTraining/static/js/2.a0f94e78.chunk.js",
-    "static/js/2.a0f94e78.chunk.js.map": "/gobiTraining/static/js/2.a0f94e78.chunk.js.map",
+    "static/js/2.9570cff5.chunk.js": "/gobiTraining/static/js/2.9570cff5.chunk.js",
+    "static/js/2.9570cff5.chunk.js.map": "/gobiTraining/static/js/2.9570cff5.chunk.js.map",
     "index.html": "/gobiTraining/index.html",
-    "precache-manifest.7999888843ced24e80cbfaa4c04c1ecc.js": "/gobiTraining/precache-manifest.7999888843ced24e80cbfaa4c04c1ecc.js",
+    "precache-manifest.47ad58d3e7f1a3c3e432b2b11d40d4dd.js": "/gobiTraining/precache-manifest.47ad58d3e7f1a3c3e432b2b11d40d4dd.js",
     "service-worker.js": "/gobiTraining/service-worker.js",
     "static/css/2.0b5659ac.chunk.css.map": "/gobiTraining/static/css/2.0b5659ac.chunk.css.map",
     "static/css/main.912ab2fb.chunk.css.map": "/gobiTraining/static/css/main.912ab2fb.chunk.css.map",
-    "static/js/2.a0f94e78.chunk.js.LICENSE.txt": "/gobiTraining/static/js/2.a0f94e78.chunk.js.LICENSE.txt",
+    "static/js/2.9570cff5.chunk.js.LICENSE.txt": "/gobiTraining/static/js/2.9570cff5.chunk.js.LICENSE.txt",
     "static/media/Watersheds.zip": "/gobiTraining/static/media/Watersheds.f8041b03.zip",
-    "static/media/accessibility.shx": "/gobiTraining/static/media/accessibility.0234e742.shx",
-    "static/media/accessibility.shp": "/gobiTraining/static/media/accessibility.21cfcd9e.shp",
-    "static/media/accessibility.prj": "/gobiTraining/static/media/accessibility.49086d1c.prj",
-    "static/media/accessibility.sbn": "/gobiTraining/static/media/accessibility.9172f36b.sbn",
-    "static/media/accessibility.dbf": "/gobiTraining/static/media/accessibility.a9bdfc55.dbf",
-    "static/media/accessibility.CPG": "/gobiTraining/static/media/accessibility.ae3b3df9.CPG",
     "static/media/accessibility.zip": "/gobiTraining/static/media/accessibility.b6dc3a8e.zip",
-    "static/media/accessibility.sbx": "/gobiTraining/static/media/accessibility.d37ebb7e.sbx",
-    "static/media/accessibility.shp.xml": "/gobiTraining/static/media/accessibility.shp.acf16ac2.xml",
     "static/media/af.png": "/gobiTraining/static/media/af.a831c716.png",
     "static/media/airplane.svg": "/gobiTraining/static/media/airplane.20f19f9e.svg",
     "static/media/all_ag_c.tif": "/gobiTraining/static/media/all_ag_c.3923a11b.tif",
@@ -62,8 +54,8 @@
   "entrypoints": [
     "static/js/runtime-main.5a336880.js",
     "static/css/2.0b5659ac.chunk.css",
-    "static/js/2.a0f94e78.chunk.js",
+    "static/js/2.9570cff5.chunk.js",
     "static/css/main.912ab2fb.chunk.css",
-    "static/js/main.d936a3d9.chunk.js"
+    "static/js/main.bc3b09a8.chunk.js"
   ]
 }
