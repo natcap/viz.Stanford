@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a2db4ff58606312c1629579afdd839a9",
+    "revision": "991f13da9272e5fbdda30629f1e502d4",
     "url": "/gobiTraining/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gobiTraining/static/css/2.0b5659ac.chunk.css"
   },
   {
-    "revision": "39a3abb0996976e66885",
+    "revision": "7d67735bf1981ad8afed",
     "url": "/gobiTraining/static/css/main.912ab2fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gobiTraining/static/js/2.9570cff5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "39a3abb0996976e66885",
-    "url": "/gobiTraining/static/js/main.bc3b09a8.chunk.js"
+    "revision": "7d67735bf1981ad8afed",
+    "url": "/gobiTraining/static/js/main.9a2c9402.chunk.js"
   },
   {
     "revision": "c16dad34e7c8488fb18c",
