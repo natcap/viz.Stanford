@@ -19,7 +19,7 @@ This file includes all html code, and is probably the only thing you'll need to 
 
 
 ## Adding a new visualization
-Locate where you'd like to add it. Each example is manually added, in rows of 3.
+In `index.html`, locate where you'd like to add it. Each example is manually added, in rows of 3.
 1. If there's room in the row, simply include a new div with the project: <br/>
     Change the link, the image, the name, info, it'll look like this:
 ```
@@ -45,7 +45,14 @@ Locate where you'd like to add it. Each example is manually added, in rows of 3.
    </div>
  ```
 
+## Git cheatsheet
+If you're working on a local (cloned) version of this repo, here are all the commands you'll need. Run them from command line, once you navigated to the directory (folder) where you cloned viz.Stanford.
 
-
+* `git pull` : before you start updating the website, "pull" (=grab from the online repo) the latest version, in case someone else made changes in the meantime
+* `python -m http.server` : run this to launch a local server, to see your changes in action before pushing them online. If it doesn't open automaticallly you'll need to go to localhost:8000 in a browser, once you've run this command. (It could - unlikely - be another port than 8000, it will output which port it uses in the command prompt).
+* `git status`: once you made changes, this command will print which files you updated. 
+* `git add *`: if you added new files (e.g an image in images/ to illustrate a new viewer in the gallery...), you need to add it. Replace * by the fille you want to add, or just use * to add everything.
+* `git commit -am "Commit message"` : "Commit" (=Save) your changes. Put a descriptive commit message in the ".
+* `git push` : "push" (=send your changes to the online repo). Aand that's it! The deployment is automated through github-pages, so in a few minutes you'll see your changes on the website.
 
  
