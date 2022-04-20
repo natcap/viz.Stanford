@@ -53,24 +53,34 @@ h2{
 
 }
 
-
 .info-button{
     top: 1rem;
     right: 1rem;
     z-index: 1000;
 }
 
-#info-overlay {
+.info-overlay {
     position: absolute;
-    bottom: 0.6rem;
     height: inherit;
     right: 19.6rem;
-    background-color: rgba(29, 29, 29, 0.925);
     overflow: hidden;
-    width: 0;
     transition: .5s ease;
     z-index: 1000;
 }
+#warning-overlay {
+    bottom: 15rem;
+    background-color: rgba(153, 6, 21,0.9);
+
+    margin: 1rem;
+}
+
+#info-overlay {
+    bottom: 0.6rem;
+    background-color: rgba(29, 29, 29, 0.925);
+    width: 0;
+
+}
+
 
 .legendTitle{
     margin: 0;
