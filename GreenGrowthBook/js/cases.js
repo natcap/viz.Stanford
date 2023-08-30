@@ -10,7 +10,7 @@ async function construct_cases(){
                     data_points_acres.push({x: parseInt(lineplot_data['yr'],10) ,y:lineplot_data['Total_Acres']/1000000})
                     data_points_money.push({x: parseInt(lineplot_data['yr'],10),y:lineplot_data['Total_Money']/1000000})
             });
-            choropleth_map_county = await shp("data/county/counties");
+            choropleth_map_county = await shp("./data/county/counties");
             case_6_1_fig2_data = await  d3.csv("data/acres_new.csv");
             choropleth_from_csv(case_6_1_fig2_data, ['2016'],[0, 0, 1, 5, 10],true,1);
 
@@ -120,7 +120,7 @@ async function construct_cases(){
     data_loader.cases['7-1'].create_data = async function(a){
         let case_7_1_files=["NHDArea"];
         for (var file in case_7_1_files){
-            let shape_file = await shp("data/7.1/"+case_7_1_files[file]);
+            let shape_file = await shp("./data/7.1/"+case_7_1_files[file]);
             case_7_1_fig1_layer.push(shape_file);
         }
         let colors=['#71c7ec', 'red', 'yellow', '#ffffff'];
@@ -387,7 +387,7 @@ async function construct_cases(){
     }
     //case 8-1
     data_loader.cases['8-1'].create_data = async function(a){
-        geojson = await shp("data/brazil/ucs_arpa_br_mma_snuc_2017_w");
+        geojson = await shp("./data/brazil/ucs_arpa_br_mma_snuc_2017_w");
         case_8_1_fig1_layer1 = L.geoJson(geojson, {style: {"color": "#00ff99","opacity": 1}});
 
         data = await $.getJSON('data/brazil/amapoly_ivb.json');
@@ -441,7 +441,7 @@ async function construct_cases(){
         data_loader.cases['8-2'].create_data = async function(a){
              //"NCED_Polygons_08152017"
              //choropleth map
-            let file = await shp("data/8-2/NCED_with_")
+            let file = await shp("./data/8-2/NCED_with_")
             this.layers['8-2']=L.geoJson(file, {style: style_blue_8_2});
 
             //legend
@@ -777,7 +777,7 @@ function style(feature) {
 
 async function add_shape_file(id,files,colors,additional_layer){
     for (var file in files){
-        let shape_file = await shp("data/"+id+'/'+files[file]);
+        let shape_file = await shp("./data/"+id+'/'+files[file]);
         data_loader.cases[id].files.push(shape_file);
     }
     let overlay_maps={}
