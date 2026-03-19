@@ -1,5 +1,4 @@
-This is the codebase for the [NatCap viz gallery](http://viz.naturalcapitalproject.org/)<br/>
-*Interested in contributing? [Send an email](mailto:chweil@stanford.edu) and tell us about your idea*
+This is the codebase for the [NatCap viz gallery](https://viz.naturalcapitalalliance.stanford.edu/)<br/>
 
 Besides the css, images, and js folders - which contains code for the gallery - this repo includes several subfolders with builds for other NatCap visualization. 
 
