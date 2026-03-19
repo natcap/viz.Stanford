@@ -5,7 +5,7 @@ Besides the css, images, and js folders - which contains code for the gallery - 
 ## Structure
 
 ### Viewers hosted here
-When viewer is final, add a folder `name_of_viewer` with all its contents, directly in the root of this repo. The viewer will be directly accessible at `viz.naturalcapitalproject.stanford.edu/name_of_viewer`
+When viewer is final, add a folder `name_of_viewer` with all its contents, directly in the root of this repo. The viewer will be directly accessible at `viz.naturalcapitalalliance.stanford.edu/name_of_viewer`
 
 ### `Index.html` 
 This file includes all html code, and is probably the only thing you'll need to change. It is divided into three sections. First, the side menu is declared, then the header, and finally the main content with all the examples and resources. 
